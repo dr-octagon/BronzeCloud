@@ -3,6 +3,6 @@
     "description": "BronzeCloud Turkish Providers Plugin Repository",
     "manifestVersion": 1,
     "pluginLists": [
-        "https://github.com/Dr-Octagon/cloudstream-turkish/raw/refs/heads/builds/plugins_stable.json"
+        "https://github.com/dr-octagon/Cloudstream-BronzeCloud/raw/refs/heads/builds/plugins_stable.json"
     ]
 }
