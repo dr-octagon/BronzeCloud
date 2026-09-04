@@ -20,7 +20,7 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/Dr-Octagon/cloudstream-turkish/builds/BronzeCloudSports_v4.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/BronzeCloudSports_v4.cs3",
         "status": 1,
         "version": 4,
         "name": "BronzeCloudSports",
@@ -30,7 +30,7 @@
         ],
         "description": "BronzeCloud canl\u0131 spor yay\u0131nlar\u0131 i\u00e7in haz\u0131rlanm\u0131\u015f eklenti.",
         "fileSize": 21675,
-        "repositoryUrl": "https://github.com/Dr-Octagon/cloudstream-turkish",
+        "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
             "Live"
