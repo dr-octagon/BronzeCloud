@@ -1,0 +1,9 @@
+{
+    "name": "Turkish Providers v45",
+    "description": "Turkish Providers Plugin Repository v45",
+    "manifestVersion": 1,
+    "pluginLists": [
+        "https://raw.githubusercontent.com/Dr-Octagon/cloudstream-turkish/builds/plugins_v45.json",
+        "https://cdn.jsdelivr.net/gh/Dr-Octagon/cloudstream-turkish@builds/plugins_v45.json"
+    ]
+}

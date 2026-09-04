@@ -1,0 +1,8 @@
+{
+    "name": "Turkish Providers v42",
+    "description": "Türkçe içerikli eklenti havuzu (@feroxx altyapısıyla)",
+    "manifestVersion": 1,
+    "pluginLists": [
+      "https://fastly.jsdelivr.net/gh/Dr.Octagon/cloudstream-turkish@builds/plugins_v42.json"
+    ]
+}
