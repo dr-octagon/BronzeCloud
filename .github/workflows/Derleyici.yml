@@ -1,0 +1,160 @@
+# CloudStream Derleyici Workflow for @Dr.Octagon (feat. @feroxx / @keyiflerolsun)
+name: CloudStream Derleyici
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event_name }}-${{ github.ref }}
+  cancel-in-progress: true
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+    paths-ignore:
+      - "**/*.md"
+      - "**/*.png"
+      - "**/*.jpg"
+
+jobs:
+  CloudStreamDerleyici:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: "'src' Depo Kontrolü"
+        uses: actions/checkout@v4
+        with:
+          path: "src"
+ 
+      - name: "'build' Depo Kontrolü"
+        uses: actions/checkout@v4
+        with:
+          ref: "builds"
+          path: "builds"
+
+      - name: Eski Derlemeleri Temizle
+        run: |
+          python3 - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+          from urllib.parse import urlparse
+
+          builds_dir = Path(os.environ["GITHUB_WORKSPACE"]) / "builds"
+          manual_plugins_path = builds_dir / "manual_plugins.json"
+          preserved_packages = set()
+
+          if manual_plugins_path.is_file():
+              manual_plugins = json.loads(manual_plugins_path.read_text())
+              preserved_packages = {
+                  Path(urlparse(plugin["url"]).path).name
+                  for plugin in manual_plugins
+              }
+
+          for package_path in builds_dir.glob("*.cs3"):
+              if package_path.name not in preserved_packages:
+                  package_path.unlink()
+          PY
+
+      - name: JDK 17 Ayarla
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          cache-read-only: false
+
+      - name: Eklentileri Derle
+        run: |
+          cd $GITHUB_WORKSPACE/src
+          chmod +x gradlew
+          ./gradlew make makePluginsJson
+          cp **/build/*.cs3 $GITHUB_WORKSPACE/builds/
+          python3 - <<'PY'
+          import json
+          import os
+          import shutil
+          from pathlib import Path
+          from urllib.parse import urlparse
+          from zipfile import ZipFile
+
+          plugins_path = Path("build/plugins.json")
+          builds_dir = Path(os.environ["GITHUB_WORKSPACE"]) / "builds"
+          plugins = json.loads(plugins_path.read_text())
+
+          for plugin in plugins:
+              original_name = Path(urlparse(plugin["url"]).path).name
+              original_path = builds_dir / original_name
+              versioned_name = f"{Path(original_name).stem}_v{plugin['version']}{Path(original_name).suffix}"
+              shutil.copy2(original_path, builds_dir / versioned_name)
+              plugin["url"] = (
+                  "https://raw.githubusercontent.com/"
+                  "Dr.Octagon/cloudstream-turkish/builds/"
+                  f"{versioned_name}"
+              )
+              plugin.pop("fileHash", None)
+
+          manual_plugins_path = builds_dir / "manual_plugins.json"
+          if manual_plugins_path.is_file():
+              manual_plugins = json.loads(manual_plugins_path.read_text())
+              generated_internal_names = {plugin["internalName"] for plugin in plugins}
+
+              for plugin in manual_plugins:
+                  if plugin["internalName"] in generated_internal_names:
+                      raise ValueError(
+                          f"Duplicate plugin internalName: {plugin['internalName']}"
+                      )
+
+                  package_name = Path(urlparse(plugin["url"]).path).name
+                  package_path = builds_dir / package_name
+                  if not package_path.is_file():
+                      raise FileNotFoundError(
+                          f"Manual plugin package is missing: {package_name}"
+                      )
+
+                  with ZipFile(package_path) as archive:
+                      manifest = json.loads(archive.read("manifest.json"))
+
+                  if (
+                      manifest["name"] != plugin["name"]
+                      or manifest["version"] != plugin["version"]
+                  ):
+                      raise ValueError(
+                          f"Manual plugin manifest mismatch: {package_name}"
+                      )
+
+                  plugin["fileSize"] = package_path.stat().st_size
+                  plugin.pop("fileHash", None)
+
+              plugins.extend(manual_plugins)
+              plugins.sort(key=lambda plugin: plugin["name"].casefold())
+
+          plugins_path.write_text(json.dumps(plugins, indent=4))
+          PY
+          cp build/plugins.json $GITHUB_WORKSPACE/builds/
+          cp build/plugins.json $GITHUB_WORKSPACE/builds/plugins_stable.json
+          cp build/plugins.json $GITHUB_WORKSPACE/builds/plugins_v46.json
+          cp repo.json $GITHUB_WORKSPACE/builds/repo.json
+          cp repo.json $GITHUB_WORKSPACE/builds/repo_stable.json
+          cp repo.json $GITHUB_WORKSPACE/builds/repo_v46.json
+          cp build/plugins.json $GITHUB_WORKSPACE/builds/plugins_v50.json
+          cp repo.json $GITHUB_WORKSPACE/builds/repo_v50.json
+          cp -r logos $GITHUB_WORKSPACE/builds/logos || true
+
+      - name: Derlemeleri Yükle
+        run: |
+          cd $GITHUB_WORKSPACE/builds
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git add .
+          git commit -m "Build plugins for $GITHUB_SHA" || exit 0
+          git push
+
+      - name: jsDelivr Önbelleğini Temizle
+        run: |
+          for file in repo.json repo_stable.json plugins.json plugins_stable.json; do
+            curl --fail --silent --show-error --retry 3 \
+              "https://purge.jsdelivr.net/gh/Dr-Octagon/cloudstream-turkish@builds/$file"
+          done
