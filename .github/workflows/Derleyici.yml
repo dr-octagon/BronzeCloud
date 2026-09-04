@@ -82,6 +82,7 @@ jobs:
 
           plugins_path = Path("build/plugins.json")
           builds_dir = Path(os.environ["GITHUB_WORKSPACE"]) / "builds"
+          repository = os.environ["GITHUB_REPOSITORY"]
           plugins = json.loads(plugins_path.read_text())
 
           for plugin in plugins:
@@ -91,7 +92,7 @@ jobs:
               shutil.copy2(original_path, builds_dir / versioned_name)
               plugin["url"] = (
                   "https://raw.githubusercontent.com/"
-                  "Dr.Octagon/cloudstream-turkish/builds/"
+                  f"{repository}/builds/"
                   f"{versioned_name}"
               )
               plugin.pop("fileHash", None)
@@ -156,5 +157,5 @@ jobs:
         run: |
           for file in repo.json repo_stable.json plugins.json plugins_stable.json; do
             curl --fail --silent --show-error --retry 3 \
-              "https://purge.jsdelivr.net/gh/Dr-Octagon/cloudstream-turkish@builds/$file"
+              "https://purge.jsdelivr.net/gh/${GITHUB_REPOSITORY}@builds/$file"
           done
