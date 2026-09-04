@@ -1,6 +1,6 @@
 [
     {
-        "url": "https://raw.githubusercontent.com/Dr.Octagon/cloudstream-turkish/builds/BelgeselX_v17.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/cloudstream-turkish/builds/BelgeselX_v17.cs3",
         "status": 1,
         "version": 17,
         "name": "BelgeselX",
@@ -38,7 +38,7 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/Dr.Octagon/cloudstream-turkish/builds/CineStream_v482.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/cloudstream-turkish/builds/CineStream_v482.cs3",
         "status": 1,
         "version": 482,
         "name": "CineStream",
@@ -62,7 +62,7 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/Dr.Octagon/cloudstream-turkish/builds/CizgiMax_v16.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/cloudstream-turkish/builds/CizgiMax_v16.cs3",
         "status": 1,
         "version": 16,
         "name": "CizgiMax",
@@ -83,7 +83,7 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/Dr.Octagon/cloudstream-turkish/builds/Ddizi_v22.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/cloudstream-turkish/builds/Ddizi_v22.cs3",
         "status": 1,
         "version": 22,
         "name": "Ddizi",
@@ -102,7 +102,7 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/Dr.Octagon/cloudstream-turkish/builds/DiziBox_v23.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/cloudstream-turkish/builds/DiziBox_v23.cs3",
         "status": 1,
         "version": 23,
         "name": "DiziBox",
@@ -121,7 +121,7 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/Dr.Octagon/cloudstream-turkish/builds/Dizilla_v92.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/cloudstream-turkish/builds/Dizilla_v92.cs3",
         "status": 1,
         "version": 92,
         "name": "Dizilla",
@@ -140,7 +140,7 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/Dr.Octagon/cloudstream-turkish/builds/DiziMom_v57.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/cloudstream-turkish/builds/DiziMom_v57.cs3",
         "status": 1,
         "version": 57,
         "name": "DiziMom",
@@ -159,7 +159,7 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/Dr.Octagon/cloudstream-turkish/builds/DiziPal_v106.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/cloudstream-turkish/builds/DiziPal_v106.cs3",
         "status": 1,
         "version": 106,
         "name": "DiziPal",
@@ -180,7 +180,7 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/Dr.Octagon/cloudstream-turkish/builds/DiziPalOriginal_v86.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/cloudstream-turkish/builds/DiziPalOriginal_v86.cs3",
         "status": 1,
         "version": 86,
         "name": "DiziPalOriginal",
@@ -201,7 +201,7 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/Dr.Octagon/cloudstream-turkish/builds/DiziYou_v25.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/cloudstream-turkish/builds/DiziYou_v25.cs3",
         "status": 1,
         "version": 25,
         "name": "DiziYou",
@@ -220,7 +220,7 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/Dr.Octagon/cloudstream-turkish/builds/FilmMakinesi_v58.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/cloudstream-turkish/builds/FilmMakinesi_v58.cs3",
         "status": 1,
         "version": 58,
         "name": "FilmMakinesi",
@@ -240,7 +240,7 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/Dr.Octagon/cloudstream-turkish/builds/FilmModu_v19.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/cloudstream-turkish/builds/FilmModu_v19.cs3",
         "status": 1,
         "version": 19,
         "name": "FilmModu",
@@ -259,7 +259,7 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/Dr.Octagon/cloudstream-turkish/builds/FullHDFilm_v36.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/cloudstream-turkish/builds/FullHDFilm_v36.cs3",
         "status": 1,
         "version": 36,
         "name": "FullHDFilm",
@@ -279,7 +279,7 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/Dr.Octagon/cloudstream-turkish/builds/FullHDFilmizlesene_v33.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/cloudstream-turkish/builds/FullHDFilmizlesene_v33.cs3",
         "status": 1,
         "version": 33,
         "name": "FullHDFilmizlesene",
@@ -298,7 +298,7 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/Dr.Octagon/cloudstream-turkish/builds/HDFilmCehennemi_v48.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/cloudstream-turkish/builds/HDFilmCehennemi_v48.cs3",
         "status": 1,
         "version": 48,
         "name": "HDFilmCehennemi",
@@ -319,7 +319,7 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/Dr.Octagon/cloudstream-turkish/builds/HDFilmDelisi_v1.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/cloudstream-turkish/builds/HDFilmDelisi_v1.cs3",
         "status": 1,
         "version": 1,
         "name": "HDFilmDelisi",
@@ -339,7 +339,7 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/Dr.Octagon/cloudstream-turkish/builds/InatBox_v53.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/cloudstream-turkish/builds/InatBox_v53.cs3",
         "status": 1,
         "version": 53,
         "name": "InatBox",
@@ -363,7 +363,7 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/Dr.Octagon/cloudstream-turkish/builds/JetFilmizle_v47.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/cloudstream-turkish/builds/JetFilmizle_v47.cs3",
         "status": 1,
         "version": 47,
         "name": "JetFilmizle",
@@ -382,7 +382,7 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/Dr.Octagon/cloudstream-turkish/builds/KultFilmler_v16.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/cloudstream-turkish/builds/KultFilmler_v16.cs3",
         "status": 1,
         "version": 16,
         "name": "KultFilmler",
@@ -402,7 +402,7 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/Dr.Octagon/cloudstream-turkish/builds/RecTV_v110.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/cloudstream-turkish/builds/RecTV_v110.cs3",
         "status": 1,
         "version": 110,
         "name": "RecTV",
@@ -426,7 +426,7 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/Dr.Octagon/cloudstream-turkish/builds/SetFilmIzle_v30.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/cloudstream-turkish/builds/SetFilmIzle_v30.cs3",
         "status": 1,
         "version": 30,
         "name": "SetFilmIzle",
@@ -446,7 +446,7 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/Dr.Octagon/cloudstream-turkish/builds/SezonlukDizi_v9.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/cloudstream-turkish/builds/SezonlukDizi_v9.cs3",
         "status": 1,
         "version": 9,
         "name": "SezonlukDizi",
@@ -466,7 +466,7 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/Dr.Octagon/cloudstream-turkish/builds/SinemaCX_v24.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/cloudstream-turkish/builds/SinemaCX_v24.cs3",
         "status": 1,
         "version": 24,
         "name": "SinemaCX",
@@ -485,7 +485,7 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/Dr.Octagon/cloudstream-turkish/builds/Sinewix_v2.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/cloudstream-turkish/builds/Sinewix_v2.cs3",
         "status": 1,
         "version": 2,
         "name": "Sinewix",
@@ -507,7 +507,7 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/Dr.Octagon/cloudstream-turkish/builds/TLCtr_v19.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/cloudstream-turkish/builds/TLCtr_v19.cs3",
         "status": 1,
         "version": 19,
         "name": "TLCtr",
@@ -526,7 +526,7 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/Dr.Octagon/cloudstream-turkish/builds/Vavoo_v3.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/cloudstream-turkish/builds/Vavoo_v3.cs3",
         "status": 1,
         "version": 3,
         "name": "Vavoo",
@@ -545,7 +545,7 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/Dr.Octagon/cloudstream-turkish/builds/Watch2Movies_v6.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/cloudstream-turkish/builds/Watch2Movies_v6.cs3",
         "status": 1,
         "version": 6,
         "name": "Watch2Movies",
@@ -565,7 +565,7 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/Dr.Octagon/cloudstream-turkish/builds/WebteIzle_v20.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/cloudstream-turkish/builds/WebteIzle_v20.cs3",
         "status": 1,
         "version": 20,
         "name": "WebteIzle",
