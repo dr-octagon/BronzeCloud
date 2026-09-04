@@ -721,7 +721,7 @@ suspend fun getHindMoviezLinks(
 //For Extractor new domain
 suspend fun getLatestBaseUrl(baseUrl: String, source: String): String {
     return try {
-        val dynamicUrls = app.get("https://raw.githubusercontent.com/Dr-Octagon/cloudstream-turkish/master/urls.json")
+        val dynamicUrls = app.get("https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/master/urls.json")
             .parsedSafe<Map<String, String>>()
             ?: app.get("https://raw.githubusercontent.com/SaurabhKaperwan/Utils/refs/heads/main/urls.json")
             .parsedSafe<Map<String, String>>()

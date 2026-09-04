@@ -34,10 +34,10 @@ PENDING_PATH = DATA_ROOT / "domain-watch-state.json"
 HISTORY_PATH = DATA_ROOT / "domain-update-history.json"
 LOCK_PATH = DATA_ROOT / "domain-update.lock"
 
-GITHUB_REPOSITORY = "dr-octagon/cloudstream-turkish"
+GITHUB_REPOSITORY = "dr-octagon/Cloudstream-BronzeCloud"
 GITHUB_API = f"https://api.github.com/repos/{GITHUB_REPOSITORY}"
 CI_WORKFLOW_NAME = "CloudStream Derleyici"
-SSH_KEY = Path("/opt/data/ssh/cloudstream_turkish_ed25519")
+SSH_KEY = Path("/opt/data/ssh/cloudstream_bronzecloud_ed25519")
 
 TARGETS = {
     "dizipal": {

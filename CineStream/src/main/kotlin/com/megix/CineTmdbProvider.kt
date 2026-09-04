@@ -200,7 +200,7 @@ class CineTmdbProvider: MainAPI() {
                             // eps.name + if (isUpcoming(eps.airDate)) " • [UPCOMING]" else ""
                             this.season = eps.seasonNumber
                             this.episode = eps.episodeNumber
-                            this.posterUrl = getImageUrl(eps.stillPath) ?: "https://raw.githubusercontent.com/Dr-Octagon/cloudstream-turkish/master/CineStream/missing_thumbnail.png"
+                            this.posterUrl = getImageUrl(eps.stillPath) ?: "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/master/CineStream/missing_thumbnail.png"
                             this.score = Score.from10(eps.voteAverage)
                             this.description = eps.overview
                             this.runTime = eps.runtime

@@ -409,7 +409,7 @@ class CineSimklProvider: MainAPI() {
                     this.season = it.season
                     this.episode = it.episode
                     this.description = it.description
-                    this.posterUrl = getPosterUrl(it.img, "episode") ?: "https://raw.githubusercontent.com/Dr-Octagon/cloudstream-turkish/master/CineStream/missing_thumbnail.png"
+                    this.posterUrl = getPosterUrl(it.img, "episode") ?: "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/master/CineStream/missing_thumbnail.png"
                     addDate(it.date, "yyyy-MM-dd'T'HH:mm:ssXXX")
                 }
             }

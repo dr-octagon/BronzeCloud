@@ -96,7 +96,7 @@ private var _apiConfig: JSONObject? = null
 suspend fun init() {
     if (_apiConfig != null) return
     val urls = listOf(
-        "https://raw.githubusercontent.com/Dr-Octagon/cloudstream-turkish/master/urls.json",
+        "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/master/urls.json",
         "https://raw.githubusercontent.com/SaurabhKaperwan/Utils/refs/heads/main/urls.json"
     )
     for (url in urls) {

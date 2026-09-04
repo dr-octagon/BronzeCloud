@@ -43,5 +43,5 @@ cloudstream {
         "Torrent"
     )
 
-    iconUrl = "https://raw.githubusercontent.com/Dr-Octagon/cloudstream-turkish/master/CineStream/icon.png"
+    iconUrl = "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/master/CineStream/icon.png"
 }
