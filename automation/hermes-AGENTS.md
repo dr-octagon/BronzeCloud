@@ -26,7 +26,7 @@ about it.
   requested.
 
 ## BronzeCloud Domain Pilot
-- BronzeCloud is available at `/workspace/cloudstream-turkish`.
+- BronzeCloud is available at `/workspace/Cloudstream-BronzeCloud`.
 - The scheduled monitor currently covers only `DiziPal` and
   `DiziPalOriginal`. It records verified candidates in
   `/opt/data/domain-monitor/domain-watch-state.json` and sends a Telegram
@@ -34,7 +34,7 @@ about it.
 - Never run `KONTROL.py` in response to a domain notification. It scans and may
   modify unrelated providers.
 - Use only the restricted command below for this pilot:
-  `/opt/hermes/.venv/bin/python /workspace/cloudstream-turkish/automation/bronzecloud-domain.py`
+  `/opt/hermes/.venv/bin/python /workspace/Cloudstream-BronzeCloud/automation/bronzecloud-domain.py`
 - When the user says `güncelle` after a domain notification, that is explicit
   authorization to apply the recorded candidate, increment the provider
   version, push `master`, wait for GitHub Actions, and verify the live package.
