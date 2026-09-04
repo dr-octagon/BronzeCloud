@@ -11,7 +11,7 @@ CloudStream 3 için Türkçe dizi, film ve TV eklenti deposu.
 
 ### Tek dokunuşla kurulum
 
-[**📲 BronzeCloud deposunu CloudStream'e ekle**](https://cs.repo/?github.com/dr-octagon/Cloudstream-BronzeCloud/raw/refs/heads/builds/repo_stable.json)
+[**📲 BronzeCloud deposunu CloudStream'e ekle**](https://cs.repo/?raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/refs/heads/builds/repo_stable.json)
 
 > Bu bağlantı Android cihazda CloudStream kuruluysa uygulamayı açar ve BronzeCloud deposunu ekleme ekranına aktarır. Tarayıcı açılırsa Android ayarlarından CloudStream için **Desteklenen bağlantıları aç** seçeneğini etkinleştirin veya aşağıdaki doğrudan bağlantı yöntemini kullanın.
 
@@ -31,10 +31,10 @@ CloudStream 3 için Türkçe dizi, film ve TV eklenti deposu.
 
 CloudStream'de **Ayarlar → Eklentiler → Depo Ekle** yolunu açın. Kısa kod yerine aşağıdaki doğrudan BronzeCloud depo bağlantısını **Depo URL'si** alanına yapıştırın:
 
-[**🔗 BronzeCloud doğrudan depo bağlantısı**](https://github.com/dr-octagon/Cloudstream-BronzeCloud/raw/refs/heads/builds/repo_stable.json)
+[**🔗 BronzeCloud doğrudan depo bağlantısı**](https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/refs/heads/builds/repo_stable.json)
 
 ```text
-https://github.com/dr-octagon/Cloudstream-BronzeCloud/raw/refs/heads/builds/repo_stable.json
+https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/refs/heads/builds/repo_stable.json
 ```
 
 ---
