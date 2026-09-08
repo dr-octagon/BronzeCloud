@@ -22,8 +22,12 @@ import java.nio.charset.StandardCharsets
 import java.text.SimpleDateFormat
 import java.util.Locale
 import java.util.TimeZone
+import java.security.MessageDigest
+import java.util.UUID
 import java.util.regex.Pattern
 import javax.crypto.Cipher
+import javax.crypto.Mac
+import javax.crypto.spec.GCMParameterSpec
 import javax.crypto.spec.IvParameterSpec
 import javax.crypto.spec.SecretKeySpec
 
@@ -43,9 +47,9 @@ class ShadowTVBC : MainAPI() {
         private const val TS_KEY           = "HdRyPcAqhpXf92kLmThp4sQzWv7nXeAs"
         private const val TS_IV            = "GbMJtUeB9hGzskmz"
         private const val DEFAULT_EMAIL    = "atarsercan2@gmail.com"
-        private const val DEFAULT_PASSWORD = "Yarrakadam"
-        private const val UUID             = "c9a8d7df-6401-4bbc-97b5-6630cc1470e1"
-        private const val ASIZ_HASH        = "ZZzIUo5Wrw1T1WMwjybNwg=="
+        private const val DEFAULT_PASSWORD    = "Yarrakadam"
+        private const val DEFAULT_DEVICE_UUID = "c9a8d7df-6401-4bbc-97b5-6630cc1470e1"
+        private const val ASIZ_HASH           = "ZZzIUo5Wrw1T1WMwjybNwg=="
         private const val GLG1_KEY         = "0Ae0+Zxj5pITIE38f+LqpRGO1IQjj9NytSciDvSew+oNq7T6dGsHASlMl+O8DUxu"
         private const val ORMOX_ROKS       = "D8C42BC6CD20C00E85659003F62B1F4A7A882DCB"
         private const val USER_AGENT       = "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:80.0) Gecko/20100101 Firefox/79.0"
@@ -54,6 +58,9 @@ class ShadowTVBC : MainAPI() {
         private const val VOD_FILM_SEARCH  = "https://abibigitya.xyz/api/film/filmmakinesi/search.php"
         private const val VOD_DIZI_API     = "https://abibigitya.xyz/api/dizi/dizipal/diziapi.php"
         private const val VOD_DIZI_SEARCH  = "https://abibigitya.xyz/api/dizi/dizipal/dizisearch.php"
+
+        private const val REC_HMAC_KEY     = "3508611138826751fdf77beaa6f93eb93fd27e6a5acb910e7aad22665513dd6e"
+        private const val REC_AES_KEY_HEX  = "666482389dc76bfa57068407418f7dac9f6c14b6868856b169165b9fac7d812e"
     }
 
     private val fetchMutex = Mutex()
@@ -61,6 +68,12 @@ class ShadowTVBC : MainAPI() {
     private var cachedChannels: List<ShadowChannelItem>? = null
     private var lastFetchTime = 0L
     private var serverClockOffset = 0L
+
+    private val recJwtMutex = Mutex()
+    @Volatile
+    private var cachedRecJwt: String? = null
+    @Volatile
+    private var recJwtExp: Long = 0L
 
     // ---- Cryptography Helpers ----
     private fun decryptAesCbc(cipherTextB64: String, key: ByteArray, iv: ByteArray): String {
@@ -80,6 +93,97 @@ class ShadowTVBC : MainAPI() {
         cipher.init(Cipher.ENCRYPT_MODE, keySpec, ivSpec)
         val encrypted = cipher.doFinal(nowStr.toByteArray(StandardCharsets.UTF_8))
         return Base64.encodeToString(encrypted, Base64.NO_WRAP)
+    }
+
+    private fun sha256Hex(data: String): String {
+        val digest = MessageDigest.getInstance("SHA-256").digest(data.toByteArray(StandardCharsets.UTF_8))
+        return digest.joinToString("") { "%02x".format(it) }
+    }
+
+    private fun hmacSha256Hex(key: String, message: String): String {
+        val mac = Mac.getInstance("HmacSHA256")
+        mac.init(SecretKeySpec(key.toByteArray(StandardCharsets.UTF_8), "HmacSHA256"))
+        return mac.doFinal(message.toByteArray(StandardCharsets.UTF_8)).joinToString("") { "%02x".format(it) }
+    }
+
+    private suspend fun getRecTvJwt(verifyUrl: String): String? {
+        val now = System.currentTimeMillis() / 1000L
+        val currentJwt = cachedRecJwt
+        if (currentJwt != null && now < recJwtExp - 300) {
+            return currentJwt
+        }
+
+        return recJwtMutex.withLock {
+            val currentNow = System.currentTimeMillis() / 1000L
+            val recheckJwt = cachedRecJwt
+            if (recheckJwt != null && currentNow < recJwtExp - 300) {
+                return@withLock recheckJwt
+            }
+
+            try {
+                val ts = currentNow.toString()
+                val nonce = UUID.randomUUID().toString()
+                val body = "{}"
+                val bodyHash = sha256Hex(body)
+                val path = if (verifyUrl.contains("/api/")) "/api/" + verifyUrl.substringAfter("/api/") else "/api/attest/verify"
+                val msg = "POST\n$path\n$ts\n$nonce\n$bodyHash"
+                val sig = hmacSha256Hex(REC_HMAC_KEY, msg)
+
+                val headers = mapOf(
+                    "User-Agent" to "googleusercontent",
+                    "Referer" to "https://twitter.com/",
+                    "X-Timestamp" to ts,
+                    "X-Nonce" to nonce,
+                    "X-Signature" to sig,
+                    "X-App-Version" to "157",
+                    "X-Client-Id" to "rectv-android",
+                    "Content-Type" to "application/json"
+                )
+                val res = app.post(
+                    verifyUrl,
+                    headers = headers,
+                    requestBody = body.toRequestBody("application/json; charset=utf-8".toMediaType())
+                )
+                val respMap = AppUtils.tryParseJson<Map<String, Any>>(res.text)
+                val token = respMap?.get("jwt")?.toString()
+                if (!token.isNullOrEmpty()) {
+                    cachedRecJwt = token
+                    recJwtExp = currentNow + 7000L
+                    token
+                } else null
+            } catch (e: Exception) {
+                Log.e(name, "Failed to fetch RecTV JWT: ${e.message}")
+                cachedRecJwt
+            }
+        }
+    }
+
+    private fun decryptRecAesGcm(encUrl: String): String? {
+        return try {
+            val cleaned = encUrl.replace("\\/", "/").replace("%2F", "/").replace("%2B", "+").trim()
+            val raw = Base64.decode(cleaned, Base64.DEFAULT)
+            if (raw.size < 28) return null
+
+            val iv = raw.copyOfRange(0, 12)
+            val cipherTextAndTag = raw.copyOfRange(12, raw.size)
+
+            val keyBytes = ByteArray(REC_AES_KEY_HEX.length / 2)
+            for (i in keyBytes.indices) {
+                val index = i * 2
+                keyBytes[i] = REC_AES_KEY_HEX.substring(index, index + 2).toInt(16).toByte()
+            }
+
+            val cipher = Cipher.getInstance("AES/GCM/NoPadding")
+            val keySpec = SecretKeySpec(keyBytes, "AES")
+            val gcmSpec = GCMParameterSpec(128, iv)
+            cipher.init(Cipher.DECRYPT_MODE, keySpec, gcmSpec)
+
+            val decrypted = cipher.doFinal(cipherTextAndTag)
+            String(decrypted, StandardCharsets.UTF_8).trim()
+        } catch (e: Exception) {
+            Log.e(name, "Failed to decrypt RecTV enc_url: ${e.message}")
+            null
+        }
     }
 
     private fun getApiUrl(): String = DEFAULT_API_URL
@@ -161,7 +265,7 @@ class ShadowTVBC : MainAPI() {
         val params = listOf(
             "ormoxRoks" to ORMOX_ROKS,
             "ormxArmegedEryxc" to "",
-            "uuid" to UUID,
+            "uuid" to DEFAULT_DEVICE_UUID,
             "asize" to ASIZ_HASH,
             "serverurl" to BOOTSTRAP_URL,
             "glg1Key" to GLG1_KEY,
@@ -770,6 +874,229 @@ class ShadowTVBC : MainAPI() {
         return cleaned
     }
 
+    private suspend fun resolveGolge15(
+        sourceTitle: String,
+        rawUrl: String,
+        callback: (ExtractorLink) -> Unit
+    ): Boolean {
+        try {
+            var clean = cleanWorkerProxies(rawUrl.substring(10))
+            if (clean.startsWith("https//")) clean = clean.replaceFirst("https//", "https://")
+            else if (clean.startsWith("http//")) clean = clean.replaceFirst("http//", "http://")
+
+            val parts = if (clean.contains("%7C")) clean.split("%7C") else clean.split("|")
+            val configUrl = parts.getOrNull(0)?.trim() ?: return false
+            val v6 = parts.getOrNull(1)?.trim() ?: ""
+            val targetIp = parts.getOrNull(3)?.trim() ?: ""
+
+            val reqHeaders = mapOf("User-Agent" to USER_AGENT)
+            val confRes = app.get(configUrl, headers = reqHeaders)
+            val confMap = AppUtils.tryParseJson<Map<String, Any>>(confRes.text) ?: return false
+
+            var apiUrl = confMap["api_url"]?.toString() ?: return false
+            if (v6.isNotEmpty() && !apiUrl.startsWith("http")) {
+                apiUrl = v6 + apiUrl
+            }
+
+            val jsonData = confMap["json_data"]
+            val jsonStr = if (jsonData is String) jsonData else jacksonObjectMapper().writeValueAsString(jsonData)
+            val proxyUrl = confMap["proxyurl"]?.toString() ?: return false
+            val medyaUrl = confMap["medyaurl"]?.toString() ?: return false
+
+            @Suppress("UNCHECKED_CAST")
+            val hMap = confMap["headers"] as? Map<String, String> ?: emptyMap()
+            val apiHeaders = mutableMapOf(
+                "Content-Type" to (hMap["content-type"] ?: "application/json; charset=utf-8"),
+                "User-Agent" to (hMap["user-agent"] ?: "Rokkr/1.8.3 (android)"),
+                "Referer" to (hMap["referer"] ?: "https://www.dezor.net/"),
+                "Origin" to (hMap["origin"] ?: "https://www.dezor.net"),
+                "X-Requested-With" to (hMap["x-requested-with"] ?: "com.golge.golgetv2")
+            )
+            if (hMap.containsKey("x-forwarded-for")) {
+                apiHeaders["X-Forwarded-For"] = hMap["x-forwarded-for"]!!
+            }
+
+            val apiRes = app.post(
+                apiUrl,
+                headers = apiHeaders,
+                requestBody = jsonStr.toRequestBody("application/json; charset=utf-8".toMediaType())
+            )
+            val apiObj = AppUtils.tryParseJson<Map<String, Any>>(apiRes.text)
+            val addonSig = apiObj?.get("addonSig")?.toString() ?: ""
+
+            val fetchBody = jacksonObjectMapper().writeValueAsString(
+                mapOf("language" to "tr", "region" to "TR", "url" to medyaUrl)
+            )
+            val fetchHeaders = mapOf(
+                "watched-sig" to addonSig,
+                "mediahubmx-signature" to addonSig,
+                "user-agent" to (hMap["user-agent"] ?: USER_AGENT),
+                "X-Requested-With" to "com.golge.golgetv",
+                "Content-Type" to "application/json"
+            )
+
+            val proxyRes = app.post(
+                proxyUrl,
+                headers = fetchHeaders,
+                requestBody = fetchBody.toRequestBody("application/json; charset=utf-8".toMediaType())
+            )
+            val proxyList = AppUtils.tryParseJson<List<Map<String, Any>>>(proxyRes.text)
+            val resolvedUrl = proxyList?.firstOrNull()?.get("url")?.toString() ?: return false
+
+            val parsedUri = Uri.parse(resolvedUrl)
+            val origHost = parsedUri.authority ?: parsedUri.host ?: ""
+
+            val finalStreamUrl: String
+            val playHeaders: Map<String, String>
+            if (targetIp.isNotBlank()) {
+                val path = parsedUri.encodedPath ?: ""
+                val query = parsedUri.encodedQuery
+                finalStreamUrl = "http://$targetIp$path" + (if (query.isNullOrBlank()) "" else "?$query")
+                playHeaders = mapOf(
+                    "User-Agent" to USER_AGENT,
+                    "Host" to origHost
+                )
+            } else {
+                finalStreamUrl = resolvedUrl
+                playHeaders = mapOf("User-Agent" to USER_AGENT)
+            }
+
+            callback.invoke(
+                newExtractorLink(
+                    source = name,
+                    name = sourceTitle,
+                    url = finalStreamUrl,
+                    type = ExtractorLinkType.M3U8
+                ) {
+                    this.headers = playHeaders
+                    this.quality = Qualities.P1080.value
+                }
+            )
+            return true
+        } catch (e: Exception) {
+            Log.e(name, "Error in resolveGolge15: ${e.message}", e)
+            return false
+        }
+    }
+
+    private suspend fun resolveGolge26(
+        sourceTitle: String,
+        rawUrl: String,
+        callback: (ExtractorLink) -> Unit
+    ): Boolean {
+        try {
+            var clean = cleanWorkerProxies(rawUrl.substring(10))
+            if (clean.startsWith("https//")) clean = clean.replaceFirst("https//", "https://")
+            else if (clean.startsWith("http//")) clean = clean.replaceFirst("http//", "http://")
+
+            val split = if (clean.contains("%7C")) clean.split("%7C") else clean.split("|")
+            val recUrl = split.getOrNull(0)?.trim() ?: return false
+
+            val res = app.get(recUrl, headers = mapOf("User-Agent" to USER_AGENT))
+            val recConfig = AppUtils.tryParseJson<Map<String, Any>>(res.text) ?: return false
+
+            val unlockUrl = recConfig["unlockurl"]?.toString() ?: return false
+            val verifyUrl = recConfig["verifyurl"]?.toString()
+                ?: (recConfig["baseurl"]?.toString()?.let { "${it.trimEnd('/')}/attest/verify" })
+                ?: "https://a.prectv71.lol/api/attest/verify"
+
+            val jwt = getRecTvJwt(verifyUrl) ?: return false
+
+            val deviceId = UUID.randomUUID().toString()
+            val postBody = "device_id=$deviceId"
+            val unlockPath = "/" + unlockUrl.substringAfter("://").substringAfter("/")
+
+            val ts = (System.currentTimeMillis() / 1000L).toString()
+            val nonce = UUID.randomUUID().toString()
+            val bodyHash = sha256Hex(postBody)
+            val msg = "POST\n$unlockPath\n$ts\n$nonce\n$bodyHash"
+            val sig = hmacSha256Hex(REC_HMAC_KEY, msg)
+
+            val unlockHeaders = mapOf(
+                "User-Agent" to "googleusercontent",
+                "Referer" to "https://twitter.com/",
+                "X-Timestamp" to ts,
+                "X-Nonce" to nonce,
+                "X-Signature" to sig,
+                "X-App-Version" to "156",
+                "X-Client-Id" to "rectv-android",
+                "Content-Type" to "application/x-www-form-urlencoded",
+                "Authorization" to "Bearer $jwt"
+            )
+
+            val unlockRes = app.post(
+                unlockUrl,
+                headers = unlockHeaders,
+                requestBody = postBody.toRequestBody("application/x-www-form-urlencoded".toMediaType())
+            )
+            val unlockMap = AppUtils.tryParseJson<Map<String, Any>>(unlockRes.text)
+            val encUrl = unlockMap?.get("enc_url")?.toString() ?: return false
+
+            val decryptedStream = decryptRecAesGcm(encUrl) ?: return false
+            Log.d(name, "Successfully resolved golge26 stream: $decryptedStream")
+
+            callback.invoke(
+                newExtractorLink(
+                    source = name,
+                    name = sourceTitle,
+                    url = decryptedStream,
+                    type = ExtractorLinkType.M3U8
+                ) {
+                    this.headers = mapOf("User-Agent" to USER_AGENT)
+                    this.quality = Qualities.P1080.value
+                }
+            )
+            return true
+        } catch (e: Exception) {
+            Log.e(name, "Error in resolveGolge26: ${e.message}", e)
+            return false
+        }
+    }
+
+    private suspend fun resolveGolge19(
+        sourceTitle: String,
+        rawUrl: String,
+        headers: Map<String, String>,
+        callback: (ExtractorLink) -> Unit
+    ): Boolean {
+        try {
+            var clean = cleanWorkerProxies(rawUrl.substring(10))
+            if (clean.startsWith("https//")) clean = clean.replaceFirst("https//", "https://")
+            else if (clean.startsWith("http//")) clean = clean.replaceFirst("http//", "http://")
+
+            val split = if (clean.contains("%7C")) clean.split("%7C") else clean.split("|")
+            val targetUrl = split.getOrNull(0)?.trim() ?: return false
+            val referer = split.getOrNull(1)?.trim() ?: ""
+            val origin = split.getOrNull(2)?.trim() ?: "https://google.com/"
+
+            val reqHeaders = headers.toMutableMap()
+            if (referer.isNotEmpty()) reqHeaders["Referer"] = referer
+            if (origin.isNotEmpty()) reqHeaders["Origin"] = origin
+            reqHeaders["X-Requested-With"] = "com.pro.golgetv"
+            if (!reqHeaders.containsKey("User-Agent")) reqHeaders["User-Agent"] = USER_AGENT
+
+            val res = app.get(targetUrl, headers = reqHeaders)
+            if (res.isSuccessful && res.text.contains("#EXTM3U")) {
+                callback.invoke(
+                    newExtractorLink(
+                        source = name,
+                        name = sourceTitle,
+                        url = targetUrl,
+                        type = ExtractorLinkType.M3U8
+                    ) {
+                        this.headers = reqHeaders
+                        this.quality = Qualities.P1080.value
+                    }
+                )
+                return true
+            }
+            return false
+        } catch (e: Exception) {
+            Log.w(name, "golge19 resolution failed: ${e.message}")
+            return false
+        }
+    }
+
     private suspend fun resolveAndEmitStream(
         sourceTitle: String,
         rawUrl: String,
@@ -843,7 +1170,45 @@ class ShadowTVBC : MainAPI() {
             }
         }
 
-        // 3. Resolve generic `golge\d+://` (golge1, golge11, golge19, golge20, golge21, golge23, etc.)
+        // 3. Resolve `golge15://` (WHATCHED & DEZOR / Rokkr proxy)
+        if (url.startsWith("golge15://")) {
+            val resolved = resolveGolge15(sourceTitle, url, callback)
+            if (resolved) return true
+        }
+
+        // 4. Resolve `golge26://` (RC PANEL / RecTV GCM)
+        if (url.startsWith("golge26://")) {
+            val resolved = resolveGolge26(sourceTitle, url, callback)
+            if (resolved) return true
+        }
+
+        // 5. Resolve `golge19://` (KECI SPOR)
+        if (url.startsWith("golge19://")) {
+            val resolved = resolveGolge19(sourceTitle, url, headers, callback)
+            if (resolved) return true
+        }
+
+        // 6. Resolve Birazcik Canli Maclar origin (event.html?id=...)
+        if (url.contains("event.html?id=", ignoreCase = true) || url.contains("/birazcik/", ignoreCase = true)) {
+            val matchId = if (url.contains("id=")) url.substringAfter("id=").substringBefore("&").trim() else ""
+            if (matchId.isNotEmpty() && !matchId.contains("/")) {
+                val directHls = "https://andro.evrenesoglu101.click/checklist/$matchId.m3u8"
+                callback.invoke(
+                    newExtractorLink(
+                        source = name,
+                        name = sourceTitle,
+                        url = directHls,
+                        type = ExtractorLinkType.M3U8
+                    ) {
+                        this.headers = headers
+                        this.quality = Qualities.P1080.value
+                    }
+                )
+                return true
+            }
+        }
+
+        // 7. Resolve generic `golge\d+://` (golge1, golge11, golge20, golge21, golge23, etc.)
         val golgeMatch = Regex("""^golge\d*://""").find(url)
         if (golgeMatch != null) {
             val clean = url.substring(golgeMatch.range.last + 1)
@@ -949,6 +1314,20 @@ class ShadowTVBC : MainAPI() {
                             cleanLoc
                         }
                         return resolveAndEmitStream(sourceTitle, resolvedLoc, headers, subtitleCallback, callback)
+                    } else if (res.text.contains("#EXTM3U")) {
+                        callback.invoke(
+                            newExtractorLink(
+                                source = name,
+                                name = sourceTitle,
+                                url = streamUrl,
+                                type = ExtractorLinkType.M3U8
+                            ) {
+                                this.headers = headers
+                                this.referer = headers["Referer"] ?: headers["referer"] ?: ""
+                                this.quality = Qualities.P1080.value
+                            }
+                        )
+                        return true
                     }
                 } catch (e: Exception) {
                     Log.d(name, "Dispatcher check error: ${e.message}")
