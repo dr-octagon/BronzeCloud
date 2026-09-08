@@ -100,14 +100,10 @@ jobs:
           manual_plugins_path = builds_dir / "manual_plugins.json"
           if manual_plugins_path.is_file():
               manual_plugins = json.loads(manual_plugins_path.read_text())
-              generated_internal_names = {plugin["internalName"] for plugin in plugins}
+              def norm(text: str) -> str:
+                  return "".join(c for c in str(text).lower() if c.isalnum())
 
               for plugin in manual_plugins:
-                  if plugin["internalName"] in generated_internal_names:
-                      raise ValueError(
-                          f"Duplicate plugin internalName: {plugin['internalName']}"
-                      )
-
                   package_name = Path(urlparse(plugin["url"]).path).name
                   package_path = builds_dir / package_name
                   if not package_path.is_file():
@@ -118,18 +114,28 @@ jobs:
                   with ZipFile(package_path) as archive:
                       manifest = json.loads(archive.read("manifest.json"))
 
+                  m_name = norm(manifest.get("name", ""))
+                  p_name = norm(plugin.get("name", ""))
+                  p_internal = norm(plugin.get("internalName", ""))
+
                   if (
-                      manifest["name"] != plugin["name"]
+                      (m_name != p_name and m_name != p_internal)
                       or manifest["version"] != plugin["version"]
                   ):
                       raise ValueError(
-                          f"Manual plugin manifest mismatch: {package_name}"
+                          f"Manual plugin manifest mismatch: {package_name} (manifest: {manifest.get('name')} v{manifest.get('version')}, plugin: {plugin.get('name')} v{plugin.get('version')})"
                       )
 
                   plugin["fileSize"] = package_path.stat().st_size
                   plugin.pop("fileHash", None)
 
-              plugins.extend(manual_plugins)
+                  plugins = [
+                      p for p in plugins
+                      if norm(p.get("internalName", "")) not in (p_name, p_internal, m_name)
+                      and norm(p.get("name", "")) not in (p_name, p_internal, m_name)
+                  ]
+                  plugins.append(plugin)
+
               plugins.sort(key=lambda plugin: plugin["name"].casefold())
 
           plugins_path.write_text(json.dumps(plugins, indent=4))
