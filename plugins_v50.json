@@ -508,27 +508,6 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/shadowtv-bc_v5.cs3",
-        "status": 1,
-        "version": 5,
-        "name": "shadowtv-bc",
-        "internalName": "shadowtv-bc",
-        "authors": [
-            "Dr.Octagon"
-        ],
-        "description": "Shadow TV (G\u00f6lge TV Plus) BronzeCloud Edition - Spor, Canl\u0131 TV ve VOD",
-        "fileSize": 95836,
-        "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
-        "language": "tr",
-        "tvTypes": [
-            "Live",
-            "Movie",
-            "TvSeries"
-        ],
-        "iconUrl": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/refs/heads/master/Shadow%20TV%20BC/icon.png",
-        "apiVersion": 1
-    },
-    {
         "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/SinemaCX_v24.cs3",
         "status": 1,
         "version": 24,
