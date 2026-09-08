@@ -20,7 +20,7 @@ rootProject.name = "CloudstreamPlugins"
 
 // This file sets what projects are included. All new projects should get automatically included unless specified in "disabled" variable.
 
-val disabled = listOf("__Temel")
+val disabled = listOf("__Temel", "shadowtv-bc", "Shadow TV BC")
 
 File(rootDir, ".").eachDir { dir ->
     if (!disabled.contains(dir.name) && File(dir, "build.gradle.kts").exists()) {
