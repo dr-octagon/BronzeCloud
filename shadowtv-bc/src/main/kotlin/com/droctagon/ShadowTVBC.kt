@@ -6,12 +6,22 @@ import android.util.Log
 import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
 import com.lagradost.cloudstream3.*
 import com.lagradost.cloudstream3.utils.*
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Deferred
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.async
 import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
+import okhttp3.MediaType.Companion.toMediaType
+import okhttp3.RequestBody.Companion.toRequestBody
 import org.mozilla.javascript.Context
 import org.mozilla.javascript.Scriptable
 import java.net.URLDecoder
+import java.net.URLEncoder
 import java.nio.charset.StandardCharsets
+import java.text.SimpleDateFormat
+import java.util.Locale
+import java.util.TimeZone
 import java.util.regex.Pattern
 import javax.crypto.Cipher
 import javax.crypto.spec.IvParameterSpec
@@ -46,10 +56,11 @@ class ShadowTVBC : MainAPI() {
         private const val VOD_DIZI_SEARCH  = "https://abibigitya.xyz/api/dizi/dizipal/dizisearch.php"
     }
 
-    private val channelMutex = Mutex()
-    private var cachedApiUrl: String? = null
+    private val fetchMutex = Mutex()
+    private var runningDeferred: Deferred<List<ShadowChannelItem>>? = null
     private var cachedChannels: List<ShadowChannelItem>? = null
     private var lastFetchTime = 0L
+    private var serverClockOffset = 0L
 
     // ---- Cryptography Helpers ----
     private fun decryptAesCbc(cipherTextB64: String, key: ByteArray, iv: ByteArray): String {
@@ -61,8 +72,8 @@ class ShadowTVBC : MainAPI() {
         return String(cipher.doFinal(cipherBytes), StandardCharsets.UTF_8)
     }
 
-    private fun generateTimestampToken(): String {
-        val nowStr = System.currentTimeMillis().toString()
+    private fun generateTimestampToken(offsetMs: Long = 0L): String {
+        val nowStr = (System.currentTimeMillis() + offsetMs + serverClockOffset).toString()
         val cipher = Cipher.getInstance("AES/CBC/PKCS5Padding")
         val keySpec = SecretKeySpec(TS_KEY.toByteArray(StandardCharsets.UTF_8), "AES")
         val ivSpec = IvParameterSpec(TS_IV.toByteArray(StandardCharsets.UTF_8))
@@ -73,96 +84,153 @@ class ShadowTVBC : MainAPI() {
 
     private fun getApiUrl(): String = DEFAULT_API_URL
 
-    // ---- Live TV & Playlist APIs ----
-    private suspend fun fetchMainChannels(): List<ShadowChannelItem> {
-        val now = System.currentTimeMillis()
-        if (cachedChannels != null && (now - lastFetchTime) < 300_000) {
-            return cachedChannels ?: emptyList()
+    private fun buildQueryString(pairs: List<Pair<String, String>>): String {
+        return pairs.joinToString("&") { (k, v) ->
+            "${URLEncoder.encode(k, "UTF-8")}=${URLEncoder.encode(v, "UTF-8")}"
         }
+    }
 
-        return channelMutex.withLock {
-            val recheckNow = System.currentTimeMillis()
-            if (cachedChannels != null && (recheckNow - lastFetchTime) < 300_000) {
-                return@withLock cachedChannels ?: emptyList()
+    private suspend fun syncServerClockOffset() {
+        try {
+            val head = app.head(DEFAULT_API_URL)
+            val dateStr = head.headers["Date"] ?: head.headers["date"]
+            if (!dateStr.isNullOrBlank()) {
+                val format = SimpleDateFormat("EEE, dd MMM yyyy HH:mm:ss 'GMT'", Locale.US)
+                format.timeZone = TimeZone.getTimeZone("GMT")
+                val serverDate = format.parse(dateStr)
+                if (serverDate != null) {
+                    serverClockOffset = serverDate.time - System.currentTimeMillis()
+                    Log.d(name, "Synchronized server clock offset: ${serverClockOffset}ms")
+                }
             }
+        } catch (e: Exception) {
+            Log.w(name, "Failed to sync server clock offset: ${e.message}")
+        }
+    }
 
+    private suspend fun postApiRequest(
+        url: String,
+        params: List<Pair<String, String>>
+    ): String? {
+        val simgeBytes = SIMGE.toByteArray(StandardCharsets.UTF_8)
+        val imgeBytes = IMGE.toByteArray(StandardCharsets.UTF_8)
+
+        for (attempt in 0..2) {
             try {
-                val apiUrl = getApiUrl()
-                val tsToken = generateTimestampToken()
-                val simgeBytes = SIMGE.toByteArray(StandardCharsets.UTF_8)
-                val imgeBytes = IMGE.toByteArray(StandardCharsets.UTF_8)
+                if (attempt == 1 && serverClockOffset == 0L) {
+                    syncServerClockOffset()
+                }
+                val tsOffset = when (attempt) {
+                    2 -> -30_000L
+                    else -> 0L
+                }
+                val tsToken = generateTimestampToken(tsOffset)
+                val formPairs = params.toMutableList()
+                formPairs.removeAll { it.first == "Authorization" }
+                formPairs.add("Authorization" to tsToken)
 
-                val formMap = mapOf(
-                    "ormoxRoks" to ORMOX_ROKS,
-                    "ormxArmegedEryxc" to "",
-                    "uuid" to UUID,
-                    "asize" to ASIZ_HASH,
-                    "serverurl" to BOOTSTRAP_URL,
-                    "glg1Key" to GLG1_KEY,
-                    "Authorization" to tsToken,
-                    "email" to DEFAULT_EMAIL,
-                    "password" to DEFAULT_PASSWORD
-                )
+                val bodyStr = buildQueryString(formPairs)
+                val requestBody = bodyStr.toRequestBody("application/x-www-form-urlencoded; charset=UTF-8".toMediaType())
 
                 val headers = mapOf(
                     "X-Requested-With" to "com.golge.golgetv2",
                     "User-Agent" to USER_AGENT,
                     "Authorization" to "Bearer $tsToken",
                     "email" to DEFAULT_EMAIL,
-                    "password" to DEFAULT_PASSWORD,
-                    "Content-Type" to "application/x-www-form-urlencoded; charset=UTF-8"
+                    "password" to DEFAULT_PASSWORD
                 )
 
-                val res = app.post(apiUrl, data = formMap, headers = headers)
-                val decrypted = decryptAesCbc(res.text, simgeBytes, imgeBytes)
-                val parsed = AppUtils.tryParseJson<ShadowChannelResponse>(decrypted)
-                val list = parsed?.channels ?: emptyList()
+                val res = app.post(url, headers = headers, requestBody = requestBody)
+                val rawText = res.text.trim()
+                if (rawText.length > 50) {
+                    return decryptAesCbc(rawText, simgeBytes, imgeBytes)
+                } else {
+                    Log.w(name, "API response too short (${rawText.length}), retrying attempt $attempt")
+                }
+            } catch (e: Exception) {
+                Log.w(name, "API request attempt $attempt failed: ${e.message}")
+                if (attempt == 0) {
+                    syncServerClockOffset()
+                }
+            }
+        }
+        return null
+    }
+
+    private suspend fun executeFetchChannels(): List<ShadowChannelItem> {
+        val params = listOf(
+            "ormoxRoks" to ORMOX_ROKS,
+            "ormxArmegedEryxc" to "",
+            "uuid" to UUID,
+            "asize" to ASIZ_HASH,
+            "serverurl" to BOOTSTRAP_URL,
+            "glg1Key" to GLG1_KEY,
+            "email" to DEFAULT_EMAIL,
+            "password" to DEFAULT_PASSWORD
+        )
+        val decrypted = postApiRequest(getApiUrl(), params)
+        if (decrypted != null) {
+            val parsed = AppUtils.tryParseJson<ShadowChannelResponse>(decrypted)
+            val list = parsed?.channels ?: emptyList()
+            if (list.isNotEmpty()) {
                 Log.d(name, "fetchMainChannels: Successfully loaded ${list.size} channels")
                 cachedChannels = list
                 lastFetchTime = System.currentTimeMillis()
-                list
-            } catch (e: Exception) {
-                Log.e(name, "Failed to fetch main channels: ${e.message}", e)
-                cachedChannels ?: emptyList()
+                return list
             }
+        }
+        return cachedChannels ?: emptyList()
+    }
+
+    // ---- Live TV & Playlist APIs ----
+    private suspend fun fetchMainChannels(): List<ShadowChannelItem> {
+        val now = System.currentTimeMillis()
+        val cached = cachedChannels
+        if (!cached.isNullOrEmpty() && (now - lastFetchTime) < 300_000) {
+            return cached
+        }
+
+        val deferred = fetchMutex.withLock {
+            val recheckCached = cachedChannels
+            if (!recheckCached.isNullOrEmpty() && (System.currentTimeMillis() - lastFetchTime) < 300_000) {
+                return recheckCached
+            }
+            val existing = runningDeferred
+            if (existing != null && existing.isActive) {
+                existing
+            } else {
+                val newDeferred = CoroutineScope(Dispatchers.IO).async {
+                    executeFetchChannels()
+                }
+                runningDeferred = newDeferred
+                newDeferred
+            }
+        }
+
+        return try {
+            deferred.await()
+        } catch (e: Exception) {
+            Log.e(name, "Error awaiting channel fetch: ${e.message}", e)
+            cachedChannels ?: emptyList()
         }
     }
 
     private suspend fun fetchSubPlaylist(linkId: String): List<ShadowSubPlaylistItem> {
-        return try {
-            val apiUrl = getApiUrl()
-            val tsToken = generateTimestampToken()
-            val simgeBytes = SIMGE.toByteArray(StandardCharsets.UTF_8)
-            val imgeBytes = IMGE.toByteArray(StandardCharsets.UTF_8)
-
-            val formMap = mapOf(
-                "ormoxRoks" to ORMOX_ROKS,
-                "qOyOxSzVyL" to linkId,
-                "tICFQdmhzR" to "",
-                "Authorization" to tsToken,
-                "email" to DEFAULT_EMAIL,
-                "password" to DEFAULT_PASSWORD
-            )
-
-            val headers = mapOf(
-                "X-Requested-With" to "com.golge.golgetv2",
-                "User-Agent" to USER_AGENT,
-                "Authorization" to "Bearer $tsToken",
-                "email" to DEFAULT_EMAIL,
-                "password" to DEFAULT_PASSWORD,
-                "Content-Type" to "application/x-www-form-urlencoded; charset=UTF-8"
-            )
-
-            val res = app.post(apiUrl, data = formMap, headers = headers)
-            val decrypted = decryptAesCbc(res.text, simgeBytes, imgeBytes)
+        val params = listOf(
+            "ormoxRoks" to ORMOX_ROKS,
+            "qOyOxSzVyL" to linkId,
+            "tICFQdmhzR" to "",
+            "email" to DEFAULT_EMAIL,
+            "password" to DEFAULT_PASSWORD
+        )
+        val decrypted = postApiRequest(getApiUrl(), params)
+        if (decrypted != null) {
             val parsed = AppUtils.tryParseJson<ShadowSubPlaylistWrapper>(decrypted)
             val items = parsed?.list?.items ?: emptyList()
             Log.d(name, "fetchSubPlaylist: Loaded ${items.size} items for linkId $linkId")
-            items
-        } catch (e: Exception) {
-            Log.e(name, "Failed to fetch sub-playlist for linkId $linkId: ${e.message}", e)
-            emptyList()
+            return items
         }
+        return emptyList()
     }
 
     // ---- Main Page Configuration ----
@@ -179,6 +247,19 @@ class ShadowTVBC : MainAPI() {
         "son_filmler"          to "Son Eklenen Filmler",
         "son_diziler"          to "Son Eklenen Diziler"
     )
+
+    private fun normalizeCat(cat: String?): String {
+        if (cat == null) return ""
+        return cat.uppercase()
+            .replace("İ", "I")
+            .replace("I", "I")
+            .replace("Ç", "C")
+            .replace("Ş", "S")
+            .replace("Ğ", "G")
+            .replace("Ü", "U")
+            .replace("Ö", "O")
+            .trim()
+    }
 
     override suspend fun getMainPage(page: Int, request: MainPageRequest): HomePageResponse {
         val mapper = jacksonObjectMapper()
@@ -224,32 +305,34 @@ class ShadowTVBC : MainAPI() {
         val allChannels = fetchMainChannels()
         val filtered = when (request.data) {
             "spor_kanallari" -> allChannels.filter {
-                it.kategori.equals("SPOR", ignoreCase = true) && !it.player.equals("m3u", ignoreCase = true)
+                normalizeCat(it.kategori) == "SPOR" && !it.player.equals("m3u", ignoreCase = true)
             }
             "canli_maclar" -> allChannels.filter {
-                it.kategori.equals("SPOR", ignoreCase = true) && it.player.equals("m3u", ignoreCase = true)
+                normalizeCat(it.kategori) == "SPOR" && it.player.equals("m3u", ignoreCase = true)
             }
             "ulusal_tv" -> allChannels.filter {
-                (it.kategori.equals("CANLI", ignoreCase = true) || it.kategori.equals("ULUSAL", ignoreCase = true)) &&
-                        !it.player.equals("m3u", ignoreCase = true)
+                val cat = normalizeCat(it.kategori)
+                (cat == "CANLI" || cat == "ULUSAL") && !it.player.equals("m3u", ignoreCase = true)
             }
             "haber_kanallari" -> allChannels.filter {
-                it.kategori.equals("HABER", ignoreCase = true)
+                normalizeCat(it.kategori) == "HABER"
             }
             "sinema_kanallari" -> allChannels.filter {
-                it.kategori.equals("SİNEMA", ignoreCase = true) || it.kategori.equals("SINEMA", ignoreCase = true)
+                val cat = normalizeCat(it.kategori)
+                cat.startsWith("SINEMA") || cat.contains("SINEMA") || cat.contains("FILM")
             }
             "belgesel_kanallari" -> allChannels.filter {
-                it.kategori.equals("BELGESEL", ignoreCase = true)
+                normalizeCat(it.kategori) == "BELGESEL"
             }
             "cocuk_kanallari" -> allChannels.filter {
-                it.kategori.equals("ÇOCUK", ignoreCase = true) || it.kategori.equals("COCUK", ignoreCase = true)
+                val cat = normalizeCat(it.kategori)
+                cat.contains("COCUK")
             }
             "dunya_kanallari" -> allChannels.filter {
-                it.kategori.equals("WORLD", ignoreCase = true)
+                normalizeCat(it.kategori) == "WORLD"
             }
             "ozel_paneller" -> allChannels.filter {
-                it.kategori.equals("PANELLER", ignoreCase = true)
+                normalizeCat(it.kategori) == "PANELLER"
             }
             else -> allChannels
         }
@@ -261,7 +344,7 @@ class ShadowTVBC : MainAPI() {
             val dataStr = mapper.writeValueAsString(pass)
 
             if (isSubPlaylist) {
-                newTvSeriesSearchResponse(title, dataStr, TvType.Live) {
+                newTvSeriesSearchResponse(title, dataStr, TvType.TvSeries) {
                     this.posterUrl = ch.resim
                 }
             } else {
@@ -292,7 +375,7 @@ class ShadowTVBC : MainAPI() {
                 val pass = ShadowPassData(type = if (isSub) "m3u" else "channel", channel = ch)
                 val dataStr = mapper.writeValueAsString(pass)
                 if (isSub) {
-                    results.add(newTvSeriesSearchResponse(title, dataStr, TvType.Live) {
+                    results.add(newTvSeriesSearchResponse(title, dataStr, TvType.TvSeries) {
                         this.posterUrl = ch.resim
                     })
                 } else {
