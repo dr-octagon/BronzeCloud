@@ -25,6 +25,7 @@ import com.lagradost.cloudstream3.utils.ExtractorLink
 import com.lagradost.cloudstream3.utils.ExtractorLinkType
 import com.lagradost.cloudstream3.utils.newExtractorLink
 import kotlinx.coroutines.async
+import kotlinx.coroutines.awaitAll
 import kotlinx.coroutines.coroutineScope
 import org.json.JSONException
 import org.json.JSONObject
@@ -51,7 +52,9 @@ class Vavoo(
         .map { MainPageData(it, it) }
 
     override suspend fun getMainPage(page: Int, request: MainPageRequest): HomePageResponse {
-        loadChannelMetadata()
+        if (turkeyLogoMap.isEmpty()) {
+            loadChannelMetadata()
+        }
 
         if (request.data == TURKEY) {
             if (page > 1) return newHomePageResponse(emptyList())
@@ -64,11 +67,17 @@ class Vavoo(
                 channelsRequest.await() to trendingRequest.await()
             }
             val categoryLists = TURKEY_CATEGORIES.mapNotNull { category ->
-                val results = channels
+                val resultsSequence = channels
                     .asSequence()
                     .filter { categoryFor(it.name) == category }
                     .map(::channelToSearchResponse)
-                    .toList()
+
+                val results = if (category == TurkeyCategory.OTHER) {
+                    resultsSequence.take(150).toList()
+                } else {
+                    resultsSequence.toList()
+                }
+
                 results.takeIf { it.isNotEmpty() }
                     ?.let { HomePageList(category.title, it, true) }
             }
@@ -93,28 +102,57 @@ class Vavoo(
     }
 
     private suspend fun getAllTurkeyChannels(): List<Channel> {
+        val now = System.currentTimeMillis()
+        cachedTurkeyChannels?.let { (timestamp, cachedList) ->
+            if (now - timestamp < CACHE_TTL_MS && cachedList.isNotEmpty()) {
+                return cachedList
+            }
+        }
+
+        val page1Result = getCatalog(TURKEY, 1)
         val channels = mutableListOf<Channel>()
-        var page = 1
-        var hasNext: Boolean
+        channels.addAll(page1Result.first)
 
-        do {
-            val result = getCatalog(TURKEY, page)
-            channels += result.first
-            hasNext = result.second
-            page += 1
-        } while (hasNext && page <= MAX_TURKEY_PAGES)
+        if (page1Result.second) {
+            val remaining = coroutineScope {
+                (2..6).map { page ->
+                    async {
+                        runCatching { getCatalog(TURKEY, page) }.getOrNull()
+                    }
+                }.awaitAll().filterNotNull()
+            }
+            for (res in remaining) {
+                channels.addAll(res.first)
+            }
+        }
 
-        return channels.distinctBy { it.url }
+        val distinctChannels = channels.distinctBy { it.url }
+        if (distinctChannels.isNotEmpty()) {
+            cachedTurkeyChannels = now to distinctChannels
+        }
+        return distinctChannels
     }
 
     private suspend fun getTrendingTurkeyChannels(): List<Channel> {
-        return getCatalog(
+        val now = System.currentTimeMillis()
+        cachedTrendingChannels?.let { (timestamp, cachedList) ->
+            if (now - timestamp < CACHE_TTL_MS && cachedList.isNotEmpty()) {
+                return cachedList
+            }
+        }
+
+        val trending = getCatalog(
             country = TURKEY,
             page = 1,
             sort = TRENDING_SORT,
         ).first
             .distinctBy { it.url }
             .take(TRENDING_LIMIT)
+
+        if (trending.isNotEmpty()) {
+            cachedTrendingChannels = now to trending
+        }
+        return trending
     }
 
     private suspend fun getCatalog(
@@ -224,21 +262,19 @@ class Vavoo(
     }
 
     private fun findMetadataLogo(channelName: String): String? {
-        val comparableName = channelName.substringBeforeLast(" .", channelName)
-        return channelMetadata.firstOrNull {
-            it.name.contains(comparableName, ignoreCase = true)
-        }?.logo?.takeIf { it.isNotBlank() }
+        val comparableName = normalize(channelName.substringBeforeLast(" .", channelName))
+        return turkeyLogoMap[comparableName]
     }
 
     private suspend fun loadChannelMetadata() {
-        if (channelMetadata.isNotEmpty()) return
+        if (turkeyLogoMap.isNotEmpty()) return
 
         val cached = sharedPreferences.getString(CHANNELS_CACHE_KEY, null)
         if (!cached.isNullOrBlank()) {
-            channelMetadata = runCatching { parseJson<List<ChannelMetadata>>(cached) }
-                .getOrDefault(emptyList())
+            turkeyLogoMap = runCatching { parseJson<Map<String, String>>(cached) }
+                .getOrDefault(emptyMap())
         }
-        if (channelMetadata.isNotEmpty()) return
+        if (turkeyLogoMap.isNotEmpty()) return
 
         runCatching {
             val response = app.get(
@@ -248,10 +284,20 @@ class Vavoo(
                     "User-Agent" to BROWSER_USER_AGENT,
                 ),
             ).body.string()
-            parseJson<List<ChannelMetadata>>(response)
-        }.onSuccess { metadata ->
-            channelMetadata = metadata
-            sharedPreferences.edit().putString(CHANNELS_CACHE_KEY, metadata.toJson()).apply()
+            val allChannels = parseJson<List<ChannelMetadata>>(response)
+            val map = mutableMapOf<String, String>()
+            for (ch in allChannels) {
+                if (ch.logo.isNotBlank() && (ch.group.equals("Turkey", ignoreCase = true) || ch.tvg_id.endsWith(".tr"))) {
+                    map[normalize(ch.name)] = ch.logo
+                    map[normalize(ch.name.substringBeforeLast(" .", ch.name))] = ch.logo
+                }
+            }
+            map
+        }.onSuccess { map ->
+            if (map.isNotEmpty()) {
+                turkeyLogoMap = map
+                sharedPreferences.edit().putString(CHANNELS_CACHE_KEY, map.toJson()).apply()
+            }
         }.onFailure {
             Log.w(TAG, "Kanal logoları alınamadı: ${it.message}")
         }
@@ -466,7 +512,10 @@ class Vavoo(
             TurkeyCategory.MUSIC,
             TurkeyCategory.OTHER,
         )
+        const val CACHE_TTL_MS = 15 * 60 * 1000L
         var authSign: AuthSign? = null
-        var channelMetadata: List<ChannelMetadata> = emptyList()
+        var cachedTurkeyChannels: Pair<Long, List<Channel>>? = null
+        var cachedTrendingChannels: Pair<Long, List<Channel>>? = null
+        var turkeyLogoMap: Map<String, String> = emptyMap()
     }
 }
