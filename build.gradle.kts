@@ -9,7 +9,13 @@ buildscript {
     repositories {
         google()
         mavenCentral()
-        maven("https://jitpack.io")
+        maven("https://jitpack.io") {
+            // JitPack currently publishes invalid POM metadata for the
+            // CloudStream Gradle master-SNAPSHOT; resolve its JAR directly.
+            metadataSources {
+                artifact()
+            }
+        }
     }
 
     dependencies {
