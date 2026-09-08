@@ -447,7 +447,7 @@ class ShadowTVBC : MainAPI() {
                 }
             }
 
-            return newTvSeriesLoadResponse(ch.isim ?: "Oynatma Listesi", url, TvType.Live, episodes) {
+            return newTvSeriesLoadResponse(ch.isim ?: "Oynatma Listesi", url, TvType.TvSeries, episodes) {
                 this.posterUrl = ch.resim
                 this.plot = "${ch.isim} canlı yayın ve maç kanalları listesi."
                 this.tags = listOfNotNull(ch.kategori, "Canlı Liste")
@@ -763,6 +763,13 @@ class ShadowTVBC : MainAPI() {
         }
     }
 
+    private fun cleanWorkerProxies(url: String): String {
+        var cleaned = url.trim()
+        cleaned = cleaned.replace(Regex("""https?://[^/]*lagaluga[^/]*workers\.dev/"""), "")
+        cleaned = cleaned.replace(Regex("""https?://corsproxy\.org/\?"""), "")
+        return cleaned
+    }
+
     private suspend fun resolveAndEmitStream(
         sourceTitle: String,
         rawUrl: String,
@@ -770,17 +777,18 @@ class ShadowTVBC : MainAPI() {
         subtitleCallback: (SubtitleFile) -> Unit,
         callback: (ExtractorLink) -> Unit
     ): Boolean {
-        var url = rawUrl.trim()
+        var url = cleanWorkerProxies(rawUrl)
+        if (url.isBlank()) return false
 
         // 1. Resolve `golge2://` (tvmarkaj / live stream obfuscation)
         if (url.startsWith("golge2://")) {
             try {
-                var clean = url.substring(9)
+                var clean = cleanWorkerProxies(url.substring(9))
                 if (clean.startsWith("https//")) clean = clean.replaceFirst("https//", "https://")
                 else if (clean.startsWith("http//")) clean = clean.replaceFirst("http//", "http://")
 
-                val split = clean.split("%7C", "|")
-                val requestUrl = split[0].trim()
+                val split = if (clean.contains("%7C")) clean.split("%7C") else clean.split("|")
+                val requestUrl = cleanWorkerProxies(split[0].trim())
                 val pathyeni = if (split.size > 1 && split[1].isNotBlank()) split[1].trim() else "bc2b05d321cb80050c5d035a9daeb26d"
                 val subdomain = if (split.size > 2 && split[2].isNotBlank()) split[2].trim() else "a"
                 val host = if (split.size > 3 && split[3].isNotBlank()) split[3].trim() else null
@@ -793,7 +801,7 @@ class ShadowTVBC : MainAPI() {
                 if (arr != null && arr.size >= 6) {
                     val s0 = arr[0]
                     val s5 = arr[5]
-                    val matcher = Pattern.compile("atob\\(\"([^\"]+)\"").matcher(s0)
+                    val matcher = Pattern.compile("""atob\("([^"]+)"""").matcher(s0)
                     if (matcher.find()) {
                         val decodedDomain = String(Base64.decode(matcher.group(1), Base64.DEFAULT), StandardCharsets.UTF_8)
                         val idParam = if (requestUrl.contains("id=")) requestUrl.substringAfter("id=").substringBefore("&") else ""
@@ -808,7 +816,7 @@ class ShadowTVBC : MainAPI() {
                                 type = ExtractorLinkType.M3U8
                             ) {
                                 this.headers = reqHeaders
-                                this.referer = reqHeaders["referer"] ?: "https://izlemac529.sbs/"
+                                this.referer = reqHeaders["Referer"] ?: reqHeaders["referer"] ?: "https://izlemac529.sbs/"
                                 this.quality = Qualities.P1080.value
                             }
                         )
@@ -818,18 +826,34 @@ class ShadowTVBC : MainAPI() {
             } catch (e: Exception) {
                 Log.e(name, "Failed to resolve golge2 stream: ${e.message}")
             }
+            return false
         }
 
-        // 2. Resolve `golge1://` and `golge11://` (pipe separated URL|Referer|Origin|Subtitle)
-        if (url.startsWith("golge1://") || url.startsWith("golge11://")) {
-            val clean = url.substringAfter("://")
+        // 2. Resolve `golge5://` (match center embed / dynamic links)
+        if (url.startsWith("golge5://")) {
+            val clean = url.substring(9)
+            if (clean.contains("id=")) {
+                val matchId = clean.substringAfter("id=").substringBefore("&")
+                val origin = if (clean.contains("/wp-content")) clean.substringBefore("/wp-content") else "https://izlemac529.sbs"
+                val tUrl = "$origin/t?id=$matchId"
+                val rewritten = "golge2://$tUrl%7Ccefc8a875b06cc6da16ca7dd99157dee%7C%7Ce-aga-m.943411d29aa8b67a6485827229af8b16.sbs"
+                return resolveAndEmitStream(sourceTitle, rewritten, headers, subtitleCallback, callback)
+            } else {
+                url = clean
+            }
+        }
+
+        // 3. Resolve generic `golge\d+://` (golge1, golge11, golge19, golge20, golge21, golge23, etc.)
+        val golgeMatch = Regex("""^golge\d*://""").find(url)
+        if (golgeMatch != null) {
+            val clean = url.substring(golgeMatch.range.last + 1)
             val decoded = try {
                 URLDecoder.decode(clean, "UTF-8")
             } catch (_: Exception) {
                 clean
             }
-            val parts = decoded.split("|")
-            val targetUrl = parts.getOrNull(0)?.trim() ?: ""
+            val parts = if (decoded.contains("%7C")) decoded.split("%7C") else decoded.split("|")
+            val targetUrl = cleanWorkerProxies(parts.getOrNull(0)?.trim() ?: "")
             val referer = parts.getOrNull(1)?.trim() ?: ""
             val origin = parts.getOrNull(2)?.trim() ?: ""
 
@@ -846,92 +870,38 @@ class ShadowTVBC : MainAPI() {
                 val reqHeaders = headers.toMutableMap()
                 if (referer.isNotEmpty()) reqHeaders["Referer"] = referer
                 if (origin.isNotEmpty()) reqHeaders["Origin"] = origin
+                return resolveAndEmitStream(sourceTitle, targetUrl, reqHeaders, subtitleCallback, callback)
+            }
+            return false
+        }
 
-                if (targetUrl.contains(".m3u8", ignoreCase = true) || targetUrl.contains(".mp4", ignoreCase = true)) {
-                    val linkType = if (targetUrl.contains(".m3u8", ignoreCase = true)) ExtractorLinkType.M3U8 else ExtractorLinkType.VIDEO
-                    callback.invoke(
-                        newExtractorLink(
-                            source = name,
-                            name = sourceTitle,
-                            url = targetUrl,
-                            type = linkType
-                        ) {
-                            this.headers = reqHeaders
-                            this.referer = referer
-                            this.quality = Qualities.P1080.value
+        // 4. Closeload resolver
+        if (url.contains("closeload", ignoreCase = true)) {
+            val embedHeaders = mapOf(
+                "User-Agent" to USER_AGENT,
+                "Referer" to (headers["Referer"] ?: "https://filmmakinesi.to/")
+            )
+            try {
+                val embedHtml = app.get(url, headers = embedHeaders).text
+                val tracksMatcher = Pattern.compile("""tracks:\s*(\[[^\]]+\])""").matcher(embedHtml)
+                if (tracksMatcher.find()) {
+                    val tracksJson = tracksMatcher.group(1)
+                    val arr = AppUtils.tryParseJson<List<Map<String, Any>>>(tracksJson)
+                    arr?.forEach { track ->
+                        val f = track["file"]?.toString()
+                        val label = track["label"]?.toString() ?: "Türkçe"
+                        if (!f.isNullOrEmpty() && f.startsWith("http")) {
+                            subtitleCallback.invoke(newSubtitleFile(label, f))
                         }
-                    )
-                    return true
-                }
-
-                // A. Closeload resolver
-                if (targetUrl.contains("closeload", ignoreCase = true)) {
-                    val embedHeaders = mapOf(
-                        "User-Agent" to USER_AGENT,
-                        "Referer" to if (referer.isNotEmpty()) referer else "https://filmmakinesi.to/"
-                    )
-                    try {
-                        val embedHtml = app.get(targetUrl, headers = embedHeaders).text
-                        val tracksMatcher = Pattern.compile("""tracks:\s*(\[[^\]]+\])""").matcher(embedHtml)
-                        if (tracksMatcher.find()) {
-                            val tracksJson = tracksMatcher.group(1)
-                            val arr = AppUtils.tryParseJson<List<Map<String, Any>>>(tracksJson)
-                            arr?.forEach { track ->
-                                val f = track["file"]?.toString()
-                                val label = track["label"]?.toString() ?: "Türkçe"
-                                if (!f.isNullOrEmpty() && f.startsWith("http")) {
-                                    subtitleCallback.invoke(newSubtitleFile(label, f))
-                                }
-                            }
-                        }
-
-                        val streamUrl = extractCloseloadStream(embedHtml)
-                        if (!streamUrl.isNullOrEmpty()) {
-                            val streamHeaders = mapOf(
-                                "User-Agent" to USER_AGENT,
-                                "Referer" to "https://closeload.filmmakinesi.to/"
-                            )
-                            callback.invoke(
-                                newExtractorLink(
-                                    source = name,
-                                    name = sourceTitle,
-                                    url = streamUrl,
-                                    type = ExtractorLinkType.M3U8
-                                ) {
-                                    this.headers = streamHeaders
-                                    this.referer = "https://closeload.filmmakinesi.to/"
-                                    this.quality = Qualities.P1080.value
-                                }
-                            )
-                            return true
-                        }
-                    } catch (e: Exception) {
-                        Log.e(name, "Error resolving closeload: ${e.message}")
                     }
                 }
 
-                // B. Ag2m4 / Playerjs dl stream resolver
-                if (targetUrl.contains("ag2m4", ignoreCase = true) || targetUrl.contains("/embed-", ignoreCase = true)) {
-                    val resolved = extractPlayerjsStream(targetUrl, referer, sourceTitle, subtitleCallback, callback)
-                    if (resolved) return true
-                }
-
-                // C. Fallback to generic extractor
-                return loadExtractor(targetUrl, referer, subtitleCallback, callback)
-            }
-        }
-
-        // 3. Resolve `golge5://` (embed URL)
-        if (url.startsWith("golge5://")) {
-            url = url.substring(9)
-        }
-
-        // 4. If direct embed url passed (closeload or ag2m4)
-        if (url.contains("closeload", ignoreCase = true)) {
-            try {
-                val embedHtml = app.get(url, headers = mapOf("User-Agent" to USER_AGENT, "Referer" to "https://filmmakinesi.to/")).text
                 val streamUrl = extractCloseloadStream(embedHtml)
                 if (!streamUrl.isNullOrEmpty()) {
+                    val streamHeaders = mapOf(
+                        "User-Agent" to USER_AGENT,
+                        "Referer" to "https://closeload.filmmakinesi.to/"
+                    )
                     callback.invoke(
                         newExtractorLink(
                             source = name,
@@ -939,7 +909,7 @@ class ShadowTVBC : MainAPI() {
                             url = streamUrl,
                             type = ExtractorLinkType.M3U8
                         ) {
-                            this.headers = mapOf("User-Agent" to USER_AGENT, "Referer" to "https://closeload.filmmakinesi.to/")
+                            this.headers = streamHeaders
                             this.referer = "https://closeload.filmmakinesi.to/"
                             this.quality = Qualities.P1080.value
                         }
@@ -947,33 +917,68 @@ class ShadowTVBC : MainAPI() {
                     return true
                 }
             } catch (e: Exception) {
-                Log.e(name, "Error in direct closeload resolve: ${e.message}")
+                Log.e(name, "Error resolving closeload: ${e.message}")
             }
         }
+
+        // 5. Ag2m4 / Playerjs dl stream resolver
         if (url.contains("ag2m4", ignoreCase = true) || url.contains("/embed-", ignoreCase = true)) {
             val resolved = extractPlayerjsStream(url, headers["Referer"] ?: "", sourceTitle, subtitleCallback, callback)
             if (resolved) return true
         }
 
-        // 5. Standard Direct HLS or MP4 Stream
+        // 6. Direct HTTP/HTTPS streams & redirect dispatchers (.php, /ch/, etc.)
         if (url.startsWith("http://") || url.startsWith("https://")) {
-            val linkType = if (url.contains(".m3u8", ignoreCase = true)) {
-                ExtractorLinkType.M3U8
-            } else if (url.contains(".mp4", ignoreCase = true)) {
+            var streamUrl = cleanWorkerProxies(url)
+            val isDispatcher = streamUrl.contains(".php", ignoreCase = true) ||
+                    streamUrl.contains("/ch/", ignoreCase = true) ||
+                    streamUrl.contains("/panel/", ignoreCase = true)
+
+            if (isDispatcher) {
+                try {
+                    val res = app.get(streamUrl, headers = headers, allowRedirects = false)
+                    val location = res.headers["location"] ?: res.headers["Location"]
+                    if (!location.isNullOrBlank()) {
+                        val cleanLoc = cleanWorkerProxies(location.trim())
+                        val resolvedLoc = if (cleanLoc.startsWith("http://") || cleanLoc.startsWith("https://")) {
+                            cleanLoc
+                        } else if (cleanLoc.startsWith("/")) {
+                            val parsed = Uri.parse(streamUrl)
+                            "${parsed.scheme}://${parsed.host}$cleanLoc"
+                        } else {
+                            cleanLoc
+                        }
+                        return resolveAndEmitStream(sourceTitle, resolvedLoc, headers, subtitleCallback, callback)
+                    }
+                } catch (e: Exception) {
+                    Log.d(name, "Dispatcher check error: ${e.message}")
+                }
+            }
+
+            val extractorLoaded = try {
+                loadExtractor(streamUrl, headers["Referer"] ?: "", subtitleCallback, callback)
+            } catch (_: Exception) {
+                false
+            }
+            if (extractorLoaded) return true
+
+            val linkType = if (streamUrl.contains(".mpd", ignoreCase = true)) {
+                ExtractorLinkType.DASH
+            } else if (streamUrl.contains(".mp4", ignoreCase = true)) {
                 ExtractorLinkType.VIDEO
             } else {
-                INFER_TYPE
+                ExtractorLinkType.M3U8
             }
 
             callback.invoke(
                 newExtractorLink(
                     source = name,
                     name = sourceTitle,
-                    url = url,
+                    url = streamUrl,
                     type = linkType
                 ) {
                     this.headers = headers
-                    this.referer = headers["Referer"] ?: headers["referer"] ?: "https://twitter.com/"
+                    this.referer = headers["Referer"] ?: headers["referer"] ?: ""
                     this.quality = Qualities.P1080.value
                 }
             )
