@@ -39,16 +39,16 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/RecTV_BC_v2.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/RecTV_BC_v3.cs3",
         "status": 1,
-        "version": 2,
+        "version": 3,
         "name": "RecTV BC",
         "internalName": "RecTVBC",
         "authors": [
             "Dr.Octagon"
         ],
         "description": "RecTV BronzeCloud Edition - Spor ve Canlı TV",
-        "fileSize": 34434,
+        "fileSize": 37290,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
