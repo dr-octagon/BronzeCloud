@@ -384,16 +384,16 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/InatBoxBC_v11.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/InatBoxBC_v12.cs3",
         "status": 1,
-        "version": 11,
+        "version": 12,
         "name": "\u0130natBox BC",
         "internalName": "InatBoxBC",
         "authors": [
             "Dr.Octagon"
         ],
         "description": "\u0130natBox BronzeCloud Edition - Canl\u0131 kanallar, spor ve diziler burada.",
-        "fileSize": 47928,
+        "fileSize": 47316,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
