@@ -38,18 +38,18 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/CineJoy_v1.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/CineJoy_v2.cs3",
         "status": 1,
-        "version": 1,
+        "version": 2,
         "name": "CineJoy",
         "internalName": "CineJoy",
         "authors": [
             "Dr.Octagon"
         ],
-        "description": "Stream Movies & TV Series with 4K HDR sources, rich TMDb metadata and cast crew info.",
-        "fileSize": 68045,
+        "description": "4K HDR kaynaklar, T\u00fcrk\u00e7e altyaz\u0131 deste\u011fi ve zengin TMDb i\u00e7erik detaylar\u0131 ile Film ve Dizi izleme eklentisi.",
+        "fileSize": 70011,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
-        "language": "en",
+        "language": "tr",
         "tvTypes": [
             "Movie",
             "TvSeries",
