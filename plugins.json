@@ -44,10 +44,10 @@
         "name": "CineJoy",
         "internalName": "CineJoy",
         "authors": [
-            "muham"
+            "Dr.Octagon"
         ],
         "description": "Stream Movies & TV Series with 4K HDR sources, rich TMDb metadata and cast crew info.",
-        "fileSize": 58733,
+        "fileSize": 68045,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "en",
         "tvTypes": [
