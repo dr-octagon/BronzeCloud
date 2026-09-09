@@ -59,9 +59,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/CineStream_v482.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/CineStream_v483.cs3",
         "status": 1,
-        "version": 482,
+        "version": 483,
         "name": "CineStream",
         "internalName": "CineStream",
         "authors": [
@@ -161,22 +161,22 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/DiziMom_v57.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/DiziMom_v58.cs3",
         "status": 1,
-        "version": 57,
+        "version": 58,
         "name": "DiziMom",
         "internalName": "DiziMom",
         "authors": [
             "keyiflerolsun"
         ],
         "description": "Binlerce yerli yabanc\u0131 dizi ar\u015fivi, t\u00fcm sezonlar, kesintisiz b\u00f6l\u00fcmler. Sadece dizi izle, Dizimom heryerde seninle!",
-        "fileSize": 34663,
+        "fileSize": 34658,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
             "TvSeries"
         ],
-        "iconUrl": "https://www.google.com/s2/favicons?domain=www.dizimom.plus&sz=%size%",
+        "iconUrl": "https://www.google.com/s2/favicons?domain=www.dizimom.diy&sz=%size%",
         "apiVersion": 1
     },
     {
@@ -300,16 +300,16 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/FullHDFilmizlesene_v33.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/FullHDFilmizlesene_v34.cs3",
         "status": 1,
-        "version": 33,
+        "version": 34,
         "name": "FullHDFilmizlesene",
         "internalName": "FullHDFilmizlesene",
         "authors": [
             "keyiflerolsun"
         ],
         "description": "Sinema zevkini evinize kadar getirdik. T\u00fcrkiye'nin lider Film sitesinde, en yeni filmleri Full HD izleyin.",
-        "fileSize": 40004,
+        "fileSize": 39942,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -489,23 +489,23 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/SetFilmIzle_v30.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/SetFilmIzle_v31.cs3",
         "status": 1,
-        "version": 30,
+        "version": 31,
         "name": "SetFilmIzle",
         "internalName": "SetFilmIzle",
         "authors": [
             "keyiflerolsun"
         ],
         "description": "Setfilmizle sitemizde, donma ya\u015famadan T\u00fcrk\u00e7e dublaj ve altyaz\u0131l\u0131 filmleri ile dizileri muhte\u015fem 1080p full HD kalitesinde izleyebilirsiniz.",
-        "fileSize": 24651,
+        "fileSize": 24652,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
             "Movie",
             "TvSeries"
         ],
-        "iconUrl": "https://www.google.com/s2/favicons?domain=www.setfilmizle.uk&sz=%size%",
+        "iconUrl": "https://www.google.com/s2/favicons?domain=www.setfilmizle.ltd&sz=%size%",
         "apiVersion": 1
     },
     {
@@ -627,22 +627,22 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/WebteIzle_v20.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/WebteIzle_v21.cs3",
         "status": 1,
-        "version": 20,
+        "version": 21,
         "name": "WebteIzle",
         "internalName": "WebteIzle",
         "authors": [
             "keyiflerolsun"
         ],
         "description": "Her t\u00fcrl\u00fc filmi ister dublaj ister altyaz\u0131l\u0131, en kaliteli bir \u015fekilde izleyebilece\u011finiz ar\u015fivi en geni\u015f ger\u00e7ek film izleme siteniz.",
-        "fileSize": 24095,
+        "fileSize": 24093,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
             "Movie"
         ],
-        "iconUrl": "https://www.google.com/s2/favicons?domain=webteizle3.xyz&sz=%size%",
+        "iconUrl": "https://www.google.com/s2/favicons?domain=webteizle.info&sz=%size%",
         "apiVersion": 1
     }
 ]
