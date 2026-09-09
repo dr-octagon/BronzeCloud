@@ -1,6 +1,6 @@
 import java.util.Properties
 
-version = 482
+version = 483
 
 android {
     namespace = "com.megix"
