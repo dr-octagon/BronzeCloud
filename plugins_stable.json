@@ -384,16 +384,16 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/InatBoxBC_v4.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/InatBoxBC_v5.cs3",
         "status": 1,
-        "version": 4,
+        "version": 5,
         "name": "İnatBox BC",
         "internalName": "InatBoxBC",
         "authors": [
             "Dr.Octagon"
         ],
         "description": "İnatBox BC (v16 Güncellemesi) cloudstream eklentisidir. Canlı kanallar, spor ve diziler burada.",
-        "fileSize": 50846,
+        "fileSize": 50930,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
