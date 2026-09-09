@@ -47,7 +47,7 @@
             "muham"
         ],
         "description": "Stream Movies & TV Series with 4K HDR sources, rich TMDb metadata and cast crew info.",
-        "fileSize": 53516,
+        "fileSize": 58733,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "en",
         "tvTypes": [
@@ -55,7 +55,7 @@
             "TvSeries",
             "Anime"
         ],
-        "iconUrl": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/master/CineStream/icon.png",
+        "iconUrl": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/master/CineJoy/icon.png",
         "apiVersion": 1
     },
     {
