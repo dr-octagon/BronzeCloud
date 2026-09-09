@@ -38,9 +38,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/CineJoy_v8.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/CineJoy_v9.cs3",
         "status": 1,
-        "version": 8,
+        "version": 9,
         "name": "CineJoy",
         "internalName": "CineJoy",
         "authors": [
@@ -55,7 +55,7 @@
             "TvSeries",
             "Anime"
         ],
-        "iconUrl": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/master/CineJoy/icon.png",
+        "iconUrl": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/master/CineJoy/icon.png?v=9",
         "apiVersion": 1
     },
     {
