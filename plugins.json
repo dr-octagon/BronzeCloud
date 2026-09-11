@@ -672,16 +672,16 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/YabanciDizi_v4.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/YabanciDizi_v5.cs3",
         "status": 1,
-        "version": 4,
+        "version": 5,
         "name": "YabanciDizi",
         "internalName": "YabanciDizi",
         "authors": [
             "Dr.Octagon"
         ],
         "description": "Yabanc\u0131 dizi izle, yabanc\u0131 diziler ve filmler full HD 1080p kalitesinde T\u00fcrk\u00e7e altyaz\u0131l\u0131 ve dublajl\u0131 yabancidizi.news adresinde.",
-        "fileSize": 47496,
+        "fileSize": 54142,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
