@@ -1,8 +1,8 @@
 [
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/BelgeselX_v19.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/BelgeselX_v20.cs3",
         "status": 1,
-        "version": 19,
+        "version": 20,
         "name": "BelgeselX",
         "internalName": "BelgeselX",
         "authors": [
@@ -11,7 +11,7 @@
             "Dr.Octagon"
         ],
         "description": "En yeni belgeseller, t\u00fcrk\u00e7e altyaz\u0131l\u0131 yada dublaj olarak 1080p kalitesinde HD belgesel izle.",
-        "fileSize": 31793,
+        "fileSize": 33211,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
