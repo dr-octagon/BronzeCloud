@@ -1,8 +1,8 @@
 [
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/BelgeselX_v18.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/BelgeselX_v19.cs3",
         "status": 1,
-        "version": 18,
+        "version": 19,
         "name": "BelgeselX",
         "internalName": "BelgeselX",
         "authors": [
@@ -11,7 +11,7 @@
             "Dr.Octagon"
         ],
         "description": "En yeni belgeseller, t\u00fcrk\u00e7e altyaz\u0131l\u0131 yada dublaj olarak 1080p kalitesinde HD belgesel izle.",
-        "fileSize": 31051,
+        "fileSize": 31793,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -508,9 +508,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/SetFilmIzle_v32.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/SetFilmIzle_v33.cs3",
         "status": 1,
-        "version": 32,
+        "version": 33,
         "name": "SetFilmIzle",
         "internalName": "SetFilmIzle",
         "authors": [
@@ -518,7 +518,7 @@
             "Dr.Octagon"
         ],
         "description": "Setfilmizle sitemizde, donma ya\u015famadan T\u00fcrk\u00e7e dublaj ve altyaz\u0131l\u0131 filmleri ile dizileri muhte\u015fem 1080p full HD kalitesinde izleyebilirsiniz.",
-        "fileSize": 24652,
+        "fileSize": 23992,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
