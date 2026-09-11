@@ -83,9 +83,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/CizgiMax_v16.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/CizgiMax_v17.cs3",
         "status": 1,
-        "version": 16,
+        "version": 17,
         "name": "CizgiMax",
         "internalName": "CizgiMax",
         "authors": [
@@ -222,9 +222,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/DiziYou_v25.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/DiziYou_v26.cs3",
         "status": 1,
-        "version": 25,
+        "version": 26,
         "name": "DiziYou",
         "internalName": "DiziYou",
         "authors": [
@@ -241,9 +241,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/FilmMakinesi_v58.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/FilmMakinesi_v59.cs3",
         "status": 1,
-        "version": 58,
+        "version": 59,
         "name": "FilmMakinesi",
         "internalName": "FilmMakinesi",
         "authors": [
@@ -261,9 +261,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/FilmModu_v19.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/FilmModu_v20.cs3",
         "status": 1,
-        "version": 19,
+        "version": 20,
         "name": "FilmModu",
         "internalName": "FilmModu",
         "authors": [
@@ -319,9 +319,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/HDFilmCehennemi_v48.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/HDFilmCehennemi_v49.cs3",
         "status": 1,
-        "version": 48,
+        "version": 49,
         "name": "HDFilmCehennemi",
         "internalName": "HDFilmCehennemi",
         "authors": [
@@ -405,9 +405,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/JetFilmizle_v47.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/JetFilmizle_v48.cs3",
         "status": 1,
-        "version": 47,
+        "version": 48,
         "name": "JetFilmizle",
         "internalName": "JetFilmizle",
         "authors": [
@@ -424,9 +424,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/KultFilmler_v16.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/KultFilmler_v17.cs3",
         "status": 1,
-        "version": 16,
+        "version": 17,
         "name": "KultFilmler",
         "internalName": "KultFilmler",
         "authors": [
@@ -509,9 +509,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/SezonlukDizi_v9.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/SezonlukDizi_v10.cs3",
         "status": 1,
-        "version": 9,
+        "version": 10,
         "name": "SezonlukDizi",
         "internalName": "SezonlukDizi",
         "authors": [
@@ -519,7 +519,7 @@
             "JustRelaxable"
         ],
         "description": "G\u00fcncel ve eski dizileri en iyi g\u00f6r\u00fcnt\u00fc kalitesiyle bulabilece\u011finiz yabanc\u0131 dizi izleme siteniz.",
-        "fileSize": 23288,
+        "fileSize": 23289,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -627,16 +627,16 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/WebteIzle_v21.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/WebteIzle_v22.cs3",
         "status": 1,
-        "version": 21,
+        "version": 22,
         "name": "WebteIzle",
         "internalName": "WebteIzle",
         "authors": [
             "keyiflerolsun"
         ],
         "description": "Her t\u00fcrl\u00fc filmi ister dublaj ister altyaz\u0131l\u0131, en kaliteli bir \u015fekilde izleyebilece\u011finiz ar\u015fivi en geni\u015f ger\u00e7ek film izleme siteniz.",
-        "fileSize": 28131,
+        "fileSize": 28127,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
