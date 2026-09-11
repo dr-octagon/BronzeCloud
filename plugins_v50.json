@@ -59,9 +59,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/CineStream_v487.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/CineStream_v488.cs3",
         "status": 1,
-        "version": 487,
+        "version": 488,
         "name": "CineStream",
         "internalName": "CineStream",
         "authors": [
@@ -69,7 +69,7 @@
             "megix"
         ],
         "description": "One stop solution for Movies, Series, Anime, AsianDrama and Torrents",
-        "fileSize": 732559,
+        "fileSize": 770546,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "en",
         "tvTypes": [
@@ -201,9 +201,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/DiziPalOriginal_v89.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/DiziPalOriginal_v90.cs3",
         "status": 1,
-        "version": 89,
+        "version": 90,
         "name": "DiziPalOriginal",
         "internalName": "DiziPalOriginal",
         "authors": [
@@ -211,7 +211,7 @@
             "muratcesmecioglu"
         ],
         "description": "en yeni dizileri g\u00fcvenli ve h\u0131zl\u0131 \u015fekilde sunar.",
-        "fileSize": 25014,
+        "fileSize": 25019,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
