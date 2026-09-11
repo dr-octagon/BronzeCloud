@@ -670,5 +670,26 @@
         ],
         "iconUrl": "https://www.google.com/s2/favicons?domain=webteizle.info&sz=%size%",
         "apiVersion": 1
+    },
+    {
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/YabanciDizi_v1.cs3",
+        "status": 1,
+        "version": 1,
+        "name": "YabanciDizi",
+        "internalName": "YabanciDizi",
+        "authors": [
+            "keyiflerolsun",
+            "Dr.Octagon"
+        ],
+        "description": "Yabanc\u0131 dizi izle, yabanc\u0131 diziler ve filmler full HD 1080p kalitesinde T\u00fcrk\u00e7e altyaz\u0131l\u0131 ve dublajl\u0131 yabancidizi.news adresinde.",
+        "fileSize": 22788,
+        "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
+        "language": "tr",
+        "tvTypes": [
+            "TvSeries",
+            "Movie"
+        ],
+        "iconUrl": "https://www.google.com/s2/favicons?domain=yabancidizi.news&sz=%size%",
+        "apiVersion": 1
     }
 ]
