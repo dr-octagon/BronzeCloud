@@ -9,7 +9,7 @@
             "Dr.Octagon"
         ],
         "description": "BC Sports IPTV ve canl\u0131 ma\u00e7 yay\u0131nlar\u0131.",
-        "fileSize": 74930,
+        "fileSize": 74900,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -66,7 +66,7 @@
             "Dr.Octagon"
         ],
         "description": "4K HDR kaynaklar, T\u00fcrk\u00e7e altyaz\u0131 deste\u011fi ve zengin TMDb i\u00e7erik detaylar\u0131 ile Film ve Dizi izleme eklentisi.",
-        "fileSize": 91351,
+        "fileSize": 91361,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -74,7 +74,7 @@
             "TvSeries",
             "Anime"
         ],
-        "iconUrl": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/master/CineJoy/icon.png?v=9",
+        "iconUrl": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/logos/cinejoy.png",
         "apiVersion": 1
     },
     {
@@ -89,7 +89,7 @@
             "Dr.Octagon"
         ],
         "description": "One stop solution for Movies, Series, Anime, AsianDrama and Torrents",
-        "fileSize": 773279,
+        "fileSize": 773269,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "en",
         "tvTypes": [
@@ -99,7 +99,7 @@
             "Anime",
             "Torrent"
         ],
-        "iconUrl": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/master/CineStream/icon.png",
+        "iconUrl": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/logos/cinestream.png",
         "apiVersion": 1
     },
     {
