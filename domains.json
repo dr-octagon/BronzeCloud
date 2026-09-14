@@ -1,0 +1,17 @@
+{
+  "base_url": "https://cinejoy.to",
+  "mirrors": [
+    "https://cinejoy.to",
+    "https://cinejoy.online",
+    "https://cinejoy.lat",
+    "https://cinejoy.is",
+    "https://cinejoy.net",
+    "https://cinejoy.xyz"
+  ],
+  "api_url": "https://api.shegu.st",
+  "api_servers": [
+    "https://api.shegu.st",
+    "https://api.shegu.xyz"
+  ],
+  "enc_dec_api": "https://enc-dec.app/api"
+}
