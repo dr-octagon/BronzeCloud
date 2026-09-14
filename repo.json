@@ -1,0 +1,8 @@
+{
+    "name": "BronzeCloud",
+    "description": "BronzeCloud Turkish Providers Plugin Repository",
+    "manifestVersion": 1,
+    "pluginLists": [
+        "https://github.com/dr-octagon/Cloudstream-BronzeCloud/raw/refs/heads/builds/plugins_stable.json"
+    ]
+}
