@@ -78,9 +78,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/CineStream_v496.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/CineStream_v497.cs3",
         "status": 1,
-        "version": 496,
+        "version": 497,
         "name": "CineStream",
         "internalName": "CineStream",
         "authors": [
