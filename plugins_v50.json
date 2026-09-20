@@ -1,15 +1,15 @@
 [
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/BCSports_v19.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/BCSports_v20.cs3",
         "status": 1,
-        "version": 19,
+        "version": 20,
         "name": "BCSports",
         "internalName": "BCSports",
         "authors": [
             "Dr.Octagon"
         ],
         "description": "BC Sports IPTV ve canl\u0131 ma\u00e7 yay\u0131nlar\u0131.",
-        "fileSize": 85550,
+        "fileSize": 95387,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
