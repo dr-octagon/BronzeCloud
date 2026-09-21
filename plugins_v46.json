@@ -78,9 +78,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/CineStream_v504.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/CineStream_v505.cs3",
         "status": 1,
-        "version": 504,
+        "version": 505,
         "name": "CineStream",
         "internalName": "CineStream",
         "authors": [
@@ -89,7 +89,7 @@
             "Dr.Octagon"
         ],
         "description": "One stop solution for Movies, Series, Anime, AsianDrama and Torrents",
-        "fileSize": 773270,
+        "fileSize": 773269,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "en",
         "tvTypes": [
