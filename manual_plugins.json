@@ -8,7 +8,7 @@
     "authors": [
       "Dr.Octagon"
     ],
-    "description": "BronzeCloud canlı spor yayınları için hazırlanmış eklenti.",
+    "description": "BronzeCloud canl\u0131 spor yay\u0131nlar\u0131 i\u00e7in haz\u0131rlanm\u0131\u015f eklenti.",
     "fileSize": 21675,
     "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
     "language": "tr",
@@ -26,7 +26,7 @@
     "authors": [
       "Dr.Octagon"
     ],
-    "description": "RecTV BronzeCloud Edition v159 - Canlı TV, Spor, Dizi ve Film",
+    "description": "RecTV BronzeCloud Edition v159 - Canl\u0131 TV, Spor, Dizi ve Film",
     "fileSize": 43351,
     "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
     "language": "tr",
@@ -42,12 +42,12 @@
     "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/InatBoxBC_v13.cs3",
     "status": 1,
     "version": 13,
-    "name": "İnatBox BC",
+    "name": "\u0130natBox BC",
     "internalName": "InatBoxBC",
     "authors": [
       "Dr.Octagon"
     ],
-    "description": "İnatBox BronzeCloud Edition - Canlı kanallar, spor ve diziler burada.",
+    "description": "\u0130natBox BronzeCloud Edition - Canl\u0131 kanallar, spor ve diziler burada.",
     "fileSize": 47569,
     "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
     "language": "tr",
@@ -57,6 +57,25 @@
       "Live"
     ],
     "iconUrl": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3vCp6N1K4bECoYRQD-cisJF2_6V_Hk01ZhDmoPR2JuM8O5qr4MqrPO1munM9cRlleBBSK6odYhLtDBWv4E3vhPhynlmS5hVVtJZShHoGA5REQ8_3v8SIlccTEqzVQu2UJyNYQdJNrKIfWy66RQeT0D-CcmFCbHPz5023H6p2v5fv4NVloZ5Rqo_yGrIY/s320/iNat-Box-App.png",
+    "apiVersion": 1
+  },
+  {
+    "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/AlbaniaLive_v1.cs3",
+    "status": 1,
+    "version": 1,
+    "name": "AlbaniaLive",
+    "internalName": "AlbaniaLive",
+    "authors": [
+      "Dr.Octagon"
+    ],
+    "description": "Bu eklenti \u0130nan Eren i\u00e7in haz\u0131rlanm\u0131\u015ft\u0131r :)",
+    "fileSize": 15290,
+    "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
+    "language": "sq",
+    "tvTypes": [
+      "Live"
+    ],
+    "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Flag_of_Albania.svg/512px-Flag_of_Albania.svg.png",
     "apiVersion": 1
   }
 ]

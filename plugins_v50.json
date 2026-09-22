@@ -1,5 +1,24 @@
 [
     {
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/AlbaniaLive_v1.cs3",
+        "status": 1,
+        "version": 1,
+        "name": "AlbaniaLive",
+        "internalName": "AlbaniaLive",
+        "authors": [
+            "Dr.Octagon"
+        ],
+        "description": "Bu eklenti \u0130nan Eren i\u00e7in haz\u0131rlanm\u0131\u015ft\u0131r :)",
+        "fileSize": 15290,
+        "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
+        "language": "sq",
+        "tvTypes": [
+            "Live"
+        ],
+        "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Flag_of_Albania.svg/512px-Flag_of_Albania.svg.png",
+        "apiVersion": 1
+    },
+    {
         "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/BCSports_v25.cs3",
         "status": 1,
         "version": 25,
