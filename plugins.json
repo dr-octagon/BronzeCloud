@@ -247,28 +247,6 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/DiziPalOriginal_v98.cs3",
-        "status": 1,
-        "version": 98,
-        "name": "DiziPalOriginal",
-        "internalName": "DiziPalOriginal",
-        "authors": [
-            "keyiflerolsun",
-            "muratcesmecioglu",
-            "Dr.Octagon"
-        ],
-        "description": "en yeni dizileri g\u00fcvenli ve h\u0131zl\u0131 \u015fekilde sunar.",
-        "fileSize": 25672,
-        "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
-        "language": "tr",
-        "tvTypes": [
-            "TvSeries",
-            "Movie"
-        ],
-        "iconUrl": "https://chessplyimages.cfd/uploads/site/favicon-32x32.png",
-        "apiVersion": 1
-    },
-    {
         "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/DiziYou_v27.cs3",
         "status": 1,
         "version": 27,
@@ -414,51 +392,6 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/InatBox_v54.cs3",
-        "status": 1,
-        "version": 54,
-        "name": "InatBox",
-        "internalName": "InatBox",
-        "authors": [
-            "Dr.Octagon",
-            "feroxx",
-            "JustRelaxable",
-            "keyiflerolsun"
-        ],
-        "description": "\u0130natBox cloudstream eklentisidir. Sevdi\u011finiz yay\u0131n platformlar\u0131n\u0131 ve canl\u0131 ma\u00e7lar\u0131 burada bulabilirsiniz.",
-        "fileSize": 48025,
-        "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
-        "language": "tr",
-        "tvTypes": [
-            "Movie",
-            "TvSeries",
-            "Live"
-        ],
-        "iconUrl": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3vCp6N1K4bECoYRQD-cisJF2_6V_Hk01ZhDmoPR2JuM8O5qr4MqrPO1munM9cRlleBBSK6odYhLtDBWv4E3vhPhynlmS5hVVtJZShHoGA5REQ8_3v8SIlccTEqzVQu2UJyNYQdJNrKIfWy66RQeT0D-CcmFCbHPz5023H6p2v5fv4NVloZ5Rqo_yGrIY/s320/iNat-Box-App.png",
-        "apiVersion": 1
-    },
-    {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/InatBoxBC_v13.cs3",
-        "status": 1,
-        "version": 13,
-        "name": "\u0130natBox BC",
-        "internalName": "InatBoxBC",
-        "authors": [
-            "Dr.Octagon"
-        ],
-        "description": "\u0130natBox BronzeCloud Edition - Canl\u0131 kanallar, spor ve diziler burada.",
-        "fileSize": 47569,
-        "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
-        "language": "tr",
-        "tvTypes": [
-            "Movie",
-            "TvSeries",
-            "Live"
-        ],
-        "iconUrl": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3vCp6N1K4bECoYRQD-cisJF2_6V_Hk01ZhDmoPR2JuM8O5qr4MqrPO1munM9cRlleBBSK6odYhLtDBWv4E3vhPhynlmS5hVVtJZShHoGA5REQ8_3v8SIlccTEqzVQu2UJyNYQdJNrKIfWy66RQeT0D-CcmFCbHPz5023H6p2v5fv4NVloZ5Rqo_yGrIY/s320/iNat-Box-App.png",
-        "apiVersion": 1
-    },
-    {
         "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/JetFilmizle_v49.cs3",
         "status": 1,
         "version": 49,
@@ -514,27 +447,6 @@
         ],
         "description": "RecTv APK, T\u00fcrkiye\u2019deki en pop\u00fcler \u00c7evrimi\u00e7i Medya Ak\u0131\u015f platformlar\u0131ndan biridir. Filmlerin, Canl\u0131 Sporlar\u0131n, Web Dizilerinin ve \u00e7ok daha fazlas\u0131n\u0131n keyfini \u00fccretsiz \u00e7\u0131kar\u0131n.",
         "fileSize": 28849,
-        "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
-        "language": "tr",
-        "tvTypes": [
-            "Movie",
-            "Live",
-            "TvSeries"
-        ],
-        "iconUrl": "https://rectv.org.tr/wp-content/uploads/2024/11/rectv-modified.webp",
-        "apiVersion": 1
-    },
-    {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/RecTV_BC_v7.cs3",
-        "status": 1,
-        "version": 7,
-        "name": "RecTV BC",
-        "internalName": "RecTVBC",
-        "authors": [
-            "Dr.Octagon"
-        ],
-        "description": "RecTV BronzeCloud Edition v159 - Canl\u0131 TV, Spor, Dizi ve Film",
-        "fileSize": 43351,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
