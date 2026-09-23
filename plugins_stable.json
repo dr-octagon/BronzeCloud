@@ -97,9 +97,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/CineStream_v506.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/CineStream_v507.cs3",
         "status": 1,
-        "version": 506,
+        "version": 507,
         "name": "CineStream",
         "internalName": "CineStream",
         "authors": [
@@ -224,9 +224,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/DiziPal_v110.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/DiziPal_v111.cs3",
         "status": 1,
-        "version": 110,
+        "version": 111,
         "name": "DiziPal",
         "internalName": "DiziPal",
         "authors": [
@@ -235,7 +235,7 @@
             "Dr.Octagon"
         ],
         "description": "en yeni dizileri g\u00fcvenli ve h\u0131zl\u0131 \u015fekilde sunar.",
-        "fileSize": 29468,
+        "fileSize": 29470,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
