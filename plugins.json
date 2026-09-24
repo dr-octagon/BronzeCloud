@@ -58,6 +58,30 @@
         "apiVersion": 1
     },
     {
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/BOAT_v1.cs3",
+        "status": 1,
+        "version": 1,
+        "name": "BOAT",
+        "internalName": "BOAT",
+        "authors": [
+            "wGodfather",
+            "Dr.Octagon"
+        ],
+        "description": "B.O.A.T - En iyi kalitede Film, Dizi ve Torrentler (Min 1080p, Min 1GB Torrent)",
+        "fileSize": 782602,
+        "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
+        "language": "tr",
+        "tvTypes": [
+            "TvSeries",
+            "Movie",
+            "AsianDrama",
+            "Anime",
+            "Torrent"
+        ],
+        "iconUrl": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/logos/boat.png",
+        "apiVersion": 1
+    },
+    {
         "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/BronzeCloudSports_v4.cs3",
         "status": 1,
         "version": 4,
