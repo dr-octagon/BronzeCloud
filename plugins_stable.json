@@ -97,9 +97,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/CineStream_v514.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/CineStream_v515.cs3",
         "status": 1,
-        "version": 514,
+        "version": 515,
         "name": "CineStream",
         "internalName": "CineStream",
         "authors": [
@@ -109,7 +109,7 @@
             "megix"
         ],
         "description": "Film, Dizi, Asya Dizileri ve Torrentler i\u00e7in hepsi bir arada \u00e7\u00f6z\u00fcm",
-        "fileSize": 781413,
+        "fileSize": 781412,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
