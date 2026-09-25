@@ -313,9 +313,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/FilmMakinesi_v62.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/FilmMakinesi_v63.cs3",
         "status": 1,
-        "version": 62,
+        "version": 63,
         "name": "FilmMakinesi",
         "internalName": "FilmMakinesi",
         "authors": [
@@ -571,9 +571,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/SetFilmIzle_v36.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/SetFilmIzle_v37.cs3",
         "status": 1,
-        "version": 36,
+        "version": 37,
         "name": "SetFilmIzle",
         "internalName": "SetFilmIzle",
         "authors": [
@@ -613,9 +613,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/SinemaCX_v28.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/SinemaCX_v29.cs3",
         "status": 1,
-        "version": 28,
+        "version": 29,
         "name": "SinemaCX",
         "internalName": "SinemaCX",
         "authors": [
