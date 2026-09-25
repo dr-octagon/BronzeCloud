@@ -1,0 +1,604 @@
+{
+  "timestamp": "2026-09-25T17:10:49+0300",
+  "total_checked": 66,
+  "healthy_count": 61,
+  "protected_count": 4,
+  "dead_count": 1,
+  "details": [
+    {
+      "name": "bollyflix",
+      "original_url": "https://bollyflix.af",
+      "active_url": "https://bollyflix.af",
+      "new_url": null,
+      "status": "HEALTHY",
+      "response_code": 200,
+      "response_time_ms": 168
+    },
+    {
+      "name": "4khdhub",
+      "original_url": "https://4khdhub.one",
+      "active_url": "https://4khdhub.one",
+      "new_url": null,
+      "status": "HEALTHY",
+      "response_code": 200,
+      "response_time_ms": 170
+    },
+    {
+      "name": "hindmoviez",
+      "original_url": "https://hindmovie.dev",
+      "active_url": "https://hindmovie.dev",
+      "new_url": null,
+      "status": "HEALTHY",
+      "response_code": 200,
+      "response_time_ms": 175
+    },
+    {
+      "name": "nfmirror",
+      "original_url": "https://tv.imgcdn.kim/newtv",
+      "active_url": "https://tv.imgcdn.kim/newtv",
+      "new_url": null,
+      "status": "PROTECTED",
+      "response_code": 403,
+      "response_time_ms": 173
+    },
+    {
+      "name": "skymovies",
+      "original_url": "https://skymovieshd.lgbt",
+      "active_url": "https://skymovieshd.lgbt",
+      "new_url": null,
+      "status": "HEALTHY",
+      "response_code": 200,
+      "response_time_ms": 178
+    },
+    {
+      "name": "hdmovie2",
+      "original_url": "https://hdmovie2a.biz",
+      "active_url": "https://hdmovie2a.biz",
+      "new_url": null,
+      "status": "HEALTHY",
+      "response_code": 200,
+      "response_time_ms": 191
+    },
+    {
+      "name": "movies4u",
+      "original_url": "https://movies4u.foo",
+      "active_url": "https://movies4u.foo",
+      "new_url": null,
+      "status": "HEALTHY",
+      "response_code": 200,
+      "response_time_ms": 190
+    },
+    {
+      "name": "rtally",
+      "original_url": "https://rtally.lol",
+      "active_url": "https://rtally.lol",
+      "new_url": null,
+      "status": "HEALTHY",
+      "response_code": 200,
+      "response_time_ms": 284
+    },
+    {
+      "name": "moviesdrive",
+      "original_url": "https://new4.moviesdrive.christmas",
+      "active_url": "https://new4.moviesdrive.christmas",
+      "new_url": null,
+      "status": "HEALTHY",
+      "response_code": 200,
+      "response_time_ms": 314
+    },
+    {
+      "name": "uhdmovies",
+      "original_url": "https://uhdmovies.my",
+      "active_url": "https://uhdmovies.my",
+      "new_url": null,
+      "status": "HEALTHY",
+      "response_code": 200,
+      "response_time_ms": 150
+    },
+    {
+      "name": "moviesmod",
+      "original_url": "https://moviesmod.ai.in",
+      "active_url": "https://moviesmod.ai.in",
+      "new_url": null,
+      "status": "HEALTHY",
+      "response_code": 200,
+      "response_time_ms": 151
+    },
+    {
+      "name": "topmovies",
+      "original_url": "https://moviesleech.club",
+      "active_url": "https://moviesleech.club",
+      "new_url": null,
+      "status": "HEALTHY",
+      "response_code": 200,
+      "response_time_ms": 148
+    },
+    {
+      "name": "vegamovies",
+      "original_url": "https://vegamovies.gallery",
+      "active_url": "https://vegamovies.gallery",
+      "new_url": null,
+      "status": "HEALTHY",
+      "response_code": 200,
+      "response_time_ms": 150
+    },
+    {
+      "name": "gdflix",
+      "original_url": "https://new4.gdflix.io",
+      "active_url": "https://new4.gdflix.io",
+      "new_url": null,
+      "status": "PROTECTED",
+      "response_code": 403,
+      "response_time_ms": 176
+    },
+    {
+      "name": "rogmovies",
+      "original_url": "https://n1.rogmovies.best",
+      "active_url": "https://n1.rogmovies.best",
+      "new_url": null,
+      "status": "HEALTHY",
+      "response_code": 200,
+      "response_time_ms": 194
+    },
+    {
+      "name": "vcloud",
+      "original_url": "https://vcloud.fit",
+      "active_url": "https://vcloud.fit",
+      "new_url": null,
+      "status": "PROTECTED",
+      "response_code": 403,
+      "response_time_ms": 142
+    },
+    {
+      "name": "multimovies",
+      "original_url": "https://multimovies.casa",
+      "active_url": "https://multimovies.casa",
+      "new_url": null,
+      "status": "HEALTHY",
+      "response_code": 200,
+      "response_time_ms": 458
+    },
+    {
+      "name": "zinkmovies",
+      "original_url": "https://new4.zinkmovies.cc",
+      "active_url": "https://new4.zinkmovies.cc",
+      "new_url": null,
+      "status": "PROTECTED",
+      "response_code": 403,
+      "response_time_ms": 150
+    },
+    {
+      "name": "hubcloud",
+      "original_url": "https://hubcloud.ist",
+      "active_url": "https://hubcloud.ist",
+      "new_url": null,
+      "status": "HEALTHY",
+      "response_code": 200,
+      "response_time_ms": 278
+    },
+    {
+      "name": "fibwatch",
+      "original_url": "https://fibwatch.art",
+      "active_url": "https://fibwatch.art",
+      "new_url": null,
+      "status": "HEALTHY",
+      "response_code": 200,
+      "response_time_ms": 150
+    },
+    {
+      "name": "toonstream",
+      "original_url": "https://toonstream.us",
+      "active_url": "https://toonstream.us",
+      "new_url": null,
+      "status": "HEALTHY",
+      "response_code": 200,
+      "response_time_ms": 290
+    },
+    {
+      "name": "m4ufree",
+      "original_url": "https://ww4.m4ufree.lat",
+      "active_url": "https://ww4.m4ufree.lat",
+      "new_url": null,
+      "status": "HEALTHY",
+      "response_code": 200,
+      "response_time_ms": 262
+    },
+    {
+      "name": "kisskh",
+      "original_url": "https://kisskh.co",
+      "active_url": "https://kisskh.co",
+      "new_url": null,
+      "status": "HEALTHY",
+      "response_code": 200,
+      "response_time_ms": 144
+    },
+    {
+      "name": "hdhub4u",
+      "original_url": "https://new6.hdhub4u.cl",
+      "active_url": "https://new6.hdhub4u.cl",
+      "new_url": null,
+      "status": "HEALTHY",
+      "response_code": 200,
+      "response_time_ms": 149
+    },
+    {
+      "name": "dudefilms",
+      "original_url": "https://dudefilms.stream",
+      "active_url": "https://dudefilms.stream",
+      "new_url": null,
+      "status": "HEALTHY",
+      "response_code": 200,
+      "response_time_ms": 312
+    },
+    {
+      "name": "primesrc",
+      "original_url": "https://primesrc.me",
+      "active_url": "https://primesrc.me",
+      "new_url": null,
+      "status": "DEAD",
+      "response_code": 404,
+      "response_time_ms": 189
+    },
+    {
+      "name": "akwam",
+      "original_url": "https://akwam.cx",
+      "active_url": "https://akwam.cx",
+      "new_url": null,
+      "status": "HEALTHY",
+      "response_code": 200,
+      "response_time_ms": 204
+    },
+    {
+      "name": "videasy",
+      "original_url": "https://api.speedracelight.com",
+      "active_url": "https://api.speedracelight.com",
+      "new_url": null,
+      "status": "HEALTHY",
+      "response_code": 200,
+      "response_time_ms": 223
+    },
+    {
+      "name": "vidfastpro",
+      "original_url": "https://vidfast.vc",
+      "active_url": "https://vidfast.vc",
+      "new_url": null,
+      "status": "HEALTHY",
+      "response_code": 200,
+      "response_time_ms": 182
+    },
+    {
+      "name": "animedao",
+      "original_url": "https://animedao.to",
+      "active_url": "https://animedao.to",
+      "new_url": null,
+      "status": "HEALTHY",
+      "response_code": 200,
+      "response_time_ms": 456
+    },
+    {
+      "name": "vidlink",
+      "original_url": "https://vidlink.pro",
+      "active_url": "https://vidlink.pro",
+      "new_url": null,
+      "status": "HEALTHY",
+      "response_code": 200,
+      "response_time_ms": 204
+    },
+    {
+      "name": "vidcore",
+      "original_url": "https://vidcore.io",
+      "active_url": "https://vidcore.io",
+      "new_url": null,
+      "status": "HEALTHY",
+      "response_code": 200,
+      "response_time_ms": 267
+    },
+    {
+      "name": "xpass",
+      "original_url": "https://play.xpass.top",
+      "active_url": "https://play.xpass.top",
+      "new_url": null,
+      "status": "HEALTHY",
+      "response_code": 200,
+      "response_time_ms": 204
+    },
+    {
+      "name": "vidzee",
+      "original_url": "https://player.vidzee.wtf",
+      "active_url": "https://player.vidzee.wtf",
+      "new_url": null,
+      "status": "HEALTHY",
+      "response_code": 200,
+      "response_time_ms": 218
+    },
+    {
+      "name": "vidrock",
+      "original_url": "https://vidrock.ru",
+      "active_url": "https://vidrock.ru",
+      "new_url": null,
+      "status": "HEALTHY",
+      "response_code": 200,
+      "response_time_ms": 358
+    },
+    {
+      "name": "vidup",
+      "original_url": "https://vidup.to",
+      "active_url": "https://vidup.to",
+      "new_url": null,
+      "status": "HEALTHY",
+      "response_code": 200,
+      "response_time_ms": 306
+    },
+    {
+      "name": "levidia",
+      "original_url": "https://www.levidia.ch",
+      "active_url": "https://www.levidia.ch",
+      "new_url": null,
+      "status": "HEALTHY",
+      "response_code": 200,
+      "response_time_ms": 188
+    },
+    {
+      "name": "fshare",
+      "original_url": "https://fsharetv.cc",
+      "active_url": "https://fsharetv.cc",
+      "new_url": null,
+      "status": "HEALTHY",
+      "response_code": 200,
+      "response_time_ms": 302
+    },
+    {
+      "name": "allmovieland",
+      "original_url": "https://allmovieland.art",
+      "active_url": "https://allmovieland.art",
+      "new_url": null,
+      "status": "HEALTHY",
+      "response_code": 200,
+      "response_time_ms": 213
+    },
+    {
+      "name": "peachify",
+      "original_url": "https://peachify.top",
+      "active_url": "https://peachify.top",
+      "new_url": null,
+      "status": "HEALTHY",
+      "response_code": 200,
+      "response_time_ms": 208
+    },
+    {
+      "name": "projectfreetv",
+      "original_url": "https://projectfreetv.sx",
+      "active_url": "https://projectfreetv.sx",
+      "new_url": null,
+      "status": "HEALTHY",
+      "response_code": 200,
+      "response_time_ms": 277
+    },
+    {
+      "name": "peachifybase",
+      "original_url": "https://peachify.top",
+      "active_url": "https://peachify.top",
+      "new_url": null,
+      "status": "HEALTHY",
+      "response_code": 200,
+      "response_time_ms": 233
+    },
+    {
+      "name": "vaplayer",
+      "original_url": "https://streamdata.vaplayer.ru",
+      "active_url": "https://streamdata.vaplayer.ru",
+      "new_url": null,
+      "status": "HEALTHY",
+      "response_code": 200,
+      "response_time_ms": 461
+    },
+    {
+      "name": "mlsbd",
+      "original_url": "https://mlsbd.co",
+      "active_url": "https://mlsbd.co",
+      "new_url": null,
+      "status": "HEALTHY",
+      "response_code": 200,
+      "response_time_ms": 856
+    },
+    {
+      "name": "febbox",
+      "original_url": "https://www.febbox.com",
+      "active_url": "https://www.febbox.com",
+      "new_url": null,
+      "status": "HEALTHY",
+      "response_code": 200,
+      "response_time_ms": 265
+    },
+    {
+      "name": "anikoto",
+      "original_url": "https://anikototv.to",
+      "active_url": "https://anikototv.to",
+      "new_url": null,
+      "status": "HEALTHY",
+      "response_code": 200,
+      "response_time_ms": 152
+    },
+    {
+      "name": "reanime",
+      "original_url": "https://reanime.to",
+      "active_url": "https://reanime.to",
+      "new_url": null,
+      "status": "HEALTHY",
+      "response_code": 200,
+      "response_time_ms": 239
+    },
+    {
+      "name": "asiaflix",
+      "original_url": "https://asiaflix.net",
+      "active_url": "https://asiaflix.net",
+      "new_url": null,
+      "status": "HEALTHY",
+      "response_code": 200,
+      "response_time_ms": 154
+    },
+    {
+      "name": "dahmer",
+      "original_url": "https://a.111477.xyz",
+      "active_url": "https://a.111477.xyz",
+      "new_url": null,
+      "status": "HEALTHY",
+      "response_code": 200,
+      "response_time_ms": 520
+    },
+    {
+      "name": "tpb",
+      "original_url": "https://thepiratebay-plus.strem.fun",
+      "active_url": "https://thepiratebay-plus.strem.fun",
+      "new_url": null,
+      "status": "HEALTHY",
+      "response_code": 200,
+      "response_time_ms": 166
+    },
+    {
+      "name": "anikage",
+      "original_url": "https://anikage.cc",
+      "active_url": "https://anikage.cc",
+      "new_url": null,
+      "status": "HEALTHY",
+      "response_code": 200,
+      "response_time_ms": 337
+    },
+    {
+      "name": "torrentio",
+      "original_url": "https://torrentio.strem.fun/providers=yts,eztv,rarbg,1337x,thepiratebay,kickasstorrents,torrentgalaxy,magnetdl,nyaasi,tokyotosho,anidex,rutor|sort=qualitysize|qualityfilter=scr,cam|limit=50",
+      "active_url": "https://torrentio.strem.fun/providers=yts,eztv,rarbg,1337x,thepiratebay,kickasstorrents,torrentgalaxy,magnetdl,nyaasi,tokyotosho,anidex,rutor|sort=qualitysize|qualityfilter=scr,cam|limit=50",
+      "new_url": null,
+      "status": "HEALTHY",
+      "response_code": 200,
+      "response_time_ms": 155
+    },
+    {
+      "name": "anizone",
+      "original_url": "https://anizone.to",
+      "active_url": "https://anizone.to",
+      "new_url": null,
+      "status": "HEALTHY",
+      "response_code": 200,
+      "response_time_ms": 283
+    },
+    {
+      "name": "tokyoinsider",
+      "original_url": "https://www.tokyoinsider.com",
+      "active_url": "https://www.tokyoinsider.com",
+      "new_url": null,
+      "status": "HEALTHY",
+      "response_code": 200,
+      "response_time_ms": 310
+    },
+    {
+      "name": "animesalt",
+      "original_url": "https://animesalt.ac",
+      "active_url": "https://animesalt.ac",
+      "new_url": null,
+      "status": "HEALTHY",
+      "response_code": 200,
+      "response_time_ms": 458
+    },
+    {
+      "name": "torrentio_seeds",
+      "original_url": "https://torrentio.strem.fun/providers=yts,eztv,rarbg,1337x,thepiratebay,kickasstorrents,torrentgalaxy,magnetdl,nyaasi,tokyotosho,anidex,rutor|sort=seeders|qualityfilter=scr,cam|limit=50",
+      "active_url": "https://torrentio.strem.fun/providers=yts,eztv,rarbg,1337x,thepiratebay,kickasstorrents,torrentgalaxy,magnetdl,nyaasi,tokyotosho,anidex,rutor|sort=seeders|qualityfilter=scr,cam|limit=50",
+      "new_url": null,
+      "status": "HEALTHY",
+      "response_code": 200,
+      "response_time_ms": 163
+    },
+    {
+      "name": "subtitles_opensubtitles",
+      "original_url": "https://opensubtitles-v3.strem.io",
+      "active_url": "https://opensubtitles-v3.strem.io",
+      "new_url": null,
+      "status": "HEALTHY",
+      "response_code": 200,
+      "response_time_ms": 179
+    },
+    {
+      "name": "showbox",
+      "original_url": "https://showbox.media",
+      "active_url": "https://showbox.media",
+      "new_url": null,
+      "status": "HEALTHY",
+      "response_code": 200,
+      "response_time_ms": 663
+    },
+    {
+      "name": "subtitles_submaker",
+      "original_url": "https://submaker.elfhosted.com",
+      "active_url": "https://submaker.elfhosted.com",
+      "new_url": null,
+      "status": "HEALTHY",
+      "response_code": 200,
+      "response_time_ms": 197
+    },
+    {
+      "name": "cinejoy",
+      "original_url": "https://api.wing.st",
+      "active_url": "https://api.wing.st",
+      "new_url": null,
+      "status": "HEALTHY",
+      "response_code": 200,
+      "response_time_ms": 184
+    },
+    {
+      "name": "torrentsdb",
+      "original_url": "https://torrentsdb.com/eyJsaW1pdCI6ICI1MCIsICJzb3J0IjogInF1YWxpdHlzaXplIiwgInF1YWxpdHlmaWx0ZXIiOiBbInNjciIsICJjYW0iXSwgImRlYnJpZG9wdGlvbnMiOiBbIm5vZG93bmxvYWRsaW5rcyJdfQ==",
+      "active_url": "https://torrentsdb.com/eyJsaW1pdCI6ICI1MCIsICJzb3J0IjogInF1YWxpdHlzaXplIiwgInF1YWxpdHlmaWx0ZXIiOiBbInNjciIsICJjYW0iXSwgImRlYnJpZG9wdGlvbnMiOiBbIm5vZG93bmxvYWRsaW5rcyJdfQ==",
+      "new_url": null,
+      "status": "HEALTHY",
+      "response_code": 200,
+      "response_time_ms": 325
+    },
+    {
+      "name": "hexa",
+      "original_url": "https://hexatv.cfd",
+      "active_url": "https://hexatv.cfd",
+      "new_url": null,
+      "status": "HEALTHY",
+      "response_code": 200,
+      "response_time_ms": 273
+    },
+    {
+      "name": "cinejoybase",
+      "original_url": "https://cinejoy.to",
+      "active_url": "https://cinejoy.to",
+      "new_url": null,
+      "status": "HEALTHY",
+      "response_code": 200,
+      "response_time_ms": 306
+    },
+    {
+      "name": "meowtv",
+      "original_url": "https://meowtv.ru",
+      "active_url": "https://meowtv.ru",
+      "new_url": null,
+      "status": "HEALTHY",
+      "response_code": 200,
+      "response_time_ms": 287
+    },
+    {
+      "name": "animekizz",
+      "original_url": "https://animekizz.live",
+      "active_url": "https://animekizz.live",
+      "new_url": null,
+      "status": "HEALTHY",
+      "response_code": 200,
+      "response_time_ms": 1104
+    },
+    {
+      "name": "ctgmovies",
+      "original_url": "https://ctgfun.com",
+      "active_url": "https://ctgfun.com",
+      "new_url": null,
+      "status": "HEALTHY",
+      "response_code": 200,
+      "response_time_ms": 808
+    }
+  ],
+  "updated": []
+}

@@ -21,7 +21,7 @@
   "vcloud": "https://vcloud.fit",
   "dudefilms": "https://dudefilms.stream",
   "m4ufree": "https://ww4.m4ufree.lat",
-  "animedao": "https://anidao.to",
+  "animedao": "https://animedao.to",
   "mlsbd": "https://mlsbd.co",
   "fibwatch": "https://fibwatch.art",
   "hdhub4u": "https://new6.hdhub4u.cl",
@@ -42,7 +42,7 @@
   "projectfreetv": "https://projectfreetv.sx",
   "allmovieland": "https://allmovieland.art",
   "dahmer": "https://a.111477.xyz",
-  "peachify": "https://x.eat-peach.sbs",
+  "peachify": "https://peachify.top",
   "peachifybase": "https://peachify.top",
   "showbox": "https://showbox.media",
   "febbox": "https://www.febbox.com",
@@ -59,5 +59,10 @@
   "torrentio_seeds": "https://torrentio.strem.fun/providers=yts,eztv,rarbg,1337x,thepiratebay,kickasstorrents,torrentgalaxy,magnetdl,nyaasi,tokyotosho,anidex,rutor|sort=seeders|qualityfilter=scr,cam|limit=50",
   "torrentsdb": "https://torrentsdb.com/eyJsaW1pdCI6ICI1MCIsICJzb3J0IjogInF1YWxpdHlzaXplIiwgInF1YWxpdHlmaWx0ZXIiOiBbInNjciIsICJjYW0iXSwgImRlYnJpZG9wdGlvbnMiOiBbIm5vZG93bmxvYWRsaW5rcyJdfQ==",
   "subtitles_opensubtitles": "https://opensubtitles-v3.strem.io",
-  "subtitles_submaker": "https://submaker.elfhosted.com"
+  "subtitles_submaker": "https://submaker.elfhosted.com",
+  "cinejoy": "https://api.wing.st",
+  "cinejoybase": "https://cinejoy.to",
+  "hexa": "https://hexatv.cfd",
+  "ctgmovies": "https://ctgfun.com",
+  "meowtv": "https://meowtv.ru"
 }
