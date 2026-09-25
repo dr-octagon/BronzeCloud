@@ -58,17 +58,17 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/BOAT_v14.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/BOAT_v15.cs3",
         "status": 1,
-        "version": 14,
+        "version": 15,
         "name": "BOAT",
         "internalName": "BOAT",
         "authors": [
             "wGodfather",
             "Dr.Octagon"
         ],
-        "description": "B.O.A.T - En iyi kalitede Film, Dizi ve Torrentler (Min 1080p, Min 1GB Torrent)",
-        "fileSize": 726506,
+        "description": "B.O.A.T - Film, dizi ve torrent kaynaklar\u0131; bilinen d\u00fc\u015f\u00fck kalite elenir, do\u011frulanamayan kalite belirtilir",
+        "fileSize": 724761,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
