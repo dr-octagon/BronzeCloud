@@ -1,23 +1,5 @@
 [
   {
-    "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/BronzeCloudSports_v4.cs3",
-    "status": 1,
-    "version": 4,
-    "name": "BronzeCloudSports",
-    "internalName": "CdnLiveTvTest",
-    "authors": [
-      "Dr.Octagon"
-    ],
-    "description": "BronzeCloud canlı spor yayınları için hazırlanmış eklenti.",
-    "fileSize": 21675,
-    "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
-    "language": "tr",
-    "tvTypes": [
-      "Live"
-    ],
-    "apiVersion": 1
-  },
-  {
     "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/RecTV_BC_v7.cs3",
     "status": 1,
     "version": 7,
