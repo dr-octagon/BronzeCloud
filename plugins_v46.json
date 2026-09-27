@@ -191,9 +191,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/Dizigom_v4.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/Dizigom_v5.cs3",
         "status": 1,
-        "version": 4,
+        "version": 5,
         "name": "Dizigom",
         "internalName": "Dizigom",
         "authors": [
@@ -201,7 +201,7 @@
             "wGodfather"
         ],
         "description": "Dizigom | Full HD 1080p yabanc\u0131 dizi izleme platformu.",
-        "fileSize": 25108,
+        "fileSize": 27096,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
