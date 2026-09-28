@@ -58,9 +58,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/BOAT_v24.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/BOAT_v25.cs3",
         "status": 1,
-        "version": 24,
+        "version": 25,
         "name": "BOAT",
         "internalName": "BOAT",
         "authors": [
@@ -103,9 +103,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/CineStream_v523.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/CineStream_v524.cs3",
         "status": 1,
-        "version": 523,
+        "version": 524,
         "name": "CineStream",
         "internalName": "CineStream",
         "authors": [
@@ -400,6 +400,27 @@
         "apiVersion": 1
     },
     {
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/HDFilmcehennemiLand_v1.cs3",
+        "status": 1,
+        "version": 1,
+        "name": "HDFilmcehennemiLand",
+        "internalName": "HDFilmcehennemiLand",
+        "authors": [
+            "Dr.Octagon",
+            "wGodfather"
+        ],
+        "description": "HDFilmcehennemi Land - En yeni film ve dizileri donma olmadan full HD kalitede izleyin.",
+        "fileSize": 36455,
+        "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
+        "language": "tr",
+        "tvTypes": [
+            "Movie",
+            "TvSeries"
+        ],
+        "iconUrl": "https://www.google.com/s2/favicons?domain=www.hdfilmcehennemi.land&sz=%size%",
+        "apiVersion": 1
+    },
+    {
         "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/HDFilmDelisi_v2.cs3",
         "status": 1,
         "version": 2,
@@ -505,16 +526,16 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/rectv-bc_v8.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/rectv-bc_v9.cs3",
         "status": 1,
-        "version": 8,
+        "version": 9,
         "name": "rectv-bc",
         "internalName": "rectv-bc",
         "authors": [
             "Dr.Octagon"
         ],
         "description": "RecTV BronzeCloud Edition v160 - Canl\u0131 TV, Spor, Dizi ve Film",
-        "fileSize": 47257,
+        "fileSize": 50760,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
