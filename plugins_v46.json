@@ -756,6 +756,29 @@
         "apiVersion": 1
     },
     {
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/WebDramaTurkey_v1.cs3",
+        "status": 1,
+        "version": 1,
+        "name": "WebDramaTurkey",
+        "internalName": "WebDramaTurkey",
+        "authors": [
+            "keyiflerolsun",
+            "Dr.Octagon"
+        ],
+        "description": "WebDramaTurkey - Asya dizileri, Kore, \u00c7in, Japon dizileri, Asya filmleri ve animeleri T\u00fcrk\u00e7e altyaz\u0131l\u0131 izleme sitesi.",
+        "fileSize": 35848,
+        "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
+        "language": "tr",
+        "tvTypes": [
+            "AsianDrama",
+            "TvSeries",
+            "Movie",
+            "Anime"
+        ],
+        "iconUrl": "https://www.google.com/s2/favicons?domain=webdramaturkey2.com&sz=%size%",
+        "apiVersion": 1
+    },
+    {
         "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/WebteIzle_v24.cs3",
         "status": 1,
         "version": 24,
