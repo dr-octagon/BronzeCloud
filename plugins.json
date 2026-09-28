@@ -19,9 +19,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/Anizium_v1.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/Anizium_v2.cs3",
         "status": 1,
-        "version": 1,
+        "version": 2,
         "name": "Anizium",
         "internalName": "Anizium",
         "authors": [
@@ -29,7 +29,7 @@
             "wGodfather"
         ],
         "description": "Anizium - Pop\u00fcler anime serileri ve anime filmleri full HD/4K kalitede izleyin.",
-        "fileSize": 28925,
+        "fileSize": 28271,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
