@@ -318,16 +318,17 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/FilmEkseni_v1.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/FilmEkseni_v2.cs3",
         "status": 1,
-        "version": 1,
+        "version": 2,
         "name": "FilmEkseni",
         "internalName": "FilmEkseni",
         "authors": [
-            "Dr.Octagon"
+            "Dr.Octagon",
+            "wGodfather"
         ],
         "description": "FilmEkseni film ve dizi eklentisi. Sayfalama, \u00e7oklu kaynak ve altyaz\u0131 deste\u011fi i\u00e7erir.",
-        "fileSize": 33014,
+        "fileSize": 37926,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
