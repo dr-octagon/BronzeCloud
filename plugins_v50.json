@@ -400,9 +400,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/HDFilmcehennemiLand_v2.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/HDFilmcehennemiLand_v3.cs3",
         "status": 1,
-        "version": 2,
+        "version": 3,
         "name": "HDFilmcehennemiLand",
         "internalName": "HDFilmcehennemiLand",
         "authors": [
@@ -410,7 +410,7 @@
             "wGodfather"
         ],
         "description": "HDFilmcehennemi Land - En yeni film ve dizileri donma olmadan full HD kalitede izleyin.",
-        "fileSize": 50922,
+        "fileSize": 51845,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
