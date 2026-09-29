@@ -194,9 +194,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/DiziBox_v27.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/DiziBox_v28.cs3",
         "status": 1,
-        "version": 27,
+        "version": 28,
         "name": "DiziBox",
         "internalName": "DiziBox",
         "authors": [
@@ -204,7 +204,7 @@
             "Dr.Octagon"
         ],
         "description": "Yabanc\u0131 Dizi izle, T\u00fcm yabanc\u0131 dizilerin yeni ve eski sezonlar\u0131n\u0131 full hd izleyebilece\u011finiz elit site.",
-        "fileSize": 34657,
+        "fileSize": 34415,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -298,9 +298,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/Dizipod_v1.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/Dizipod_v2.cs3",
         "status": 1,
-        "version": 1,
+        "version": 2,
         "name": "Dizipod",
         "internalName": "Dizipod",
         "authors": [
@@ -308,7 +308,7 @@
             "wGodfather"
         ],
         "description": "Dizipod - Orijinal Dilinde T\u00fcrk\u00e7e Altyaz\u0131l\u0131 Yabanc\u0131 dizi ve filmleri full HD kalitede izleyin.",
-        "fileSize": 25549,
+        "fileSize": 30200,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
