@@ -339,6 +339,27 @@
         "apiVersion": 1
     },
     {
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/DominoTV_v1.cs3",
+        "status": 1,
+        "version": 1,
+        "name": "DominoTV",
+        "internalName": "DominoTV",
+        "authors": [
+            "Dr.Octagon"
+        ],
+        "description": "DominoTV / Cine10 - Canl\u0131 TV, Spor, Film ve Dizi Eklentisi (Dinamik Domain Deste\u011fi ile)",
+        "fileSize": 49427,
+        "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
+        "language": "tr",
+        "tvTypes": [
+            "Live",
+            "Movie",
+            "TvSeries"
+        ],
+        "iconUrl": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/logos/dominotv.png",
+        "apiVersion": 1
+    },
+    {
         "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/FilmEkseni_v2.cs3",
         "status": 1,
         "version": 2,
