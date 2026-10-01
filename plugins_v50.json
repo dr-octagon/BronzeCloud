@@ -234,9 +234,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/DiziMom_v62.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/DiziMom_v63.cs3",
         "status": 1,
-        "version": 62,
+        "version": 63,
         "name": "DiziMom",
         "internalName": "DiziMom",
         "authors": [
@@ -244,7 +244,7 @@
             "Dr.Octagon"
         ],
         "description": "Binlerce yerli yabanc\u0131 dizi ar\u015fivi, t\u00fcm sezonlar, kesintisiz b\u00f6l\u00fcmler. Sadece dizi izle, Dizimom heryerde seninle!",
-        "fileSize": 34850,
+        "fileSize": 34849,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -276,9 +276,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/DiziPalOriginal_v100.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/DiziPalOriginal_v101.cs3",
         "status": 1,
-        "version": 100,
+        "version": 101,
         "name": "DiziPalOriginal",
         "internalName": "DiziPalOriginal",
         "authors": [
@@ -287,7 +287,7 @@
             "Dr.Octagon"
         ],
         "description": "en yeni dizileri g\u00fcvenli ve h\u0131zl\u0131 \u015fekilde sunar.",
-        "fileSize": 27724,
+        "fileSize": 27723,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
