@@ -782,9 +782,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/Trdiziizle_v1.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/Trdiziizle_v2.cs3",
         "status": 1,
-        "version": 1,
+        "version": 2,
         "name": "Trdiziizle",
         "internalName": "Trdiziizle",
         "authors": [
@@ -792,7 +792,7 @@
             "wGodfather"
         ],
         "description": "Trdiziizle - Yerli ve yabanc\u0131 dizileri full HD tek par\u00e7a izleyin.",
-        "fileSize": 26065,
+        "fileSize": 27007,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
