@@ -1,4 +1,6 @@
 {
+  "_version": 1,
+  "_updated": "2026-10-05T21:40:00Z",
   "base_url": "https://cinejoy.to",
   "mirrors": [
     "https://cinejoy.to",
@@ -13,5 +15,32 @@
     "https://api.shegu.st",
     "https://api.shegu.xyz"
   ],
-  "enc_dec_api": "https://enc-dec.app/api"
+  "enc_dec_api": "https://enc-dec.app/api",
+  "DiziPal": "https://dizipal1586.com",
+  "DiziPalOriginal": "https://dizipal2135.com",
+  "DiziMom": "https://www.dizimom.wiki",
+  "DiziBox": "https://www.dizibox.live",
+  "Dizilla": "https://dizilla.now",
+  "DiziYou": "https://www.diziyou.one",
+  "Dizipod": "https://dizipod.com",
+  "Ddizi": "https://www.ddizi.im",
+  "DomatesTV": "https://domatestv.com",
+  "DominoTV": "http://dominotv58.site/admin_panel",
+  "FilmEkseni": "https://filmekseni.vip",
+  "FilmMakinesi": "https://filmmakinesi.to",
+  "FilmModu": "https://www.filmmodu.one",
+  "FullHDFilm": "https://hdfilm.us",
+  "FullHDFilmizlesene": "https://www.fullhdfilmizlesene.now",
+  "HDFilmCehennemi": "https://www.hdfilmcehennemi.nl",
+  "HDFilmcehennemiLand": "https://www.hdfilmcehennemi.land",
+  "JetFilmizle": "https://jetfilmizle.now",
+  "KultFilmler": "https://kultfilmler.net",
+  "SelcukFlix": "https://selcukflix.com",
+  "SetFilmIzle": "https://www.setfilmizle.ltd",
+  "SezonlukDizi": "https://sezonlukdizi.cc",
+  "SinemaCX": "https://sinemacc.com",
+  "Trdiziizle": "https://www.trdiziizle.tv/tr2",
+  "WebDramaTurkey": "https://webdramaturkey2.com",
+  "WebteIzle": "https://webteizle.info",
+  "YabanciDizi": "https://yabancidizi.news"
 }
