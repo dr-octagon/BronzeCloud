@@ -612,29 +612,6 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/plt-stream-bc_v100.cs3",
-        "status": 1,
-        "version": 100,
-        "name": "plt stream-bc",
-        "internalName": "plt-stream-bc",
-        "authors": [
-            "pltmustafa",
-            "Dr.Octagon"
-        ],
-        "description": "Evrensel \u00e7oklu kaynak film/dizi motoru (70+ kaynak) ve ak\u0131ll\u0131 aray\u00fcz \u00f6zellikleri (Film Koleksiyonlar\u0131, Oyuncu Profilleri ve Gelecek B\u00f6l\u00fcm Takvimi). Orijinal Geli\u015ftirici: pltmustafa. BronzeCloud uyarlamas\u0131.",
-        "fileSize": 1059003,
-        "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
-        "language": "tr",
-        "tvTypes": [
-            "Movie",
-            "TvSeries",
-            "Anime",
-            "Documentary"
-        ],
-        "iconUrl": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/plt-stream-bc.png",
-        "apiVersion": 1
-    },
-    {
         "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/Puhu_v4.cs3",
         "status": 1,
         "version": 4,

@@ -581,28 +581,5 @@
     ],
     "iconUrl": "https://www.google.com/s2/favicons?domain=webteizle3.xyz&sz=%size%",
     "apiVersion": 1
-  },
-  {
-    "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/plt-stream-bc_v100.cs3",
-    "status": 1,
-    "version": 100,
-    "name": "plt stream-bc",
-    "internalName": "plt-stream-bc",
-    "authors": [
-      "pltmustafa",
-      "Dr.Octagon"
-    ],
-    "description": "Evrensel çoklu kaynak film/dizi motoru (70+ kaynak) ve akıllı arayüz özellikleri (Film Koleksiyonları, Oyuncu Profilleri ve Gelecek Bölüm Takvimi). Orijinal Geliştirici: pltmustafa. BronzeCloud uyarlaması.",
-    "fileSize": 1059003,
-    "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
-    "language": "tr",
-    "tvTypes": [
-      "Movie",
-      "TvSeries",
-      "Anime",
-      "Documentary"
-    ],
-    "iconUrl": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/plt-stream-bc.png",
-    "apiVersion": 1
   }
 ]
