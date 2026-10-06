@@ -141,9 +141,9 @@
     "apiVersion": 1
   },
   {
-    "url": "https://fastly.jsdelivr.net/gh/Dr.Octagon/cloudstream-turkish@builds/DiziPal.cs3",
+    "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/DiziPal_v115.cs3",
     "status": 1,
-    "version": 105,
+    "version": 115,
     "name": "DiziPal",
     "internalName": "DiziPal",
     "authors": [
@@ -151,7 +151,7 @@
       "muratcesmecioglu"
     ],
     "description": "en yeni dizileri güvenli ve hızlı şekilde sunar.",
-    "fileSize": 29478,
+    "fileSize": 68603,
     "repositoryUrl": "https://github.com/Dr-Octagon/cloudstream-turkish",
     "language": "tr",
     "tvTypes": [
@@ -280,9 +280,9 @@
     "apiVersion": 1
   },
   {
-    "url": "https://fastly.jsdelivr.net/gh/Dr.Octagon/cloudstream-turkish@builds/HDFilmCehennemi.cs3",
+    "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/HDFilmCehennemi_v54.cs3",
     "status": 1,
-    "version": 48,
+    "version": 54,
     "name": "HDFilmCehennemi",
     "internalName": "HDFilmCehennemi",
     "authors": [
@@ -290,7 +290,7 @@
       "keyiflerolsun"
     ],
     "description": "Türkiye'nin en hızlı hd film izleme sitesi",
-    "fileSize": 31661,
+    "fileSize": 70467,
     "repositoryUrl": "https://github.com/Dr-Octagon/cloudstream-turkish",
     "language": "tr",
     "tvTypes": [
