@@ -339,23 +339,22 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/DomatesTV_v10.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/DomatesTV_v11.cs3",
         "status": 1,
-        "version": 10,
+        "version": 11,
         "name": "DomatesTV",
         "internalName": "DomatesTV",
         "authors": [
             "Dr.Octagon",
             "BronzeCloud"
         ],
-        "description": "DomatesTV - 600+ Canl\u0131 TV kanal\u0131 ve Netflix, Disney+, HBO, Prime yap\u0131m\u0131 binlerce film ve dizi.",
-        "fileSize": 98580,
+        "description": "DomatesTV - Netflix, Disney+, HBO, Prime yap\u0131m\u0131 binlerce film ve dizi.",
+        "fileSize": 88533,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
             "TvSeries",
-            "Movie",
-            "Live"
+            "Movie"
         ],
         "iconUrl": "https://raw.githubusercontent.com/keyiflerolsun/Cloudstream-BronzeCloud/master/logos/domatestv.png",
         "apiVersion": 1
