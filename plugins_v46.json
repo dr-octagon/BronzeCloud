@@ -194,9 +194,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/DiziBox_v28.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/DiziBox_v29.cs3",
         "status": 1,
-        "version": 28,
+        "version": 29,
         "name": "DiziBox",
         "internalName": "DiziBox",
         "authors": [
@@ -204,7 +204,7 @@
             "Dr.Octagon"
         ],
         "description": "Yabancı Dizi izle, Tüm yabancı dizilerin yeni ve eski sezonlarını full hd izleyebileceğiniz elit site.",
-        "fileSize": 37872,
+        "fileSize": 38007,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -214,9 +214,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/Dizilla_v94.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/Dizilla_v95.cs3",
         "status": 1,
-        "version": 94,
+        "version": 95,
         "name": "Dizilla",
         "internalName": "Dizilla",
         "authors": [
@@ -224,7 +224,7 @@
             "Dr.Octagon"
         ],
         "description": "Dizilla tüm yabancı dizileri ücretsiz olarak Türkçe Dublaj ve altyazılı seçenekleri ile 1080P kalite izleyebileceğiniz yeni nesil yabancı dizi izleme siteniz.",
-        "fileSize": 40929,
+        "fileSize": 41077,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -466,9 +466,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/FullHDFilmizlesene_v35.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/FullHDFilmizlesene_v36.cs3",
         "status": 1,
-        "version": 35,
+        "version": 36,
         "name": "FullHDFilmizlesene",
         "internalName": "FullHDFilmizlesene",
         "authors": [
@@ -476,7 +476,7 @@
             "Dr.Octagon"
         ],
         "description": "Sinema zevkini evinize kadar getirdik. Türkiye'nin lider Film sitesinde, en yeni filmleri Full HD izleyin.",
-        "fileSize": 43604,
+        "fileSize": 43730,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -486,9 +486,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/HDFilmCehennemi_v52.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/HDFilmCehennemi_v53.cs3",
         "status": 1,
-        "version": 52,
+        "version": 53,
         "name": "HDFilmCehennemi",
         "internalName": "HDFilmCehennemi",
         "authors": [
@@ -497,7 +497,7 @@
             "Dr.Octagon"
         ],
         "description": "Türkiye'nin en hızlı hd film izleme sitesi",
-        "fileSize": 35087,
+        "fileSize": 35211,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -678,9 +678,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/SelcukFlix_v1.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/SelcukFlix_v2.cs3",
         "status": 1,
-        "version": 1,
+        "version": 2,
         "name": "SelcukFlix",
         "internalName": "SelcukFlix",
         "authors": [
@@ -688,7 +688,7 @@
             "wGodfather"
         ],
         "description": "SelcukFlix film ve dizi eklentisi. Şifreli katalog API'si, sayfalama, çoklu kaynak ve altyazı desteği içerir.",
-        "fileSize": 32524,
+        "fileSize": 32719,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -699,9 +699,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/SetFilmIzle_v37.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/SetFilmIzle_v38.cs3",
         "status": 1,
-        "version": 37,
+        "version": 38,
         "name": "SetFilmIzle",
         "internalName": "SetFilmIzle",
         "authors": [
@@ -709,7 +709,7 @@
             "Dr.Octagon"
         ],
         "description": "Setfilmizle sitemizde, donma yaşamadan Türkçe dublaj ve altyazılı filmleri ile dizileri muhteşem 1080p full HD kalitesinde izleyebilirsiniz.",
-        "fileSize": 47511,
+        "fileSize": 47690,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -927,16 +927,16 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/YabanciDizi_v6.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/YabanciDizi_v7.cs3",
         "status": 1,
-        "version": 6,
+        "version": 7,
         "name": "YabanciDizi",
         "internalName": "YabanciDizi",
         "authors": [
             "Dr.Octagon"
         ],
         "description": "Yabancı dizi izle, yabancı diziler ve filmler full HD 1080p kalitesinde Türkçe altyazılı ve dublajlı yabancidizi.news adresinde.",
-        "fileSize": 63009,
+        "fileSize": 63153,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
