@@ -10,8 +10,9 @@
     "https://cinejoy.net",
     "https://cinejoy.xyz"
   ],
-  "api_url": "https://api.shegu.st",
+  "api_url": "https://api.wing.st",
   "api_servers": [
+    "https://api.wing.st",
     "https://api.shegu.st",
     "https://api.shegu.xyz"
   ],
