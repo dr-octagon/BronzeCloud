@@ -763,16 +763,16 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/SeyirTURK_v5.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/SeyirTURK_v6.cs3",
         "status": 1,
-        "version": 5,
+        "version": 6,
         "name": "SeyirTURK",
         "internalName": "SeyirTURK",
         "authors": [
             "Dr.Octagon"
         ],
         "description": "SeyirTURK - Film, Dizi, Canl\u0131 TV ve Ar\u015fiv Eklentisi (Dinamik Backend ve \u00c7oklu Kaynak Deste\u011fi)",
-        "fileSize": 87327,
+        "fileSize": 89126,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
