@@ -194,6 +194,28 @@
         "apiVersion": 1
     },
     {
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/Dizibal_v1.cs3",
+        "status": 1,
+        "version": 1,
+        "name": "Dizibal",
+        "internalName": "Dizibal",
+        "authors": [
+            "Dr.Octagon",
+            "wGodfather"
+        ],
+        "description": "DiziBal - Yabanc\u0131 dizi, film ve anime ar\u015fivi full HD T\u00fcrk\u00e7e altyaz\u0131l\u0131 ve dublajl\u0131.",
+        "fileSize": 37605,
+        "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
+        "language": "tr",
+        "tvTypes": [
+            "TvSeries",
+            "Movie",
+            "Anime"
+        ],
+        "iconUrl": "https://www.google.com/s2/favicons?domain=dizibal.org&sz=%size%",
+        "apiVersion": 1
+    },
+    {
         "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/DiziBox_v29.cs3",
         "status": 1,
         "version": 29,
