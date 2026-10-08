@@ -81,9 +81,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/BOAT_v39.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/BOAT_v40.cs3",
         "status": 1,
-        "version": 39,
+        "version": 40,
         "name": "BOAT",
         "internalName": "BOAT",
         "authors": [
@@ -126,9 +126,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/CineStream_v538.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/CineStream_v539.cs3",
         "status": 1,
-        "version": 538,
+        "version": 539,
         "name": "CineStream",
         "internalName": "CineStream",
         "authors": [
