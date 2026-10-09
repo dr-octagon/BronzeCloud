@@ -509,9 +509,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/FullHDFilmizlesene_v36.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/FullHDFilmizlesene_v37.cs3",
         "status": 1,
-        "version": 36,
+        "version": 37,
         "name": "FullHDFilmizlesene",
         "internalName": "FullHDFilmizlesene",
         "authors": [
@@ -519,7 +519,7 @@
             "Dr.Octagon"
         ],
         "description": "Sinema zevkini evinize kadar getirdik. T\u00fcrkiye'nin lider Film sitesinde, en yeni filmleri Full HD izleyin.",
-        "fileSize": 43730,
+        "fileSize": 48842,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -721,9 +721,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/SelcukFlix_v2.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/SelcukFlix_v3.cs3",
         "status": 1,
-        "version": 2,
+        "version": 3,
         "name": "SelcukFlix",
         "internalName": "SelcukFlix",
         "authors": [
@@ -731,14 +731,14 @@
             "wGodfather"
         ],
         "description": "SelcukFlix film ve dizi eklentisi. \u015eifreli katalog API'si, sayfalama, \u00e7oklu kaynak ve altyaz\u0131 deste\u011fi i\u00e7erir.",
-        "fileSize": 32719,
+        "fileSize": 33797,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
             "Movie",
             "TvSeries"
         ],
-        "iconUrl": "https://www.google.com/s2/favicons?domain=selcukflix.com&sz=%size%",
+        "iconUrl": "https://www.google.com/s2/favicons?domain=selcukflix.app&sz=%size%",
         "apiVersion": 1
     },
     {
