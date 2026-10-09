@@ -848,9 +848,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/THYTV_v3.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/THYTV_v4.cs3",
         "status": 1,
-        "version": 3,
+        "version": 4,
         "name": "THYTV",
         "internalName": "THYTV",
         "authors": [
@@ -858,7 +858,7 @@
             "BronzeCloud"
         ],
         "description": "THY TV - Ulusal TV, G\u00fcn\u00fcn Ma\u00e7lar\u0131 ve Pop\u00fcler Kanallar.",
-        "fileSize": 40123,
+        "fileSize": 39965,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
