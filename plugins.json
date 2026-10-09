@@ -848,17 +848,17 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/THYTV_v1.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/THYTV_v2.cs3",
         "status": 1,
-        "version": 1,
-        "name": "THY TV",
+        "version": 2,
+        "name": "THYTV",
         "internalName": "THYTV",
         "authors": [
             "Dr.Octagon",
             "BronzeCloud"
         ],
-        "description": "THY TV - Canlı Spor (beIN, S-Sport, TiViBu, SmartSpor), Ulusal Canlı TV ve Günün Canlı Maçları.",
-        "fileSize": 39588,
+        "description": "THY TV - Ulusal TV, Günün Maçları ve Popüler Kanallar.",
+        "fileSize": 40920,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
