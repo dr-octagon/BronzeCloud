@@ -908,6 +908,26 @@
         "apiVersion": 1
     },
     {
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/UltraFilm_v1.cs3",
+        "status": 1,
+        "version": 1,
+        "name": "UltraFilm",
+        "internalName": "UltraFilm",
+        "authors": [
+            "Dr.Octagon",
+            "wGodfather"
+        ],
+        "description": "UltraFilm film eklentisi. Sonsuz kayd\u0131rma, \u00e7oklu kaynak, Hotstream ve YouTube fragman deste\u011fi i\u00e7erir.",
+        "fileSize": 31603,
+        "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
+        "language": "tr",
+        "tvTypes": [
+            "Movie"
+        ],
+        "iconUrl": "https://www.google.com/s2/favicons?domain=ufilmizle.com&sz=%size%",
+        "apiVersion": 1
+    },
+    {
         "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/Vavoo_v7.cs3",
         "status": 1,
         "version": 7,
