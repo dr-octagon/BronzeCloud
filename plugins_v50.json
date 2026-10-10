@@ -507,6 +507,26 @@
         "apiVersion": 1
     },
     {
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/FilmiFullizle_v1.cs3",
+        "status": 1,
+        "version": 1,
+        "name": "FilmiFullizle",
+        "internalName": "FilmiFullizle",
+        "authors": [
+            "Dr.Octagon",
+            "wGodfather"
+        ],
+        "description": "FilmiFullizle (filmifullizle.news) film eklentisi. Sonsuz kayd\u0131rma, dublaj/altyaz\u0131, Vidmoly ve OkRu oynat\u0131c\u0131 deste\u011fi i\u00e7erir.",
+        "fileSize": 28106,
+        "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
+        "language": "tr",
+        "tvTypes": [
+            "Movie"
+        ],
+        "iconUrl": "https://www.google.com/s2/favicons?domain=filmifullizle.news&sz=%size%",
+        "apiVersion": 1
+    },
+    {
         "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/FilmMakinesi_v64.cs3",
         "status": 1,
         "version": 64,
