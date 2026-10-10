@@ -466,9 +466,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/Filmizle_v1.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/Filmizle_v2.cs3",
         "status": 1,
-        "version": 1,
+        "version": 2,
         "name": "Filmizle",
         "internalName": "Filmizle",
         "authors": [
@@ -476,7 +476,7 @@
             "wGodfather"
         ],
         "description": "Filmci Baba (filmizle.ink) film ve dizi eklentisi. Sonsuz kayd\u0131rma, Hotstream ve altyaz\u0131 deste\u011fi i\u00e7erir.",
-        "fileSize": 37534,
+        "fileSize": 37610,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
