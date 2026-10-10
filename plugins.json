@@ -908,9 +908,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/UltraFilm_v2.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/UltraFilm_v3.cs3",
         "status": 1,
-        "version": 2,
+        "version": 3,
         "name": "UltraFilm",
         "internalName": "UltraFilm",
         "authors": [
@@ -918,7 +918,7 @@
             "wGodfather"
         ],
         "description": "UltraFilm film eklentisi. Sonsuz kayd\u0131rma, \u00e7oklu kaynak, Hotstream ve YouTube fragman deste\u011fi i\u00e7erir.",
-        "fileSize": 32725,
+        "fileSize": 37963,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
