@@ -425,6 +425,26 @@
         "apiVersion": 1
     },
     {
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/FilmDozu_v1.cs3",
+        "status": 1,
+        "version": 1,
+        "name": "FilmDozu",
+        "internalName": "FilmDozu",
+        "authors": [
+            "Dr.Octagon",
+            "wGodfather"
+        ],
+        "description": "FilmDozu film eklentisi. Sonsuz kayd\u0131rma, \u00e7oklu kaynak, VidMoly ve Ok.Ru deste\u011fi i\u00e7erir.",
+        "fileSize": 36467,
+        "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
+        "language": "tr",
+        "tvTypes": [
+            "Movie"
+        ],
+        "iconUrl": "https://www.google.com/s2/favicons?domain=filmdozu.com&sz=%size%",
+        "apiVersion": 1
+    },
+    {
         "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/FilmEkseni_v4.cs3",
         "status": 1,
         "version": 4,
