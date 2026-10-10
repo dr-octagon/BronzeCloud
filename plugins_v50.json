@@ -929,9 +929,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/Superfilmizle_v2.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/Superfilmizle_v3.cs3",
         "status": 1,
-        "version": 2,
+        "version": 3,
         "name": "Superfilmizle",
         "internalName": "Superfilmizle",
         "authors": [
@@ -939,7 +939,7 @@
             "wGodfather"
         ],
         "description": "Superfilmizle (superfilmizle.org) film ve dizi eklentisi. Sonsuz kayd\u0131rma, dublaj/altyaz\u0131, Pilavyer ve Full HD oynat\u0131c\u0131 deste\u011fi i\u00e7erir.",
-        "fileSize": 40340,
+        "fileSize": 40567,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
