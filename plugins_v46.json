@@ -612,6 +612,27 @@
         "apiVersion": 1
     },
     {
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/FourKDizi_v1.cs3",
+        "status": 1,
+        "version": 1,
+        "name": "FourKDizi",
+        "internalName": "FourKDizi",
+        "authors": [
+            "Dr.Octagon",
+            "wGodfather"
+        ],
+        "description": "4KDizi (4kdizi.com) - 4K ve Full HD dizi ve film izleme platformu.",
+        "fileSize": 50893,
+        "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
+        "language": "tr",
+        "tvTypes": [
+            "Movie",
+            "TvSeries"
+        ],
+        "iconUrl": "https://www.google.com/s2/favicons?domain=4kdizi.com&sz=%size%",
+        "apiVersion": 1
+    },
+    {
         "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/FullHDFilm_v38.cs3",
         "status": 1,
         "version": 38,
