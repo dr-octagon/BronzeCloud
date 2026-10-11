@@ -258,9 +258,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/Diziizle_v1.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/Diziizle_v2.cs3",
         "status": 1,
-        "version": 1,
+        "version": 2,
         "name": "Diziizle",
         "internalName": "Diziizle",
         "authors": [
@@ -268,7 +268,7 @@
             "wGodfather"
         ],
         "description": "Diziizle (diziizle.wiki) - G\u00fcncel dizi ve anime ar\u015fivi full HD T\u00fcrk\u00e7e altyaz\u0131l\u0131 ve dublajl\u0131.",
-        "fileSize": 38289,
+        "fileSize": 38148,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
