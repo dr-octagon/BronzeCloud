@@ -194,6 +194,27 @@
         "apiVersion": 1
     },
     {
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/Dizi77_v1.cs3",
+        "status": 1,
+        "version": 1,
+        "name": "Dizi77",
+        "internalName": "Dizi77",
+        "authors": [
+            "Dr.Octagon",
+            "wGodfather"
+        ],
+        "description": "Dizi77 (dizi77.life) - Y\u00fcksek kalitede yabanc\u0131 dizi ve film izleme platformu.",
+        "fileSize": 38153,
+        "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
+        "language": "tr",
+        "tvTypes": [
+            "TvSeries",
+            "Movie"
+        ],
+        "iconUrl": "https://www.google.com/s2/favicons?domain=dizi77.life&sz=%size%",
+        "apiVersion": 1
+    },
+    {
         "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/Dizibal_v1.cs3",
         "status": 1,
         "version": 1,
