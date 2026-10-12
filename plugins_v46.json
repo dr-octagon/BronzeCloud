@@ -930,9 +930,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/SezonlukDizi_v15.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/SezonlukDizi_v16.cs3",
         "status": 1,
-        "version": 15,
+        "version": 16,
         "name": "SezonlukDizi",
         "internalName": "SezonlukDizi",
         "authors": [
@@ -941,7 +941,7 @@
             "Dr.Octagon"
         ],
         "description": "G\u00fcncel ve eski dizileri en iyi g\u00f6r\u00fcnt\u00fc kalitesiyle bulabilece\u011finiz yabanc\u0131 dizi izleme siteniz.",
-        "fileSize": 52811,
+        "fileSize": 53582,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
