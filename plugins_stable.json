@@ -152,9 +152,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/CizgiMax_v19.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/CizgiMax_v20.cs3",
         "status": 1,
-        "version": 19,
+        "version": 20,
         "name": "CizgiMax",
         "internalName": "CizgiMax",
         "authors": [
@@ -162,13 +162,14 @@
             "Dr.Octagon"
         ],
         "description": "\u00c7izgiMax ile \u00c7izgi Film izlemek art\u0131k daha kolay, donmadan full hd ve reklams\u0131z bir sitedir, i\u00e7erisinde 700 den fazla \u00e7izgi film olan, Bu site bu i\u015fi profesyonelce yap\u0131yor.",
-        "fileSize": 39970,
+        "fileSize": 65649,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
             "Cartoon",
             "Anime",
-            "Movie"
+            "Movie",
+            "TvSeries"
         ],
         "iconUrl": "https://www.google.com/s2/favicons?domain=cizgimax.online&sz=%size%",
         "apiVersion": 1
