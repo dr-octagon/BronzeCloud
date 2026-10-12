@@ -407,6 +407,27 @@
         "apiVersion": 1
     },
     {
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/Dizipub_v1.cs3",
+        "status": 1,
+        "version": 1,
+        "name": "Dizipub",
+        "internalName": "Dizipub",
+        "authors": [
+            "Dr.Octagon",
+            "wGodfather"
+        ],
+        "description": "Dizipub (dizipub3.life) - Yabanc\u0131 dizi ve anime izleme platformu.",
+        "fileSize": 41335,
+        "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
+        "language": "tr",
+        "tvTypes": [
+            "TvSeries",
+            "Anime"
+        ],
+        "iconUrl": "https://www.google.com/s2/favicons?domain=dizipub3.life&sz=%size%",
+        "apiVersion": 1
+    },
+    {
         "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/DiziYou_v28.cs3",
         "status": 1,
         "version": 28,
