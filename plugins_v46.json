@@ -865,6 +865,27 @@
         "apiVersion": 1
     },
     {
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/LoveFilmizle_v1.cs3",
+        "status": 1,
+        "version": 1,
+        "name": "LoveFilmizle",
+        "internalName": "LoveFilmizle",
+        "authors": [
+            "Dr.Octagon",
+            "wGodfather"
+        ],
+        "description": "LoveFilmizle (lovefilmizle.net) - Film ve yabanc\u0131 diziler, T\u00fcrk\u00e7e dublaj ve altyaz\u0131 se\u00e7enekleriyle.",
+        "fileSize": 41645,
+        "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
+        "language": "tr",
+        "tvTypes": [
+            "Movie",
+            "TvSeries"
+        ],
+        "iconUrl": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/logos/lovefilmizle.png",
+        "apiVersion": 1
+    },
+    {
         "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/Puhu_v4.cs3",
         "status": 1,
         "version": 4,
