@@ -429,6 +429,26 @@
         "apiVersion": 1
     },
     {
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/Diziroll_v1.cs3",
+        "status": 1,
+        "version": 1,
+        "name": "Diziroll",
+        "internalName": "Diziroll",
+        "authors": [
+            "Dr.Octagon",
+            "wGodfather"
+        ],
+        "description": "Diziroll (diziroll.club) - Yabanc\u0131 diziler, g\u00fcncel b\u00f6l\u00fcmler, T\u00fcrk\u00e7e dublaj ve altyaz\u0131 se\u00e7enekleriyle.",
+        "fileSize": 37009,
+        "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
+        "language": "tr",
+        "tvTypes": [
+            "TvSeries"
+        ],
+        "iconUrl": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/logos/diziroll.png",
+        "apiVersion": 1
+    },
+    {
         "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/DiziYou_v28.cs3",
         "status": 1,
         "version": 28,
