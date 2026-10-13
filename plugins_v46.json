@@ -634,9 +634,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/FrameXTV_v2.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/FrameXTV_v3.cs3",
         "status": 1,
-        "version": 2,
+        "version": 3,
         "name": "FrameXTV",
         "internalName": "FrameXTV",
         "authors": [
@@ -644,7 +644,7 @@
             "wGodfather"
         ],
         "description": "FrameXTV (framextv.xyz) - 4K Film, Dizi ve Anime platformu.",
-        "fileSize": 37966,
+        "fileSize": 38939,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
