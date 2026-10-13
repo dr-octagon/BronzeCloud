@@ -302,6 +302,28 @@
         "apiVersion": 1
     },
     {
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/DiziKorea_v1.cs3",
+        "status": 1,
+        "version": 1,
+        "name": "DiziKorea",
+        "internalName": "DiziKorea",
+        "authors": [
+            "Dr.Octagon",
+            "wGodfather"
+        ],
+        "description": "DiziKorea (dizikorea3.com) - Kore, \u00c7in, Japon ve Asya dizileri ile filmleri.",
+        "fileSize": 34215,
+        "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
+        "language": "tr",
+        "tvTypes": [
+            "TvSeries",
+            "Movie",
+            "AsianDrama"
+        ],
+        "iconUrl": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/logos/dizikorea.png",
+        "apiVersion": 1
+    },
+    {
         "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/Dizilla_v95.cs3",
         "status": 1,
         "version": 95,
