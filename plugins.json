@@ -175,9 +175,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/CizgiVeDizi_v3.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/CizgiVeDizi_v4.cs3",
         "status": 1,
-        "version": 3,
+        "version": 4,
         "name": "CizgiVeDizi",
         "internalName": "CizgiVeDizi",
         "authors": [
@@ -185,7 +185,7 @@
             "wGodfather"
         ],
         "description": "\u00c7izgi ve Dizi (cizgivedizi.net) - \u00c7izgi dizi, anime, TV dizileri ve animasyon filmleri ar\u015fivi.",
-        "fileSize": 34745,
+        "fileSize": 39679,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
