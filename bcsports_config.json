@@ -1,5 +1,5 @@
 {
-  "updated_at": 1792165597,
+  "updated_at": 1792176902,
   "sources": {
     "source_a": {
       "origin": "https://monotv547.com",
@@ -14,8 +14,8 @@
     "source_c": {
       "origin": "https://leograndtv10.com",
       "referer": "https://leograndtv10.com/",
-      "player": "https://iframe.bc4.live/player/player2.php?id=",
-      "cdn_referer": "https://iframe.bc4.live/"
+      "player": "https://bc4liveiframe1001.shop/player/player2.php?id=",
+      "cdn_referer": "https://bc4liveiframe1001.shop/"
     },
     "source_d": {
       "origin": "https://kolaybettv170.com",
