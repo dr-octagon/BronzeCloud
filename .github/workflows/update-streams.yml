@@ -1,0 +1,55 @@
+name: Canlı Yayın Linklerini Güncelle
+
+on:
+  schedule:
+    - cron: '0 */4 * * *'
+  workflow_dispatch:
+
+jobs:
+  update-streams:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Depoyu Çek
+        uses: actions/checkout@v4
+        with:
+          repository: "dr-octagon/Cloudstream-BronzeCloud-Source"
+          token: ${{ secrets.DIST_REPO_TOKEN }}
+          ref: "master"
+
+      - name: Python 3.11 Kur
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Botu Çalıştır ve Linkleri Güncelle
+        run: |
+          python stream_updater.py
+
+      - name: Değişiklikleri Kaydet ve Pushla
+        run: |
+          git config --local user.name "GitHub Actions"
+          git config --local user.email "actions@github.com"
+          git add */channels.m3u8 BCSports/bcsports_config.json urls.json domains.json health_report.json || true
+          git commit -m "🛠️ Auto: Canlı yayın ve sağlayıcı domainleri güncellendi." || echo "Değişiklik yok"
+          for i in 1 2 3; do
+            git pull --rebase && git push && break || sleep 5
+          done || echo "Push edilecek değişiklik yok"
+
+      - name: Dağıtım Deposunu Güncelle (Builds)
+        if: success()
+        run: |
+          git clone --depth 1 https://x-access-token:${{ secrets.DIST_REPO_TOKEN }}@github.com/dr-octagon/Cloudstream-BronzeCloud.git -b builds dist_builds || true
+          if [ -d "dist_builds" ]; then
+            cp BCSports/channels.m3u8 dist_builds/channels.m3u8 || true
+            cp BCSports/bcsports_config.json dist_builds/bcsports_config.json || true
+            cp urls.json dist_builds/urls.json || true
+            cp domains.json dist_builds/domains.json || true
+            cd dist_builds
+            git config --local user.name "GitHub Actions"
+            git config --local user.email "actions@github.com"
+            git add channels.m3u8 bcsports_config.json urls.json domains.json
+            git commit -m "🛠️ Auto: Canlı yayın ve domain konfigürasyonu güncellendi." || echo "Değişiklik yok"
+            for i in 1 2 3; do
+              git pull --rebase origin builds && git push origin builds && break || sleep 5
+            done || echo "Push edilecek değişiklik yok"
+          fi
