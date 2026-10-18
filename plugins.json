@@ -29,7 +29,7 @@
             "wGodfather"
         ],
         "description": "Anizium - Pop\u00fcler anime serileri ve anime filmleri full HD/4K kalitede izleyin.",
-        "fileSize": 33767,
+        "fileSize": 33771,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -51,7 +51,7 @@
             "Dr.Octagon"
         ],
         "description": "BC Sports IPTV ve canl\u0131 ma\u00e7 yay\u0131nlar\u0131.",
-        "fileSize": 146376,
+        "fileSize": 146384,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -71,7 +71,7 @@
             "Dr.Octagon"
         ],
         "description": "En yeni belgeseller, t\u00fcrk\u00e7e altyaz\u0131l\u0131 yada dublaj olarak 1080p kalitesinde HD belgesel izle.",
-        "fileSize": 38724,
+        "fileSize": 38759,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -91,7 +91,7 @@
             "Dr.Octagon"
         ],
         "description": "B.O.A.T - Film, dizi ve torrent kaynaklar\u0131; bilinen d\u00fc\u015f\u00fck kalite elenir, do\u011frulanamayan kalite belirtilir",
-        "fileSize": 746097,
+        "fileSize": 746089,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -114,7 +114,7 @@
             "Dr.Octagon"
         ],
         "description": "4K HDR kaynaklar, T\u00fcrk\u00e7e altyaz\u0131 deste\u011fi ve zengin TMDb i\u00e7erik detaylar\u0131 ile Film ve Dizi izleme eklentisi.",
-        "fileSize": 96162,
+        "fileSize": 96186,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -138,7 +138,7 @@
             "megix"
         ],
         "description": "Film, Dizi, Asya Dizileri ve Torrentler i\u00e7in hepsi bir arada \u00e7\u00f6z\u00fcm",
-        "fileSize": 787726,
+        "fileSize": 787748,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -162,7 +162,7 @@
             "Dr.Octagon"
         ],
         "description": "\u00c7izgiMax ile \u00c7izgi Film izlemek art\u0131k daha kolay, donmadan full hd ve reklams\u0131z bir sitedir, i\u00e7erisinde 700 den fazla \u00e7izgi film olan, Bu site bu i\u015fi profesyonelce yap\u0131yor.",
-        "fileSize": 67413,
+        "fileSize": 67422,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -185,7 +185,7 @@
             "wGodfather"
         ],
         "description": "\u00c7izgi ve Dizi (cizgivedizi.net) - \u00c7izgi dizi, anime, TV dizileri ve animasyon filmleri ar\u015fivi.",
-        "fileSize": 45042,
+        "fileSize": 45073,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -208,7 +208,7 @@
             "Dr.Octagon"
         ],
         "description": "DDizi.im i\u00e7in Cloudstream eklentisi",
-        "fileSize": 26352,
+        "fileSize": 26369,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -228,7 +228,7 @@
             "wGodfather"
         ],
         "description": "Dizi77 (dizi77.life) - Y\u00fcksek kalitede yabanc\u0131 dizi ve film izleme platformu.",
-        "fileSize": 40684,
+        "fileSize": 40693,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -249,7 +249,7 @@
             "wGodfather"
         ],
         "description": "DiziBal - Yabanc\u0131 dizi, film ve anime ar\u015fivi full HD T\u00fcrk\u00e7e altyaz\u0131l\u0131 ve dublajl\u0131.",
-        "fileSize": 39342,
+        "fileSize": 39346,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -271,7 +271,7 @@
             "wGodfather"
         ],
         "description": "DiziBol - Yabanc\u0131 dizi, film ve anime ar\u015fivi full HD T\u00fcrk\u00e7e altyaz\u0131l\u0131 ve dublajl\u0131.",
-        "fileSize": 39455,
+        "fileSize": 39445,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -293,13 +293,37 @@
             "Dr.Octagon"
         ],
         "description": "Yabanc\u0131 Dizi izle, T\u00fcm yabanc\u0131 dizilerin yeni ve eski sezonlar\u0131n\u0131 full hd izleyebilece\u011finiz elit site.",
-        "fileSize": 39815,
+        "fileSize": 39843,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
             "TvSeries"
         ],
         "iconUrl": "https://www.google.com/s2/favicons?domain=www.dizibox.live&sz=%size%",
+        "apiVersion": 1
+    },
+    {
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/Dizidad_v1.cs3",
+        "status": 1,
+        "version": 1,
+        "name": "Dizidad",
+        "internalName": "Dizidad",
+        "authors": [
+            "Dr.Octagon",
+            "wGodfather"
+        ],
+        "description": "Dizidad (dizidad.com) - Yabanc\u0131 dizi, yerli dizi, film ve anime izleme platformu.",
+        "fileSize": 36212,
+        "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
+        "language": "tr",
+        "tvTypes": [
+            "Movie",
+            "TvSeries",
+            "Anime",
+            "Cartoon",
+            "AsianDrama"
+        ],
+        "iconUrl": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/logos/dizidad.png",
         "apiVersion": 1
     },
     {
@@ -313,7 +337,7 @@
             "wGodfather"
         ],
         "description": "Diziizle (diziizle.wiki) - G\u00fcncel dizi ve anime ar\u015fivi full HD T\u00fcrk\u00e7e altyaz\u0131l\u0131 ve dublajl\u0131.",
-        "fileSize": 39911,
+        "fileSize": 39927,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -335,7 +359,7 @@
             "wGodfather"
         ],
         "description": "DiziKorea (dizikorea3.com) - Kore, \u00c7in, Japon ve Asya dizileri ile filmleri.",
-        "fileSize": 35973,
+        "fileSize": 35986,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -357,7 +381,7 @@
             "Dr.Octagon"
         ],
         "description": "Dizilla t\u00fcm yabanc\u0131 dizileri \u00fccretsiz olarak T\u00fcrk\u00e7e Dublaj ve altyaz\u0131l\u0131 se\u00e7enekleri ile 1080P kalite izleyebilece\u011finiz yeni nesil yabanc\u0131 dizi izleme siteniz.",
-        "fileSize": 43292,
+        "fileSize": 43335,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -377,7 +401,7 @@
             "Dr.Octagon"
         ],
         "description": "Binlerce yerli yabanc\u0131 dizi ar\u015fivi, t\u00fcm sezonlar, kesintisiz b\u00f6l\u00fcmler. Sadece dizi izle, Dizimom heryerde seninle!",
-        "fileSize": 40511,
+        "fileSize": 40525,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -398,7 +422,7 @@
             "Dr.Octagon"
         ],
         "description": "en yeni dizileri g\u00fcvenli ve h\u0131zl\u0131 \u015fekilde sunar.",
-        "fileSize": 47453,
+        "fileSize": 47459,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -420,7 +444,7 @@
             "Dr.Octagon"
         ],
         "description": "en yeni dizileri g\u00fcvenli ve h\u0131zl\u0131 \u015fekilde sunar.",
-        "fileSize": 36865,
+        "fileSize": 36881,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -441,7 +465,7 @@
             "wGodfather"
         ],
         "description": "Dizipod - Orijinal Dilinde T\u00fcrk\u00e7e Altyaz\u0131l\u0131 Yabanc\u0131 dizi ve filmleri full HD kalitede izleyin.",
-        "fileSize": 35595,
+        "fileSize": 35608,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -462,7 +486,7 @@
             "wGodfather"
         ],
         "description": "Diziroll (diziroll.club) - Yabanc\u0131 diziler, g\u00fcncel b\u00f6l\u00fcmler, T\u00fcrk\u00e7e dublaj ve altyaz\u0131 se\u00e7enekleriyle.",
-        "fileSize": 39463,
+        "fileSize": 39495,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -482,7 +506,7 @@
             "wGodfather"
         ],
         "description": "diziwatch (diziwatch.now) - Yabanc\u0131 dizi ve anime izleme platformu.",
-        "fileSize": 35485,
+        "fileSize": 35489,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -505,7 +529,7 @@
             "Dr.Octagon"
         ],
         "description": "Diziyou en kaliteli T\u00fcrk\u00e7e dublaj ve altyaz\u0131l\u0131 yabanc\u0131 dizi izleme sitesidir. G\u00fcncel ve efsanevi dizileri 1080p Full HD kalitede izlemek i\u00e7in hemen t\u0131kla!",
-        "fileSize": 23703,
+        "fileSize": 23705,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -525,7 +549,7 @@
             "BronzeCloud"
         ],
         "description": "DomatesTV - Netflix, Disney+, HBO, Prime yap\u0131m\u0131 binlerce film ve dizi.",
-        "fileSize": 90252,
+        "fileSize": 90266,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -567,7 +591,7 @@
             "wGodfather"
         ],
         "description": "Filmci Baba (filmizle.ink) film ve dizi eklentisi. Sonsuz kayd\u0131rma, Hotstream ve altyaz\u0131 deste\u011fi i\u00e7erir.",
-        "fileSize": 39578,
+        "fileSize": 39587,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -588,7 +612,7 @@
             "wGodfather"
         ],
         "description": "FilmDozu film eklentisi. Sonsuz kayd\u0131rma, \u00e7oklu kaynak, VidMoly ve Ok.Ru deste\u011fi i\u00e7erir.",
-        "fileSize": 38228,
+        "fileSize": 38259,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -608,7 +632,7 @@
             "wGodfather"
         ],
         "description": "FilmEkseni film ve dizi eklentisi. Sayfalama, \u00e7oklu kaynak ve altyaz\u0131 deste\u011fi i\u00e7erir.",
-        "fileSize": 46939,
+        "fileSize": 46946,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -629,7 +653,7 @@
             "wGodfather"
         ],
         "description": "FilmGecesi (filmgecesi.vip) film eklentisi. Sonsuz kayd\u0131rma, Bluray/RapidVid oynat\u0131c\u0131 ve altyaz\u0131 deste\u011fi i\u00e7erir.",
-        "fileSize": 32631,
+        "fileSize": 32640,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -649,7 +673,7 @@
             "wGodfather"
         ],
         "description": "FilmiFullizle (filmifullizle.news) film eklentisi. Sonsuz kayd\u0131rma, dublaj/altyaz\u0131, Vidmoly ve OkRu oynat\u0131c\u0131 deste\u011fi i\u00e7erir.",
-        "fileSize": 42528,
+        "fileSize": 42529,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -670,7 +694,7 @@
             "Dr.Octagon"
         ],
         "description": "Film Makinesi, en yeni ve en g\u00fcncel filmleri sitemizde full HD kalite fark\u0131 ile izleyebilirsiniz. HD film izle denildi\u011finde akla gelen en kaliteli film izleme sitesi.",
-        "fileSize": 36735,
+        "fileSize": 36744,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -691,7 +715,7 @@
             "Dr.Octagon"
         ],
         "description": "Film modun geldiyse y\u00fcksek kalitede en yeni filmleri izle, 1080p izleyebilece\u011finiz reklamsiz film sitesi.",
-        "fileSize": 22279,
+        "fileSize": 22288,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -732,7 +756,7 @@
             "wGodfather"
         ],
         "description": "FrameXTV (framextv.xyz) - 4K Film, Dizi ve Anime platformu.",
-        "fileSize": 40727,
+        "fileSize": 40770,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -754,7 +778,7 @@
             "Dr.Octagon"
         ],
         "description": "Fullhdfilm ile en yeni vizyon filmler Full HD ve kesintisiz film sizlerle. \u00d6zg\u00fcn film ar\u015fivimizle en \u00fcst\u00fcn kaliteli film izle keyfini sunuyoruz.",
-        "fileSize": 33798,
+        "fileSize": 33817,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -775,7 +799,7 @@
             "Dr.Octagon"
         ],
         "description": "Sinema zevkini evinize kadar getirdik. T\u00fcrkiye'nin lider Film sitesinde, en yeni filmleri Full HD izleyin.",
-        "fileSize": 51672,
+        "fileSize": 51698,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -796,7 +820,7 @@
             "Dr.Octagon"
         ],
         "description": "T\u00fcrkiye'nin en h\u0131zl\u0131 hd film izleme sitesi",
-        "fileSize": 36972,
+        "fileSize": 36982,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -817,7 +841,7 @@
             "wGodfather"
         ],
         "description": "HDFilmcehennemi Land - En yeni film ve dizileri donma olmadan full HD kalitede izleyin.",
-        "fileSize": 56587,
+        "fileSize": 56593,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -838,7 +862,7 @@
             "Dr.Octagon"
         ],
         "description": "HD Film Delisi - T\u00fcrk\u00e7e Filmler",
-        "fileSize": 83901,
+        "fileSize": 83927,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -858,7 +882,7 @@
             "Dr.Octagon"
         ],
         "description": "\u0130natBox BronzeCloud Edition - Canl\u0131 kanallar, spor ve diziler burada.",
-        "fileSize": 54448,
+        "fileSize": 54490,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -880,7 +904,7 @@
             "Dr.Octagon"
         ],
         "description": "Binlerce Film \u0130zleme Se\u00e7ene\u011fiyle En \u0130yi Film \u0130zleme Sitesi",
-        "fileSize": 27022,
+        "fileSize": 27053,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -900,7 +924,7 @@
             "Dr.Octagon"
         ],
         "description": "K\u00fclt Filmler \u00f6zenle en iyi filmleri derler ve iyi bir altyaz\u0131l\u0131 film izleme deneyimi sunmay\u0131 ama\u00e7lar",
-        "fileSize": 32440,
+        "fileSize": 32453,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -921,7 +945,7 @@
             "wGodfather"
         ],
         "description": "LoveFilmizle (lovefilmizle.net) - Film ve yabanc\u0131 diziler, T\u00fcrk\u00e7e dublaj ve altyaz\u0131 se\u00e7enekleriyle.",
-        "fileSize": 48835,
+        "fileSize": 48850,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -942,7 +966,7 @@
             "Dr.Octagon"
         ],
         "description": "PuhuTV - En pop\u00fcler yerli ve yabanc\u0131 diziler, Puhu orijinal yap\u0131mlar\u0131, canl\u0131 TV (Star TV, NTV, Kral Pop), ya\u015fam ve \u00e7ocuk i\u00e7erikleri.",
-        "fileSize": 42969,
+        "fileSize": 42993,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -963,7 +987,7 @@
             "Dr.Octagon"
         ],
         "description": "RecTV BronzeCloud Edition v160 - Canl\u0131 TV, Spor, Dizi ve Film",
-        "fileSize": 56291,
+        "fileSize": 56294,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -985,7 +1009,7 @@
             "BronzeCloud"
         ],
         "description": "Reeltu - Trend filmler, g\u00fcncel dizi b\u00f6l\u00fcmleri, pop\u00fcler animeler ve zengin kategoriler.",
-        "fileSize": 95705,
+        "fileSize": 95741,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -1008,7 +1032,7 @@
             "wGodfather"
         ],
         "description": "SelcukFlix film ve dizi eklentisi. \u015eifreli katalog API'si, sayfalama, \u00e7oklu kaynak ve altyaz\u0131 deste\u011fi i\u00e7erir.",
-        "fileSize": 35560,
+        "fileSize": 35589,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -1029,7 +1053,7 @@
             "Dr.Octagon"
         ],
         "description": "Setfilmizle sitemizde, donma ya\u015famadan T\u00fcrk\u00e7e dublaj ve altyaz\u0131l\u0131 filmleri ile dizileri muhte\u015fem 1080p full HD kalitesinde izleyebilirsiniz.",
-        "fileSize": 49407,
+        "fileSize": 49446,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -1049,7 +1073,7 @@
             "Dr.Octagon"
         ],
         "description": "SeyirTURK - Film, Dizi, Canl\u0131 TV ve Ar\u015fiv Eklentisi (Dinamik Backend ve \u00c7oklu Kaynak Deste\u011fi)",
-        "fileSize": 90787,
+        "fileSize": 90804,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -1072,7 +1096,7 @@
             "Dr.Octagon"
         ],
         "description": "G\u00fcncel ve eski dizileri en iyi g\u00f6r\u00fcnt\u00fc kalitesiyle bulabilece\u011finiz yabanc\u0131 dizi izleme siteniz.",
-        "fileSize": 55398,
+        "fileSize": 55448,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -1093,7 +1117,7 @@
             "Dr.Octagon"
         ],
         "description": "G\u00fcncel ve en iyi yabanc\u0131 filmleri y\u00fcksek g\u00f6r\u00fcnt\u00fc kalitesinde, T\u00fcrk\u00e7e dublaj ve altyaz\u0131 se\u00e7enekleriyle filmleri full izleyin. (SinemaCC)",
-        "fileSize": 27557,
+        "fileSize": 27578,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -1114,7 +1138,7 @@
             "Dr.Octagon"
         ],
         "description": "Sinewix | \u00dccretsiz Film - Dizi - Anime \u0130zleme Uygulamas\u0131",
-        "fileSize": 32756,
+        "fileSize": 32769,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -1136,7 +1160,7 @@
             "Dr.Octagon"
         ],
         "description": "TLC tr",
-        "fileSize": 19997,
+        "fileSize": 20026,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -1156,7 +1180,7 @@
             "wGodfather"
         ],
         "description": "Trdiziizle - Yerli ve yabanc\u0131 dizileri full HD tek par\u00e7a izleyin.",
-        "fileSize": 37466,
+        "fileSize": 37483,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -1176,7 +1200,7 @@
             "wGodfather"
         ],
         "description": "UltraFilm film eklentisi. Sonsuz kayd\u0131rma, \u00e7oklu kaynak, Hotstream ve YouTube fragman deste\u011fi i\u00e7erir.",
-        "fileSize": 39734,
+        "fileSize": 39760,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -1195,7 +1219,7 @@
             "Dr.Octagon"
         ],
         "description": "Vavoo canl\u0131 TV eklentisi. T\u00fcrkiye ve Arnavutluk kanallar\u0131 kategorili olarak listelenir.",
-        "fileSize": 51688,
+        "fileSize": 51717,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "tvTypes": [
             "Live"
@@ -1214,7 +1238,7 @@
             "Dr.Octagon"
         ],
         "description": "Movies2Watch is a Free Movies streaming site with zero ads. We let you watch movies online without having to register or paying, with over 10000 movies and TV-Series.",
-        "fileSize": 31122,
+        "fileSize": 31124,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "en",
         "tvTypes": [
@@ -1235,7 +1259,7 @@
             "Dr.Octagon"
         ],
         "description": "WebDramaTurkey - Asya dizileri, Kore, \u00c7in, Japon dizileri, Asya filmleri ve animeleri T\u00fcrk\u00e7e altyaz\u0131l\u0131 izleme sitesi.",
-        "fileSize": 41071,
+        "fileSize": 41096,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -1258,7 +1282,7 @@
             "Dr.Octagon"
         ],
         "description": "Her t\u00fcrl\u00fc filmi ister dublaj ister altyaz\u0131l\u0131, en kaliteli bir \u015fekilde izleyebilece\u011finiz ar\u015fivi en geni\u015f ger\u00e7ek film izleme siteniz.",
-        "fileSize": 44730,
+        "fileSize": 44740,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -1277,7 +1301,7 @@
             "Dr.Octagon"
         ],
         "description": "Yabanc\u0131 dizi izle, yabanc\u0131 diziler ve filmler full HD 1080p kalitesinde T\u00fcrk\u00e7e altyaz\u0131l\u0131 ve dublajl\u0131 yabancidizi.news adresinde.",
-        "fileSize": 65001,
+        "fileSize": 65017,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
