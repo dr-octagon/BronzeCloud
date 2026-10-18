@@ -41,6 +41,341 @@
         "https://www.trgoals183.top",
         "https://www.papazsports1030.pro"
       ]
+    },
+    "source_i": {
+      "channels": [
+        {
+          "id": 4,
+          "raw_name": "MOR SPOR vp 1",
+          "title": "beIN Sports 1",
+          "url": "https://bostv.tottomi.workers.dev/resolver.php?id=zirve",
+          "url_backup": "https://zeus728177.cfd/b1/index.txt",
+          "headers": {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/131 Mobile Safari/537.36",
+            "Referer": "https://taraftarium.xyz/",
+            "Origin": "https://taraftarium.xyz",
+            "Accept-Language": "en,tr;q=0.9",
+            "Accept": "*/*"
+          }
+        },
+        {
+          "id": 45,
+          "raw_name": "MOR SPOR vp 1y",
+          "title": "beIN Sports 1",
+          "url": "https://andro.evrenesoglu101.click/checklist/androstreamlivebs1.m3u8",
+          "url_backup": "https://ladyboy.ardatvgs.cfd//beintv/tracks-v1a1/mono.m3u8",
+          "headers": {
+            "Referer": "https://t24turkiye.com/",
+            "Origin": "https://t24turkiye.com"
+          }
+        },
+        {
+          "id": 1,
+          "raw_name": "MOR SPOR 2",
+          "title": "beIN Sports 2",
+          "url": "https://ladyboy.ardatvgs.cfd//bein2/tracks-v1a1/mono.m3u8",
+          "url_backup": "https://andro.evrenesoglu101.click/checklist/androstreamlivebs2.m3u8",
+          "headers": {
+            "Referer": "https://taraftarium.xyz/",
+            "Origin": "https://taraftarium.xyz",
+            "Accept": "*/*",
+            "Accept-Language": "en,tr;q=0.9"
+          }
+        },
+        {
+          "id": 27,
+          "raw_name": "MOR SPOR 3",
+          "title": "beIN Sports 3",
+          "url": "https://ladyboy.ardatvgs.cfd//bein3/tracks-v1a1/mono.m3u8",
+          "url_backup": "https://andro.evrenesoglu101.click/checklist/androstreamlivebs3.m3u8",
+          "headers": {
+            "Referer": "https://taraftarium.xyz/",
+            "Origin": "https://taraftarium.xyz",
+            "Accept-Language": "en,tr;q=0.9",
+            "Accept": "*/*"
+          }
+        },
+        {
+          "id": 47,
+          "raw_name": "MOR SPOR 4",
+          "title": "beIN Sports 4",
+          "url": "https://2i4.d72577a9dd0ec71.cfd/b4/mono.m3u8",
+          "url_backup": "https://andro.evrenesoglu101.click/checklist/androstreamlivebs4.m3u8",
+          "headers": {
+            "Referer": "https://taraftarium.xyz/",
+            "Origin": "https://taraftarium.xyz",
+            "Accept-Language": "en,tr;q=0.9",
+            "Accept": "*/*"
+          }
+        },
+        {
+          "id": 48,
+          "raw_name": "MOR SPOR M1",
+          "title": "beIN Sports Max 1",
+          "url": "https://2i4.d72577a9dd0ec71.cfd/bm1/mono.m3u8",
+          "url_backup": "https://andro.evrenesoglu101.click/checklist/androstreamlivebsm1.m3u8",
+          "headers": {
+            "Referer": "https://fairtv16.com/",
+            "Origin": "https://fairtv16.com",
+            "Accept-Language": "tr,en-US;q=0.9,en;q=0.8,ru;q=0.7,de;q=0.6",
+            "Accept": "*/*"
+          }
+        },
+        {
+          "id": 49,
+          "raw_name": "MOR SPOR M2",
+          "title": "beIN Sports Max 2",
+          "url": "https://2i4.d72577a9dd0ec71.cfd/bm2/mono.m3u8",
+          "url_backup": "https://andro.evrenesoglu101.click/checklist/androstreamlivebsm2.m3u8",
+          "headers": {
+            "Referer": "https://fairtv16.com/",
+            "Origin": "https://fairtv16.com",
+            "Accept-Language": "tr,en-US;q=0.9,en;q=0.8,ru;q=0.7,de;q=0.6",
+            "Accept": "*/*"
+          }
+        },
+        {
+          "id": 122,
+          "raw_name": "S SPORT TV",
+          "title": "S Sport",
+          "url": "https://www.3hitsport.com/api/crypto.json?id=4&parentId=0&type=0",
+          "url_backup": "",
+          "headers": {
+            "Referer": "https://www.3hitsport.com/kanal?id=4&isChannel=1",
+            "Accept": "*/*",
+            "Accept-Language": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7"
+          }
+        },
+        {
+          "id": 50,
+          "raw_name": "S Sport 1",
+          "title": "S Sport 1",
+          "url": "https://2i4.d72577a9dd0ec71.cfd/ss/mono.m3u8",
+          "url_backup": "https://andro.evrenesoglu101.click/checklist/androstreamlivess1.m3u8",
+          "headers": {
+            "Referer": "https://taraftarium.xyz/",
+            "Origin": "https://taraftarium.xyz",
+            "Accept-Language": "tr,en-US;q=0.9,en;q=0.8,ru;q=0.7,de;q=0.6",
+            "Accept": "*/*https://izmottvsc33.tvplus.com.tr:33207/CPS/images/universal/film/logo/202506/20250623/54/1002317544415eb9542c_op_0_XL.webp"
+          }
+        },
+        {
+          "id": 51,
+          "raw_name": "S Sport 2",
+          "title": "S Sport 2",
+          "url": "https://2i4.d72577a9dd0ec71.cfd/ss2/mono.m3u8",
+          "url_backup": "https://andro.evrenesoglu101.click/checklist/androstreamlivess2.m3u8",
+          "headers": {
+            "Referer": "https://taraftarium.xyz/",
+            "Origin": "https://taraftarium.xyz",
+            "Accept-Language": "en,tr;q=0.9",
+            "Accept": "*/*"
+          }
+        },
+        {
+          "id": 53,
+          "raw_name": "Smart Spor",
+          "title": "Smart Spor",
+          "url": "https://2i4.d72577a9dd0ec71.cfd/smarts/mono.m3u8",
+          "url_backup": "https://andro.evrenesoglu101.click/checklist/androstreamlivesm1.m3u8",
+          "headers": {
+            "Referer": "https://taraftarium.xyz/",
+            "Origin": "https://taraftarium.xyz",
+            "Accept-Language": "en,tr;q=0.9",
+            "Accept": "*/*"
+          }
+        },
+        {
+          "id": 52,
+          "raw_name": "Tivibu Spor 1",
+          "title": "Tivibu Spor 1",
+          "url": "https://2i4.d72577a9dd0ec71.cfd/t1/mono.m3u8",
+          "url_backup": "https://andro.evrenesoglu101.click/checklist/androstreamlivets1.m3u8",
+          "headers": {
+            "Referer": "https://taraftarium.xyz/",
+            "Origin": "https://taraftarium.xyz",
+            "Accept-Language": "en,tr;q=0.9",
+            "Accept": "*/*"
+          }
+        },
+        {
+          "id": 54,
+          "raw_name": "Tivibu Spor 2",
+          "title": "Tivibu Spor 2",
+          "url": "https://2i4.d72577a9dd0ec71.cfd/t2/mono.m3u8",
+          "url_backup": "https://andro.evrenesoglu101.click/checklist/androstreamlivets2.m3u8",
+          "headers": {
+            "Referer": "https://taraftarium.xyz/",
+            "Origin": "https://taraftarium.xyz",
+            "Accept-Language": "en,tr;q=0.9",
+            "Accept": "*/*"
+          }
+        },
+        {
+          "id": 55,
+          "raw_name": "Tivibu Spor 3",
+          "title": "Tivibu Spor 3",
+          "url": "https://2i4.d72577a9dd0ec71.cfd/t3/mono.m3u8",
+          "url_backup": "https://andro.evrenesoglu101.click/checklist/androstreamlivets3.m3u8",
+          "headers": {
+            "Referer": "https://taraftarium.xyz/",
+            "Origin": "https://taraftarium.xyz",
+            "Accept-Language": "en,tr;q=0.9",
+            "Accept": "*/*"
+          }
+        },
+        {
+          "id": 56,
+          "raw_name": "Eurosport 1",
+          "title": "Eurosport 1",
+          "url": "https://andro.evrenesoglu101.click/checklist/androstreamlivees1.m3u8",
+          "url_backup": "https://raw.githubusercontent.com/icebu12/turbo-guacamole/refs/heads/main/streams/stream_e1.m3u8",
+          "headers": {
+            "Referer": "https://taraftarium.xyz/",
+            "Origin": "https://taraftarium.xyz"
+          }
+        },
+        {
+          "id": 57,
+          "raw_name": "Eurosport 2",
+          "title": "Eurosport 2",
+          "url": "https://andro.evrenesoglu101.click/checklist/androstreamlivees2.m3u8",
+          "url_backup": "",
+          "headers": {
+            "Referer": "https://trgoals1487.xyz/"
+          }
+        },
+        {
+          "id": 58,
+          "raw_name": "TRTSPOR",
+          "title": "TRT Spor",
+          "url": "https://tv-trtspor1.medya.trt.com.tr/master.m3u8",
+          "url_backup": "https://tv-trtspor2.medya.trt.com.tr/master.m3u8",
+          "headers": {}
+        },
+        {
+          "id": 63,
+          "raw_name": "Tabii Spor",
+          "title": "Tabii Spor",
+          "url": "http://kl9mr2vxw7nq5py1sh4tj3gb6.medya.trt.com.tr/master_1080p.m3u8",
+          "url_backup": "https://andro.evrenesoglu159.click/checklist/androstreamlivetb.m3u8",
+          "headers": {
+            "Referer": "https://google.com/",
+            "Origin": "https://google.com"
+          }
+        },
+        {
+          "id": 64,
+          "raw_name": "Tabii Spor 1",
+          "title": "Tabii Spor 1",
+          "url": "http://pz4qt7nw1mr9sh2vl5xk8jg3y.medya.trt.com.tr/master_1080p.m3u8",
+          "url_backup": "https://andro.evrenesoglu159.click/checklist/androstreamlivetb1.m3u8",
+          "headers": {}
+        },
+        {
+          "id": 65,
+          "raw_name": "Tabii Spor 2",
+          "title": "Tabii Spor 2",
+          "url": "http://mr8bv4kl1nq7sh9tw2xp5zj6g.medya.trt.com.tr/master_1080p.m3u8",
+          "url_backup": "https://andro.evrenesoglu159.click/checklist/androstreamlivetb2.m3u8",
+          "headers": {}
+        },
+        {
+          "id": 66,
+          "raw_name": "Tabii Spor 3",
+          "title": "Tabii Spor 3",
+          "url": "http://mr4vl7nq2sh9tw5xp1zk3gj8b.medya.trt.com.tr/master_1080p.m3u8",
+          "url_backup": "https://raw.githubusercontent.com/panorea744/stawerlo/refs/heads/main/teyzeniyerim1/tabii4.m3u8",
+          "headers": {}
+        },
+        {
+          "id": 59,
+          "raw_name": "A Spor HD",
+          "title": "A Spor",
+          "url": "https://securevideotoken.tmgrup.com.tr/webtv/secure?862576&url=https%3A%2F%2Ftrkvz.daioncdn.net%2Faspor%2Faspor.m3u8%3Fce%3D3%26app%3Db6bf3b55-0120-4e0f-983b-a6c7969f9ec6&url2=https%3A%2F%2Ftrkvz-dvr-live.ercdn.net%2Faspor%2Findex.m3u8",
+          "url_backup": "https://trkvz-live.ercdn.net/asporhd/asporhd.m3u8",
+          "headers": {
+            "Referer": "https://www.aspor.com.tr/",
+            "Origin": "https://www.aspor.com.tr",
+            "Accept": "*/*",
+            "Accept-Language": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7"
+          }
+        },
+        {
+          "id": 60,
+          "raw_name": "HT SPORT",
+          "title": "HT Spor",
+          "url": "https://ciner.daioncdn.net/ht-spor/ht-spor.m3u8?app=web",
+          "url_backup": "",
+          "headers": {}
+        },
+        {
+          "id": 61,
+          "raw_name": "TJK TV",
+          "title": "TJK TV",
+          "url": "http://tjktv.ercdn.net/tjktv.m3u8",
+          "url_backup": "https://duhnet.hipodrom.com/S2/HLS_LIVE/mislitaynp/playlist.m3u8",
+          "headers": {
+            "Accept": "*/*"
+          }
+        },
+        {
+          "id": 62,
+          "raw_name": "CBC SPOR",
+          "title": "CBC Sport",
+          "url": "http://ott.teleport.az/server33/hls/cbc_sport.m3u8?st=AzGSZjk1DpXY1SLc1m4OvA&e=1676581573",
+          "url_backup": "https://andro.evrenesoglu163.click/checklist/androstreamlivecbcs.m3u8",
+          "headers": {}
+        },
+        {
+          "id": 67,
+          "raw_name": "FightBox 1+2",
+          "title": "FightBox",
+          "url": "https://6f972d29.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWV1X0dsb3J5S2lja2JveGluZ19ITFM/playlist.m3u8",
+          "url_backup": "https://dbrb49pjoymg4.cloudfront.net/manifest/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod_default_xumo-ams-aws/8e04f3b0-f582-4f59-a82d-b330073239dd/0.m3u8",
+          "headers": {
+            "Referer": "https://ilovetoplay.xyz/",
+            "Origin": "https://ilovetoplay.xyz"
+          }
+        },
+        {
+          "id": 68,
+          "raw_name": "Rally. TV 1+2",
+          "title": "Rally TV",
+          "url": "https://amg00115-amg00115c1-nascar-northamerica-6927.playouts.now.amagi.tv/playlist.m3u8",
+          "url_backup": "https://dv1e2nq0r4g7p.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-n8rallqdrsy49/playlist.m3u8",
+          "headers": {}
+        },
+        {
+          "id": 69,
+          "raw_name": "SPED SPOR 1+2",
+          "title": "Speed Spor",
+          "url": "https://linear-599.frequency.stream/dist/stirr/599/hls/master/playlist.m3u8",
+          "url_backup": "https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master_6660.m3u8",
+          "headers": {}
+        },
+        {
+          "id": 70,
+          "raw_name": "DAZN RING 1+2",
+          "title": "DAZN Ring",
+          "url": "https://aegis-cloudfront-1.tubi.video/bfad29e2-5bee-44f3-8256-127324e8b106/playlist.m3u8",
+          "url_backup": "https://a883593c.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWV1X1BGTE1NQV9ITFM/playlist.m3u8",
+          "headers": {}
+        },
+        {
+          "id": 126,
+          "raw_name": "Super",
+          "title": "Super",
+          "url": "https://vavoo.us4-gpiktv4.workers.dev/?i=https://huhu.to/huhu-iptv/play/222849685684ff542877de",
+          "url_backup": "",
+          "headers": {
+            "User-Agent": "Dalvik/2.1.0 (Linux; U; Android 16; SM-S928B Build/BP4A.251205.006)",
+            "Connection": "Keep-Alive",
+            "Accept-Ranges": "Keep-Alive",
+            "Referer": "https://mediaurl-resolve.us4-gpiktv4.workers.dev/"
+          }
+        }
+      ]
     }
   }
 }
