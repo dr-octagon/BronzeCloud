@@ -704,26 +704,6 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/FilmizleHD_v3.cs3",
-        "status": 1,
-        "version": 3,
-        "name": "FilmizleHD",
-        "internalName": "FilmizleHD",
-        "authors": [
-            "Dr.Octagon",
-            "wGodfather"
-        ],
-        "description": "FilmizleHD (filmizlehd.biz) - T\u00fcrk\u00e7e dublaj ve altyaz\u0131l\u0131 4K/Full HD film platformu.",
-        "fileSize": 43802,
-        "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
-        "language": "tr",
-        "tvTypes": [
-            "Movie"
-        ],
-        "iconUrl": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/logos/filmizlehd.png",
-        "apiVersion": 1
-    },
-    {
         "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/FilmMakinesi_v64.cs3",
         "status": 1,
         "version": 64,
