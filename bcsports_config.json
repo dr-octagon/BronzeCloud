@@ -1,5 +1,5 @@
 {
-  "updated_at": 1792361821,
+  "updated_at": 1792381442,
   "sources": {
     "source_a": {
       "origin": "https://monotv547.com",
@@ -258,7 +258,7 @@
           "raw_name": "Tabii Spor",
           "title": "Tabii Spor",
           "url": "http://kl9mr2vxw7nq5py1sh4tj3gb6.medya.trt.com.tr/master_1080p.m3u8",
-          "url_backup": "https://andro.evrenesoglu159.click/checklist/androstreamlivetb.m3u8",
+          "url_backup": "https://andro.evrenesoglu163.click/checklist/androstreamlivetb.m3u8",
           "headers": {
             "Referer": "https://google.com/",
             "Origin": "https://google.com"
@@ -269,7 +269,7 @@
           "raw_name": "Tabii Spor 1",
           "title": "Tabii Spor 1",
           "url": "http://pz4qt7nw1mr9sh2vl5xk8jg3y.medya.trt.com.tr/master_1080p.m3u8",
-          "url_backup": "https://andro.evrenesoglu159.click/checklist/androstreamlivetb1.m3u8",
+          "url_backup": "https://andro.evrenesoglu163.click/checklist/androstreamlivetb1.m3u8",
           "headers": {}
         },
         {
@@ -277,7 +277,7 @@
           "raw_name": "Tabii Spor 2",
           "title": "Tabii Spor 2",
           "url": "http://mr8bv4kl1nq7sh9tw2xp5zj6g.medya.trt.com.tr/master_1080p.m3u8",
-          "url_backup": "https://andro.evrenesoglu159.click/checklist/androstreamlivetb2.m3u8",
+          "url_backup": "https://andro.evrenesoglu163.click/checklist/androstreamlivetb2.m3u8",
           "headers": {}
         },
         {
@@ -324,7 +324,7 @@
           "raw_name": "CBC SPOR",
           "title": "CBC Sport",
           "url": "http://ott.teleport.az/server33/hls/cbc_sport.m3u8?st=AzGSZjk1DpXY1SLc1m4OvA&e=1676581573",
-          "url_backup": "https://andro.evrenesoglu157.click/checklist/androstreamlivecbcs.m3u8",
+          "url_backup": "https://andro.evrenesoglu161.click/checklist/androstreamlivecbcs.m3u8",
           "headers": {}
         },
         {
