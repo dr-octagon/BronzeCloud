@@ -1,5 +1,5 @@
 {
-  "updated_at": 1792746653,
+  "updated_at": 1792759446,
   "sources": {
     "source_a": {
       "origin": "https://monotv547.com",
@@ -37,9 +37,9 @@
       "referer": "https://www.sporcafe74.top/",
       "site_name": "SporCafe",
       "mirrors": [
-        "https://www.inattvizle495.top",
+        "https://www.inattvizle496.top",
         "https://www.trgoals183.top",
-        "https://www.papazsports1030.pro"
+        "https://www.papazsports1031.pro"
       ]
     },
     "source_i": {
@@ -176,7 +176,7 @@
           "id": 53,
           "raw_name": "Smart Spor",
           "title": "Smart Spor",
-          "url": "https://2i4.d72577a9dd0ec71.cfd/smarts/mono.m3u8",
+          "url": "https://raw.githubusercontent.com/icebu12/turbo-guacamole/refs/heads/main/streams/stream_smarts.m3u8",
           "url_backup": "https://andro.evrenesoglu101.click/checklist/androstreamlivesm1.m3u8",
           "headers": {
             "Referer": "https://taraftarium.xyz/",
