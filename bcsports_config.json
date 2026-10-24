@@ -1,5 +1,5 @@
 {
-  "updated_at": 1792867110,
+  "updated_at": 1792880269,
   "sources": {
     "source_a": {
       "origin": "https://monotv547.com",
@@ -189,7 +189,7 @@
           "id": 52,
           "raw_name": "Tivibu Spor 1",
           "title": "Tivibu Spor 1",
-          "url": "https://raw.githubusercontent.com/icebu12/turbo-guacamole/refs/heads/main/streams/stream_t1.m3u8",
+          "url": "https://g1b.d72577a9dd0ec74.cfd/t1/mono.m3u8",
           "url_backup": "https://andro.evrenesoglu101.click/checklist/androstreamlivets1.m3u8",
           "headers": {
             "Referer": "https://taraftarium.xyz/",
@@ -202,7 +202,7 @@
           "id": 54,
           "raw_name": "Tivibu Spor 2",
           "title": "Tivibu Spor 2",
-          "url": "https://raw.githubusercontent.com/icebu12/turbo-guacamole/refs/heads/main/streams/stream_t2.m3u8",
+          "url": "https://g1b.d72577a9dd0ec74.cfd/t2/mono.m3u8",
           "url_backup": "https://andro.evrenesoglu101.click/checklist/androstreamlivets2.m3u8",
           "headers": {
             "Referer": "https://taraftarium.xyz/",
@@ -215,7 +215,7 @@
           "id": 55,
           "raw_name": "Tivibu Spor 3",
           "title": "Tivibu Spor 3",
-          "url": "https://raw.githubusercontent.com/icebu12/turbo-guacamole/refs/heads/main/streams/stream_t3.m3u8",
+          "url": "https://g1b.d72577a9dd0ec74.cfd/t3/mono.m3u8",
           "url_backup": "https://andro.evrenesoglu101.click/checklist/androstreamlivets3.m3u8",
           "headers": {
             "Referer": "https://taraftarium.xyz/",
@@ -258,7 +258,7 @@
           "raw_name": "Tabii Spor",
           "title": "Tabii Spor",
           "url": "http://kl9mr2vxw7nq5py1sh4tj3gb6.medya.trt.com.tr/master_1080p.m3u8",
-          "url_backup": "https://andro.evrenesoglu215.click/checklist/androstreamlivetb.m3u8",
+          "url_backup": "https://andro.evrenesoglu211.click/checklist/androstreamlivetb.m3u8",
           "headers": {
             "Referer": "https://google.com/",
             "Origin": "https://google.com"
@@ -269,7 +269,7 @@
           "raw_name": "Tabii Spor 1",
           "title": "Tabii Spor 1",
           "url": "http://pz4qt7nw1mr9sh2vl5xk8jg3y.medya.trt.com.tr/master_1080p.m3u8",
-          "url_backup": "https://andro.evrenesoglu215.click/checklist/androstreamlivetb1.m3u8",
+          "url_backup": "https://andro.evrenesoglu211.click/checklist/androstreamlivetb1.m3u8",
           "headers": {}
         },
         {
@@ -277,7 +277,7 @@
           "raw_name": "Tabii Spor 2",
           "title": "Tabii Spor 2",
           "url": "http://mr8bv4kl1nq7sh9tw2xp5zj6g.medya.trt.com.tr/master_1080p.m3u8",
-          "url_backup": "https://andro.evrenesoglu215.click/checklist/androstreamlivetb2.m3u8",
+          "url_backup": "https://andro.evrenesoglu211.click/checklist/androstreamlivetb2.m3u8",
           "headers": {}
         },
         {
