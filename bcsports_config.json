@@ -1,5 +1,5 @@
 {
-  "updated_at": 1792953983,
+  "updated_at": 1792966910,
   "sources": {
     "source_a": {
       "origin": "https://monotv547.com",
@@ -135,18 +135,6 @@
           }
         },
         {
-          "id": 122,
-          "raw_name": "S SPORT TV",
-          "title": "S Sport",
-          "url": "https://www.3hitsport.com/api/crypto.json?id=4&parentId=0&type=0",
-          "url_backup": "",
-          "headers": {
-            "Referer": "https://www.3hitsport.com/kanal?id=4&isChannel=1",
-            "Accept": "*/*",
-            "Accept-Language": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7"
-          }
-        },
-        {
           "id": 50,
           "raw_name": "S Sport 1",
           "title": "S Sport 1",
@@ -157,6 +145,18 @@
             "Origin": "https://taraftarium.xyz",
             "Accept-Language": "tr,en-US;q=0.9,en;q=0.8,ru;q=0.7,de;q=0.6",
             "Accept": "*/*https://izmottvsc33.tvplus.com.tr:33207/CPS/images/universal/film/logo/202506/20250623/54/1002317544415eb9542c_op_0_XL.webp"
+          }
+        },
+        {
+          "id": 122,
+          "raw_name": "S SPORT TV",
+          "title": "S Sport",
+          "url": "https://www.3hitsport.com/api/crypto.json?id=4&parentId=0&type=0",
+          "url_backup": "",
+          "headers": {
+            "Referer": "https://www.3hitsport.com/kanal?id=4&isChannel=1",
+            "Accept": "*/*",
+            "Accept-Language": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7"
           }
         },
         {
@@ -258,7 +258,7 @@
           "raw_name": "Tabii Spor",
           "title": "Tabii Spor",
           "url": "http://kl9mr2vxw7nq5py1sh4tj3gb6.medya.trt.com.tr/master_1080p.m3u8",
-          "url_backup": "https://andro.evrenesoglu215.click/checklist/androstreamlivetb.m3u8",
+          "url_backup": "https://andro.evrenesoglu219.click/checklist/androstreamlivetb.m3u8",
           "headers": {
             "Referer": "https://google.com/",
             "Origin": "https://google.com"
@@ -269,7 +269,7 @@
           "raw_name": "Tabii Spor 1",
           "title": "Tabii Spor 1",
           "url": "http://pz4qt7nw1mr9sh2vl5xk8jg3y.medya.trt.com.tr/master_1080p.m3u8",
-          "url_backup": "https://andro.evrenesoglu215.click/checklist/androstreamlivetb1.m3u8",
+          "url_backup": "https://andro.evrenesoglu219.click/checklist/androstreamlivetb1.m3u8",
           "headers": {}
         },
         {
@@ -277,7 +277,7 @@
           "raw_name": "Tabii Spor 2",
           "title": "Tabii Spor 2",
           "url": "http://mr8bv4kl1nq7sh9tw2xp5zj6g.medya.trt.com.tr/master_1080p.m3u8",
-          "url_backup": "https://andro.evrenesoglu215.click/checklist/androstreamlivetb2.m3u8",
+          "url_backup": "https://andro.evrenesoglu219.click/checklist/androstreamlivetb2.m3u8",
           "headers": {}
         },
         {
