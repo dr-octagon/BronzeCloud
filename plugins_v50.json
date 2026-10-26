@@ -81,9 +81,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/BOAT_v69.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/BOAT_v74.cs3",
         "status": 1,
-        "version": 69,
+        "version": 74,
         "name": "BOAT",
         "internalName": "BOAT",
         "authors": [
@@ -126,9 +126,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/CineStream_v568.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/CineStream_v573.cs3",
         "status": 1,
-        "version": 568,
+        "version": 573,
         "name": "CineStream",
         "internalName": "CineStream",
         "authors": [
@@ -138,7 +138,7 @@
             "megix"
         ],
         "description": "Film, Dizi, Asya Dizileri ve Torrentler için hepsi bir arada çözüm",
-        "fileSize": 787762,
+        "fileSize": 787763,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
