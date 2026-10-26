@@ -894,16 +894,16 @@
         "apiVersion": 1
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/dr-octagon/BronzeCloud@builds/inatbox-bc_v19.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/dr-octagon/BronzeCloud@builds/inatbox-bc_v20.cs3",
         "status": 1,
-        "version": 19,
+        "version": 20,
         "name": "İnatBox BC",
         "internalName": "İnatBox BC",
         "authors": [
             "Dr.Octagon"
         ],
         "description": "İnatBox BronzeCloud Edition - Canlı kanallar, spor ve diziler burada.",
-        "fileSize": 62721,
+        "fileSize": 68483,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
