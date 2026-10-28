@@ -1020,9 +1020,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/Reeltu_v10.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/Reeltu_v11.cs3",
         "status": 1,
-        "version": 10,
+        "version": 11,
         "name": "Reeltu",
         "internalName": "Reeltu",
         "authors": [
@@ -1030,7 +1030,7 @@
             "BronzeCloud"
         ],
         "description": "Reeltu - Trend filmler, güncel dizi bölümleri, popüler animeler ve zengin kategoriler.",
-        "fileSize": 95773,
+        "fileSize": 99526,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
