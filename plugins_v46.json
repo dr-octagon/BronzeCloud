@@ -411,9 +411,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/DiziPal_v118.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/DiziPal_v119.cs3",
         "status": 1,
-        "version": 118,
+        "version": 119,
         "name": "DiziPal",
         "internalName": "DiziPal",
         "authors": [
@@ -422,7 +422,7 @@
             "Dr.Octagon"
         ],
         "description": "en yeni dizileri güvenli ve hızlı şekilde sunar.",
-        "fileSize": 47485,
+        "fileSize": 52826,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -433,9 +433,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/DiziPalOriginal_v104.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/DiziPalOriginal_v105.cs3",
         "status": 1,
-        "version": 104,
+        "version": 105,
         "name": "DiziPalOriginal",
         "internalName": "DiziPalOriginal",
         "authors": [
@@ -444,7 +444,7 @@
             "Dr.Octagon"
         ],
         "description": "en yeni dizileri güvenli ve hızlı şekilde sunar.",
-        "fileSize": 36901,
+        "fileSize": 45053,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
