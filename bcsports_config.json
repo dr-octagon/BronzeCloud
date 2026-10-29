@@ -1,5 +1,5 @@
 {
-  "updated_at": 1793286026,
+  "updated_at": 1793307316,
   "sources": {
     "source_a": {
       "origin": "https://monotv547.com",
@@ -366,15 +366,17 @@
           "id": 126,
           "raw_name": "Super",
           "title": "Super",
-          "url": "http://izlego.minikirppis-com.workers.dev/ID=22284968562a623d1b95b4",
+          "url": "https://trkvz-live.ercdn.net/asporhd/asporhd.m3u8",
           "url_backup": "",
-          "headers": {}
+          "headers": {
+            "Referer": "https://google.com/"
+          }
         }
       ]
     },
     "source_k": {
-      "origin": "https://volestream9.com",
-      "referer": "https://volestream9.com/",
+      "origin": "https://volestream8.com",
+      "referer": "https://volestream8.com/",
       "cdn": "https://pix.ruhhi.workers.dev",
       "netspor_origin": "https://netsporhd11.cc",
       "netspor_cdn": "https://css.d6e3eae5e065d5.help"
