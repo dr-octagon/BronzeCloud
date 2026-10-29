@@ -349,9 +349,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/DiziKorea_v1.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/DiziKorea_v2.cs3",
         "status": 1,
-        "version": 1,
+        "version": 2,
         "name": "DiziKorea",
         "internalName": "DiziKorea",
         "authors": [
@@ -359,7 +359,7 @@
             "wGodfather"
         ],
         "description": "DiziKorea (dizikorea3.com) - Kore, Çin, Japon ve Asya dizileri ile filmleri.",
-        "fileSize": 36006,
+        "fileSize": 44111,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -371,9 +371,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/Dizilla_v95.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/Dizilla_v96.cs3",
         "status": 1,
-        "version": 95,
+        "version": 96,
         "name": "Dizilla",
         "internalName": "Dizilla",
         "authors": [
@@ -381,7 +381,7 @@
             "Dr.Octagon"
         ],
         "description": "Dizilla tüm yabancı dizileri ücretsiz olarak Türkçe Dublaj ve altyazılı seçenekleri ile 1080P kalite izleyebileceğiniz yeni nesil yabancı dizi izleme siteniz.",
-        "fileSize": 43319,
+        "fileSize": 44035,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
