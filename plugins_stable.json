@@ -1231,16 +1231,16 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/Vavoo_v7.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/Vavoo_v8.cs3",
         "status": 1,
-        "version": 7,
+        "version": 8,
         "name": "Vavoo",
         "internalName": "Vavoo",
         "authors": [
             "Dr.Octagon"
         ],
         "description": "Vavoo canlı TV eklentisi. Türkiye ve Arnavutluk kanalları kategorili olarak listelenir.",
-        "fileSize": 51714,
+        "fileSize": 52692,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "tvTypes": [
             "Live"
