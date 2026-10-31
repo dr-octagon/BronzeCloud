@@ -1,5 +1,5 @@
 {
-  "updated_at": 1793421324,
+  "updated_at": 1793456558,
   "sources": {
     "source_a": {
       "origin": "https://monotv547.com",
@@ -189,7 +189,7 @@
           "id": 52,
           "raw_name": "Tivibu Spor 1",
           "title": "Tivibu Spor 1",
-          "url": "https://raw.githubusercontent.com/icebu12/turbo-guacamole/refs/heads/main/streams/stream_t1.m3u8",
+          "url": "https://g1b.d72577a9dd0ec74.cfd/t1/mono.m3u8",
           "url_backup": "https://andro.evrenesoglu101.click/checklist/androstreamlivets1.m3u8",
           "headers": {
             "Referer": "https://taraftarium.xyz/",
