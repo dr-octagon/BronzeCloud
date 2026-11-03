@@ -1,5 +1,5 @@
 {
-  "updated_at": 1793642205,
+  "updated_at": 1793671383,
   "sources": {
     "source_a": {
       "origin": "https://monotv547.com",
@@ -48,12 +48,12 @@
           "id": 4,
           "raw_name": "MOR SPOR vp 1",
           "title": "beIN Sports 1",
-          "url": "https://patron.tottomi.workers.dev/resolver.php?id=patron&site=https%3A%2F%2Ftaraftarium1084.xyz%2F",
+          "url": "https://bostv.tottomi.workers.dev/resolver.php?id=patron",
           "url_backup": "https://css.d6e3eds5e065t5.help//b1/tracks-v1a1/mono.m3u8",
           "headers": {
             "User-Agent": "Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/131 Mobile Safari/537.36",
-            "Referer": "https://patronhd8.cfd/",
-            "Origin": "https://patronhd8.cfd",
+            "Referer": "https://taraftarium1087.xyz/",
+            "Origin": "https://taraftarium1087.xyz",
             "Accept": "application/json,*/*"
           }
         },
@@ -257,7 +257,7 @@
           "raw_name": "Tabii Spor",
           "title": "Tabii Spor",
           "url": "http://kl9mr2vxw7nq5py1sh4tj3gb6.medya.trt.com.tr/master_1080p.m3u8",
-          "url_backup": "https://andro.evrenesoglu233.click/checklist/androstreamlivetb.m3u8",
+          "url_backup": "https://andro.evrenesoglu241.click/checklist/androstreamlivetb.m3u8",
           "headers": {
             "Referer": "https://google.com/",
             "Origin": "https://google.com"
@@ -268,7 +268,7 @@
           "raw_name": "Tabii Spor 1",
           "title": "Tabii Spor 1",
           "url": "http://pz4qt7nw1mr9sh2vl5xk8jg3y.medya.trt.com.tr/master_1080p.m3u8",
-          "url_backup": "https://andro.evrenesoglu233.click/checklist/androstreamlivetb1.m3u8",
+          "url_backup": "https://andro.evrenesoglu241.click/checklist/androstreamlivetb1.m3u8",
           "headers": {}
         },
         {
@@ -276,7 +276,7 @@
           "raw_name": "Tabii Spor 2",
           "title": "Tabii Spor 2",
           "url": "http://mr8bv4kl1nq7sh9tw2xp5zj6g.medya.trt.com.tr/master_1080p.m3u8",
-          "url_backup": "https://andro.evrenesoglu233.click/checklist/androstreamlivetb2.m3u8",
+          "url_backup": "https://andro.evrenesoglu241.click/checklist/androstreamlivetb2.m3u8",
           "headers": {}
         },
         {
