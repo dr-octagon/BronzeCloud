@@ -433,9 +433,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/DiziPalOriginal_v105.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/DiziPalOriginal_v106.cs3",
         "status": 1,
-        "version": 105,
+        "version": 106,
         "name": "DiziPalOriginal",
         "internalName": "DiziPalOriginal",
         "authors": [
@@ -444,7 +444,7 @@
             "Dr.Octagon"
         ],
         "description": "en yeni dizileri güvenli ve hızlı şekilde sunar.",
-        "fileSize": 45053,
+        "fileSize": 49423,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
