@@ -1,5 +1,5 @@
 {
-  "updated_at": 1793908234,
+  "updated_at": 1793910429,
   "sources": {
     "source_a": {
       "origin": "https://monotv547.com",
@@ -49,7 +49,7 @@
           "raw_name": "MOR SPOR vp 1",
           "title": "beIN Sports 1",
           "url": "https://bostv.tottomi.workers.dev/resolver.php?id=patron",
-          "url_backup": "https://css.d6e3eds5e065t5.help//b1/tracks-v1a1/mono.m3u8",
+          "url_backup": "https://css.d6e3eds5e065t5.help//hls/arda.m3u8",
           "headers": {
             "User-Agent": "Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/131 Mobile Safari/537.36",
             "Referer": "https://taraftarium1087.xyz/",
@@ -365,10 +365,14 @@
           "id": 126,
           "raw_name": "Super",
           "title": "Super",
-          "url": "https://vuvuu.enesgonullu2009-356.workers.dev/?url=https%3A%2F%2Fkool.to%2Fkool-iptv%2Fplay%2F10783553250ea885deefe4",
+          "url": "https://wv0.zirvedesin249.cfd/zirve/mono.m3u8",
           "url_backup": "",
           "headers": {
-            "Referer": "https://google.com/"
+            "Referer": "https://30slotintv.live/",
+            "Origin": "https://30slotintv.live",
+            "Accept": "*/*",
+            "Accept-Language": "tr,en-US;q=0.9,en;q=0.8,ru;q=0.7,de;q=0.6",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
           }
         }
       ]
