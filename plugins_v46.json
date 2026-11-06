@@ -1341,7 +1341,7 @@
         "authors": [
             "Dr.Octagon"
         ],
-        "description": "Eski kurulumlar i\u00e7in g\u00fcncelleme uyumlulu\u011fu. Yeni kurulumda inatbox-bc kullan\u0131n; iki kayd\u0131 birlikte kurmay\u0131n.",
+        "description": "Eski kurulumlar i\u00e7in g\u00fcncelleme uyumlulu\u011fu. Yeni kurulumda inatbox-bc kullan\u0131n; eski kay\u0131tlar\u0131 ayr\u0131ca kurmay\u0131n.",
         "fileSize": 103306,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
