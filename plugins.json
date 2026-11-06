@@ -894,16 +894,16 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/inatbox-bc_v26.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/inatbox-bc_v27.cs3",
         "status": 1,
-        "version": 26,
+        "version": 27,
         "name": "inatbox-bc",
         "internalName": "inatbox-bc",
         "authors": [
             "Dr.Octagon"
         ],
         "description": "\u0130natBox BronzeCloud Edition - Canl\u0131 kanallar, spor ve diziler burada.",
-        "fileSize": 103077,
+        "fileSize": 103306,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -1333,16 +1333,37 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/inatbox-bc-legacy_v26.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/inatbox-bc-legacy_v27.cs3",
         "status": 1,
-        "version": 26,
+        "version": 27,
         "name": "\u0130natBox BC (Eski kay\u0131t)",
         "internalName": "\u0130natBox BC",
         "authors": [
             "Dr.Octagon"
         ],
         "description": "Eski kurulumlar i\u00e7in g\u00fcncelleme uyumlulu\u011fu. Yeni kurulumda inatbox-bc kullan\u0131n; iki kayd\u0131 birlikte kurmay\u0131n.",
-        "fileSize": 103077,
+        "fileSize": 103306,
+        "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
+        "language": "tr",
+        "tvTypes": [
+            "Movie",
+            "TvSeries",
+            "Live"
+        ],
+        "iconUrl": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3vCp6N1K4bECoYRQD-cisJF2_6V_Hk01ZhDmoPR2JuM8O5qr4MqrPO1munM9cRlleBBSK6odYhLtDBWv4E3vhPhynlmS5hVVtJZShHoGA5REQ8_3v8SIlccTEqzVQu2UJyNYQdJNrKIfWy66RQeT0D-CcmFCbHPz5023H6p2v5fv4NVloZ5Rqo_yGrIY/s320/iNat-Box-App.png",
+        "apiVersion": 1
+    },
+    {
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/inatbox-bc-v13-legacy_v27.cs3",
+        "status": 1,
+        "version": 27,
+        "name": "\u0130natBox BC (v13 eski kay\u0131t)",
+        "internalName": "InatBoxBC",
+        "authors": [
+            "Dr.Octagon"
+        ],
+        "description": "Eski kurulumlar i\u00e7in g\u00fcncelleme uyumlulu\u011fu. Yeni kurulumda inatbox-bc kullan\u0131n; eski kay\u0131tlar\u0131 ayr\u0131ca kurmay\u0131n.",
+        "fileSize": 103306,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
