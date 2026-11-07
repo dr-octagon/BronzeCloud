@@ -1,5 +1,5 @@
 {
-  "updated_at": 1794081491,
+  "updated_at": 1794094514,
   "sources": {
     "source_a": {
       "origin": "https://monotv547.com",
@@ -48,25 +48,28 @@
           "id": 4,
           "raw_name": "MOR SPOR vp 1",
           "title": "beIN Sports 1",
-          "url": "https://ramadatv2.com/701/mono.m3u8?sign=9d8799b16424938531d24d28d0bad6bae9e79ea3cec337573723dc7e2fe131a2&ip=2a06:98c0:3600::103&expires=1793045808",
+          "url": "https://wv0.zirvedesin249.cfd/zirve/mono.m3u8",
           "url_backup": "https://css.d6e3eds5e065t5.help//b1/tracks-v1a1/mono.m3u8",
           "headers": {
-            "User-Agent": "Mozilla/5.0 (Linux; Android 10; Mobile) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-            "Referer": "https://bosssports1068.com/",
-            "Origin": "https://bosssports1068.com",
+            "Referer": "https://30slotintv.live/",
+            "Origin": "https://30slotintv.live",
             "Cookie": "_ga=GA1.1.1774627878.1793368791; __dtsu=51A01793364163D76795CBA3A5A2E46A; _pubcid=a5d29b60-5faf-4862-a2f7-cdb69c22666c; _cc_id=92a7a9de32afa0868baefd845da32ced; _cc_cc=ACZ4nGNQsDRKNE%2B0TEk1NkpMSzSwMLNISkxNS7EwMU1JNDZKTk1hAIKsd%2Ba9DAgAAHc3C%2B8%3D; _cc_aud=ABR4nGNgYGDIemfeywAHABqXAh0%3D; panoramaId_expiry=1794083085259; _ga_XHB89N426X=GS2.1.s1794056854$o11$g0$t1794056854$j60$l0$h0",
-            "Accept": "*/*"
+            "Accept": "*/*",
+            "Sec-Fetch-Dest": "empty",
+            "Sec-Fetch-Site": "cross-site",
+            "Sec-Fetch-Mode": "cors",
+            "Accept-Language": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7"
           }
         },
         {
           "id": 45,
           "raw_name": "MOR SPOR vp 1.",
           "title": "beIN Sports 1",
-          "url": "https://sc.ed469618898d75b149e5c7c4b6a1c415.biz/hls/1.m3u8",
+          "url": "https://andro.evrenesoglu235.click/checklist/batutest.m3u8",
           "url_backup": "https://zeus728177.cfd/b1/index.txt",
           "headers": {
-            "Referer": "https://bosssports1068.com/",
-            "Origin": "https://bosssports1068.com",
+            "Referer": "https://mahsunsports58.xyz/",
+            "Origin": "https://mahsunsports58.xyz",
             "Accept": "*/*",
             "Accept-Language": "tr,en-US;q=0.9,en;q=0.8,ru;q=0.7,de;q=0.6"
           }
@@ -75,7 +78,7 @@
           "id": 1,
           "raw_name": "MOR SPOR 2",
           "title": "beIN Sports 2",
-          "url": "https://g1b.d72577a9dd0ec74.cfd/b2/mono.m3u8",
+          "url": "https://css.d6e3eds5e065t5.help//b2/tracks-v1a1/mono.m3u8",
           "url_backup": "https://andro.evrenesoglu101.click/checklist/androstreamlivebs2.m3u8",
           "headers": {
             "Referer": "https://taraftarium.xyz/",
@@ -88,7 +91,7 @@
           "id": 27,
           "raw_name": "MOR SPOR 3",
           "title": "beIN Sports 3",
-          "url": "https://g1b.d72577a9dd0ec74.cfd/b3/mono.m3u8",
+          "url": "https://css.d6e3eds5e065t5.help//b3/tracks-v1a1/mono.m3u8",
           "url_backup": "https://andro.evrenesoglu101.click/checklist/androstreamlivebs3.m3u8",
           "headers": {
             "Referer": "https://taraftarium.xyz/",
@@ -101,7 +104,7 @@
           "id": 47,
           "raw_name": "MOR SPOR 4",
           "title": "beIN Sports 4",
-          "url": "https://g1b.d72577a9dd0ec74.cfd/b4/mono.m3u8",
+          "url": "https://css.d6e3eds5e065t5.help//b4/tracks-v1a1/mono.m3u8",
           "url_backup": "https://andro.evrenesoglu101.click/checklist/androstreamlivebs4.m3u8",
           "headers": {
             "Referer": "https://taraftarium.xyz/",
@@ -114,11 +117,9 @@
           "id": 48,
           "raw_name": "MOR SPOR M1",
           "title": "beIN Sports Max 1",
-          "url": "https://g1b.d72577a9dd0ec74.cfd/bm1/mono.m3u8",
+          "url": "https://zeus324232.cfd/b1max/index.txt",
           "url_backup": "https://andro.evrenesoglu101.click/checklist/androstreamlivebsm1.m3u8",
           "headers": {
-            "Referer": "https://fairtv16.com/",
-            "Origin": "https://fairtv16.com",
             "Accept-Language": "tr,en-US;q=0.9,en;q=0.8,ru;q=0.7,de;q=0.6",
             "Accept": "*/*"
           }
@@ -127,11 +128,9 @@
           "id": 49,
           "raw_name": "MOR SPOR M2",
           "title": "beIN Sports Max 2",
-          "url": "https://g1b.d72577a9dd0ec74.cfd/bm2/mono.m3u8",
+          "url": "https://zeus324232.cfd/b2max/index.txt",
           "url_backup": "https://andro.evrenesoglu101.click/checklist/androstreamlivebsm2.m3u8",
           "headers": {
-            "Referer": "https://fairtv16.com/",
-            "Origin": "https://fairtv16.com",
             "Accept-Language": "tr,en-US;q=0.9,en;q=0.8,ru;q=0.7,de;q=0.6",
             "Accept": "*/*"
           }
@@ -140,11 +139,9 @@
           "id": 50,
           "raw_name": "S Sport 1",
           "title": "S Sport 1",
-          "url": "https://g1b.d72577a9dd0ec74.cfd/ss/mono.m3u8",
+          "url": "https://zeus324232.cfd/s1/index.txt",
           "url_backup": "https://andro.evrenesoglu101.click/checklist/androstreamlivess1.m3u8",
           "headers": {
-            "Referer": "https://taraftarium.xyz/",
-            "Origin": "https://taraftarium.xyz",
             "Accept-Language": "tr,en-US;q=0.9,en;q=0.8,ru;q=0.7,de;q=0.6",
             "Accept": "*/*https://izmottvsc33.tvplus.com.tr:33207/CPS/images/universal/film/logo/202506/20250623/54/1002317544415eb9542c_op_0_XL.webp"
           }
@@ -165,11 +162,9 @@
           "id": 51,
           "raw_name": "S Sport 2",
           "title": "S Sport 2",
-          "url": "https://g1b.d72577a9dd0ec74.cfd/ss2/mono.m3u8",
+          "url": "https://zeus324232.cfd/s2/index.txt",
           "url_backup": "https://andro.evrenesoglu101.click/checklist/androstreamlivess2.m3u8",
           "headers": {
-            "Referer": "https://taraftarium.xyz/",
-            "Origin": "https://taraftarium.xyz",
             "Accept-Language": "en,tr;q=0.9",
             "Accept": "*/*"
           }
@@ -178,11 +173,9 @@
           "id": 53,
           "raw_name": "Smart Spor",
           "title": "Smart Spor",
-          "url": "https://g1b.d72577a9dd0ec74.cfd/smarts/mono.m3u8",
+          "url": "https://zeus324232.cfd/smart1/index.txt",
           "url_backup": "https://andro.evrenesoglu101.click/checklist/androstreamlivesm1.m3u8",
           "headers": {
-            "Referer": "https://taraftarium.xyz/",
-            "Origin": "https://taraftarium.xyz",
             "Accept-Language": "en,tr;q=0.9",
             "Accept": "*/*"
           }
@@ -191,11 +184,9 @@
           "id": 52,
           "raw_name": "Tivibu Spor 1",
           "title": "Tivibu Spor 1",
-          "url": "https://g1b.d72577a9dd0ec74.cfd/t1/mono.m3u8",
+          "url": "https://zeus324232.cfd/tivibu1/index.txt",
           "url_backup": "https://andro.evrenesoglu101.click/checklist/androstreamlivets1.m3u8",
           "headers": {
-            "Referer": "https://taraftarium.xyz/",
-            "Origin": "https://taraftarium.xyz",
             "Accept-Language": "en,tr;q=0.9",
             "Accept": "*/*"
           }
@@ -204,11 +195,9 @@
           "id": 54,
           "raw_name": "Tivibu Spor 2",
           "title": "Tivibu Spor 2",
-          "url": "https://g1b.d72577a9dd0ec74.cfd/t2/mono.m3u8",
+          "url": "https://zeus324232.cfd/tivibu2/index.txt",
           "url_backup": "https://andro.evrenesoglu101.click/checklist/androstreamlivets2.m3u8",
           "headers": {
-            "Referer": "https://taraftarium.xyz/",
-            "Origin": "https://taraftarium.xyz",
             "Accept-Language": "en,tr;q=0.9",
             "Accept": "*/*"
           }
@@ -217,11 +206,9 @@
           "id": 55,
           "raw_name": "Tivibu Spor 3",
           "title": "Tivibu Spor 3",
-          "url": "https://g1b.d72577a9dd0ec74.cfd/t3/mono.m3u8",
+          "url": "https://zeus324232.cfd/tivibu3/index.txt",
           "url_backup": "https://andro.evrenesoglu101.click/checklist/androstreamlivets3.m3u8",
           "headers": {
-            "Referer": "https://taraftarium.xyz/",
-            "Origin": "https://taraftarium.xyz",
             "Accept-Language": "en,tr;q=0.9",
             "Accept": "*/*"
           }
@@ -260,7 +247,7 @@
           "raw_name": "Tabii Spor",
           "title": "Tabii Spor",
           "url": "http://kl9mr2vxw7nq5py1sh4tj3gb6.medya.trt.com.tr/master_1080p.m3u8",
-          "url_backup": "https://andro.evrenesoglu237.click/checklist/androstreamlivetb.m3u8",
+          "url_backup": "https://andro.evrenesoglu235.click/checklist/androstreamlivetb.m3u8",
           "headers": {
             "Referer": "https://google.com/",
             "Origin": "https://google.com"
@@ -271,7 +258,7 @@
           "raw_name": "Tabii Spor 1",
           "title": "Tabii Spor 1",
           "url": "http://pz4qt7nw1mr9sh2vl5xk8jg3y.medya.trt.com.tr/master_1080p.m3u8",
-          "url_backup": "https://andro.evrenesoglu237.click/checklist/androstreamlivetb1.m3u8",
+          "url_backup": "https://andro.evrenesoglu235.click/checklist/androstreamlivetb1.m3u8",
           "headers": {}
         },
         {
@@ -279,7 +266,7 @@
           "raw_name": "Tabii Spor 2",
           "title": "Tabii Spor 2",
           "url": "http://mr8bv4kl1nq7sh9tw2xp5zj6g.medya.trt.com.tr/master_1080p.m3u8",
-          "url_backup": "https://andro.evrenesoglu237.click/checklist/androstreamlivetb2.m3u8",
+          "url_backup": "https://andro.evrenesoglu235.click/checklist/androstreamlivetb2.m3u8",
           "headers": {}
         },
         {
@@ -368,14 +355,16 @@
           "id": 126,
           "raw_name": "Super",
           "title": "Super",
-          "url": "https://bostv.tottomi.workers.dev/resolver.php?id=patron",
+          "url": "https://wv0.zirvedesin249.cfd/zirve/mono.m3u8",
           "url_backup": "",
           "headers": {
             "Referer": "https://30slotintv.live/",
             "Origin": "https://30slotintv.live",
+            "Cookie": "_ga=GA1.1.1774627878.1793368791; __dtsu=51A01793364163D76795CBA3A5A2E46A; _pubcid=a5d29b60-5faf-4862-a2f7-cdb69c22666c; _cc_id=92a7a9de32afa0868baefd845da32ced; _cc_cc=ACZ4nGNQsDRKNE%2B0TEk1NkpMSzSwMLNISkxNS7EwMU1JNDZKTk1hAIKsd%2Ba9DAgAAHc3C%2B8%3D; _cc_aud=ABR4nGNgYGDIemfeywAHABqXAh0%3D; _ga_XHB89N426X=GS2.1.s1794087440$o12$g0$t1794087440$j60$l0$h0",
             "Accept": "*/*",
-            "Accept-Language": "tr,en-US;q=0.9,en;q=0.8,ru;q=0.7,de;q=0.6",
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+            "Accept-Language": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7",
+            "Sec-Fetch-Dest": "empty",
+            "Sec-Fetch-Site": "cross-site"
           }
         }
       ]
