@@ -1,5 +1,5 @@
 {
-  "updated_at": 1794062685,
+  "updated_at": 1794074137,
   "sources": {
     "source_a": {
       "origin": "https://monotv547.com",
@@ -62,11 +62,13 @@
           "id": 45,
           "raw_name": "MOR SPOR vp 1.",
           "title": "beIN Sports 1",
-          "url": "https://andro.evrenesoglu101.click/checklist/androstreamlivebs1.m3u8",
+          "url": "https://sc.ed469618898d75b149e5c7c4b6a1c415.biz/hls/1.m3u8",
           "url_backup": "https://zeus728177.cfd/b1/index.txt",
           "headers": {
-            "Referer": "https://t24turkiye.com/",
-            "Origin": "https://t24turkiye.com"
+            "Referer": "https://bosssports1068.com/",
+            "Origin": "https://bosssports1068.com",
+            "Accept": "*/*",
+            "Accept-Language": "tr,en-US;q=0.9,en;q=0.8,ru;q=0.7,de;q=0.6"
           }
         },
         {
