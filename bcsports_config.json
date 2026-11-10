@@ -1,5 +1,5 @@
 {
-  "updated_at": 1794313011,
+  "updated_at": 1794341448,
   "sources": {
     "source_a": {
       "origin": "https://monotv547.com",
@@ -355,16 +355,14 @@
           "id": 126,
           "raw_name": "Super",
           "title": "Super",
-          "url": "https://g1b.d72577a9dd0ec74.cfd/b3/mono.m3u8",
+          "url": "https://kool.ninja/mediahubmx-resolve.json",
           "url_backup": "",
           "headers": {
-            "Referer": "https://raw.githubusercontent.com/icebug13/turbo-guacamoled/refs/heads/main/streams/stream_zirve.m3u8",
-            "Origin": "https://raw.githubusercontent.com",
-            "Cookie": "_ga=GA1.1.1774627878.1793368791; __dtsu=51A01793364163D76795CBA3A5A2E46A; _pubcid=a5d29b60-5faf-4862-a2f7-cdb69c22666c; _cc_id=92a7a9de32afa0868baefd845da32ced; _cc_cc=ACZ4nGNQsDRKNE%2B0TEk1NkpMSzSwMLNISkxNS7EwMU1JNDZKTk1hAIKsd%2Ba9DAgAAHc3C%2B8%3D; _cc_aud=ABR4nGNgYGDIemfeywAHABqXAh0%3D; _ga_XHB89N426X=GS2.1.s1794087440$o12$g0$t1794087440$j60$l0$h0",
+            "Referer": "https://vavoo.to/watch?live=22284968562a623d1b95b4",
+            "Origin": "https://vavoo.to",
             "Accept": "*/*",
-            "Accept-Language": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7",
-            "Sec-Fetch-Dest": "empty",
-            "Sec-Fetch-Site": "cross-site"
+            "Content-Type": "application/json; charset=utf-8",
+            "Content-Length": "98"
           }
         },
         {
