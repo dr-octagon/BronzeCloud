@@ -21,6 +21,10 @@ jobs:
         with:
           python-version: '3.11'
 
+      - name: Bağımlılıkları Yükle
+        run: |
+          pip install -U curl_cffi
+
       - name: Botu Çalıştır ve Linkleri Güncelle
         run: |
           python stream_updater.py

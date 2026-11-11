@@ -26,10 +26,10 @@ jobs:
           ref: master
           fetch-depth: 0
 
-      - name : Python 3.11.8 Yükle
+      - name : Python 3.11 Kur
         uses : actions/setup-python@v5
         with :
-          python-version: 3.11.8
+          python-version: '3.11'
 
       - name : Gereksinimleri Yükle
         run  : |
