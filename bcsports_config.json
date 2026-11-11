@@ -1,5 +1,5 @@
 {
-  "updated_at": 1794421784,
+  "updated_at": 1794427081,
   "sources": {
     "source_a": {
       "origin": "https://monotv547.com",
@@ -353,16 +353,13 @@
         },
         {
           "id": 126,
-          "raw_name": "Super",
-          "title": "Super",
-          "url": "https://kool.ninja/mediahubmx-resolve.json",
+          "raw_name": "Strongman Champions",
+          "title": "Strongman Champions",
+          "url": "https://rightsboosterltd-scl-1-eu.rakuten.wurl.tv/3000.m3u8",
           "url_backup": "",
           "headers": {
-            "Referer": "https://vavoo.to/watch?live=22284968562a623d1b95b4",
-            "Origin": "https://vavoo.to",
-            "Accept": "*/*",
-            "Content-Type": "application/json; charset=utf-8",
-            "Content-Length": "98"
+            "Accept": "text/html,application/xhtml+xml,application/vnd.apple.mpegurl,application/x-mpegURL,video/*,audio/*,*/*;q=0.8",
+            "User-Agent": "Player (Linux; Android 17)"
           }
         },
         {
