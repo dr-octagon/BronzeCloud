@@ -433,9 +433,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/DiziPalOriginal_v107.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/DiziPalOriginal_v108.cs3",
         "status": 1,
-        "version": 107,
+        "version": 108,
         "name": "DiziPalOriginal",
         "internalName": "DiziPalOriginal",
         "authors": [
@@ -444,7 +444,7 @@
             "Dr.Octagon"
         ],
         "description": "en yeni dizileri g\u00fcvenli ve h\u0131zl\u0131 \u015fekilde sunar.",
-        "fileSize": 50561,
+        "fileSize": 53951,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -873,9 +873,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/HDFilmDelisi_v4.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/HDFilmDelisi_v5.cs3",
         "status": 1,
-        "version": 4,
+        "version": 5,
         "name": "HDFilmDelisi",
         "internalName": "HDFilmDelisi",
         "authors": [
@@ -883,7 +883,7 @@
             "Dr.Octagon"
         ],
         "description": "HD Film Delisi - T\u00fcrk\u00e7e Filmler",
-        "fileSize": 83910,
+        "fileSize": 87592,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
