@@ -433,9 +433,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/DiziPalOriginal_v106.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/DiziPalOriginal_v107.cs3",
         "status": 1,
-        "version": 106,
+        "version": 107,
         "name": "DiziPalOriginal",
         "internalName": "DiziPalOriginal",
         "authors": [
@@ -444,7 +444,7 @@
             "Dr.Octagon"
         ],
         "description": "en yeni dizileri g\u00fcvenli ve h\u0131zl\u0131 \u015fekilde sunar.",
-        "fileSize": 49423,
+        "fileSize": 50561,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -1313,23 +1313,23 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/YabanciDizi_v7.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/YabanciDizi_v8.cs3",
         "status": 1,
-        "version": 7,
+        "version": 8,
         "name": "YabanciDizi",
         "internalName": "YabanciDizi",
         "authors": [
             "Dr.Octagon"
         ],
-        "description": "Yabanc\u0131 dizi izle, yabanc\u0131 diziler ve filmler full HD 1080p kalitesinde T\u00fcrk\u00e7e altyaz\u0131l\u0131 ve dublajl\u0131 yabancidizi.news adresinde.",
-        "fileSize": 65024,
+        "description": "Yabanc\u0131 dizi izle, yabanc\u0131 diziler ve filmler full HD 1080p kalitesinde T\u00fcrk\u00e7e altyaz\u0131l\u0131 ve dublajl\u0131 ybncidizi.com adresinde.",
+        "fileSize": 73823,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
             "TvSeries",
             "Movie"
         ],
-        "iconUrl": "https://www.google.com/s2/favicons?domain=yabancidizi.news&sz=%size%",
+        "iconUrl": "https://www.google.com/s2/favicons?domain=ybncidizi.com&sz=%size%",
         "apiVersion": 1
     }
 ]
