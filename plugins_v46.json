@@ -81,9 +81,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/BOAT_v88.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/BOAT_v89.cs3",
         "status": 1,
-        "version": 88,
+        "version": 89,
         "name": "BOAT",
         "internalName": "BOAT",
         "authors": [
@@ -126,9 +126,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/CineStream_v587.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/CineStream_v588.cs3",
         "status": 1,
-        "version": 587,
+        "version": 588,
         "name": "CineStream",
         "internalName": "CineStream",
         "authors": [
@@ -894,16 +894,16 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/inatbox-bc_v27.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/inatbox-bc_v28.cs3",
         "status": 1,
-        "version": 27,
+        "version": 28,
         "name": "\u0130natBox BronzeCloud",
         "internalName": "inatbox-bc",
         "authors": [
             "Dr.Octagon"
         ],
         "description": "\u0130natBox BronzeCloud Edition - Canl\u0131 kanallar, spor ve diziler burada.",
-        "fileSize": 103306,
+        "fileSize": 107567,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
