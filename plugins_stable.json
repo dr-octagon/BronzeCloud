@@ -381,7 +381,7 @@
             "Dr.Octagon"
         ],
         "description": "Dizilla t\u00fcm yabanc\u0131 dizileri \u00fccretsiz olarak T\u00fcrk\u00e7e Dublaj ve altyaz\u0131l\u0131 se\u00e7enekleri ile 1080P kalite izleyebilece\u011finiz yeni nesil yabanc\u0131 dizi izleme siteniz.",
-        "fileSize": 59880,
+        "fileSize": 59347,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -411,9 +411,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/DiziPal_v120.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/DiziPal_v121.cs3",
         "status": 1,
-        "version": 120,
+        "version": 121,
         "name": "DiziPal",
         "internalName": "DiziPal",
         "authors": [
@@ -422,7 +422,7 @@
             "Dr.Octagon"
         ],
         "description": "en yeni dizileri g\u00fcvenli ve h\u0131zl\u0131 \u015fekilde sunar.",
-        "fileSize": 63070,
+        "fileSize": 80166,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
