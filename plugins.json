@@ -175,9 +175,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/CizgiVeDizi_v7.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/CizgiVeDizi_v8.cs3",
         "status": 1,
-        "version": 7,
+        "version": 8,
         "name": "CizgiVeDizi",
         "internalName": "CizgiVeDizi",
         "authors": [
@@ -185,7 +185,7 @@
             "wGodfather"
         ],
         "description": "\u00c7izgi ve Dizi (cizgivedizi.net) - \u00c7izgi dizi, anime, TV dizileri ve animasyon filmleri ar\u015fivi.",
-        "fileSize": 45062,
+        "fileSize": 48575,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -239,9 +239,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/Dizibal_v1.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/Dizibal_v2.cs3",
         "status": 1,
-        "version": 1,
+        "version": 2,
         "name": "Dizibal",
         "internalName": "Dizibal",
         "authors": [
@@ -249,7 +249,7 @@
             "wGodfather"
         ],
         "description": "DiziBal - Yabanc\u0131 dizi, film ve anime ar\u015fivi full HD T\u00fcrk\u00e7e altyaz\u0131l\u0131 ve dublajl\u0131.",
-        "fileSize": 39366,
+        "fileSize": 40902,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -261,9 +261,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/Dizibol_v1.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/Dizibol_v2.cs3",
         "status": 1,
-        "version": 1,
+        "version": 2,
         "name": "Dizibol",
         "internalName": "Dizibol",
         "authors": [
@@ -271,7 +271,7 @@
             "wGodfather"
         ],
         "description": "DiziBol - Yabanc\u0131 dizi, film ve anime ar\u015fivi full HD T\u00fcrk\u00e7e altyaz\u0131l\u0131 ve dublajl\u0131.",
-        "fileSize": 39481,
+        "fileSize": 41000,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -283,9 +283,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/DiziBox_v29.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/DiziBox_v30.cs3",
         "status": 1,
-        "version": 29,
+        "version": 30,
         "name": "DiziBox",
         "internalName": "DiziBox",
         "authors": [
@@ -293,7 +293,7 @@
             "Dr.Octagon"
         ],
         "description": "Yabanc\u0131 Dizi izle, T\u00fcm yabanc\u0131 dizilerin yeni ve eski sezonlar\u0131n\u0131 full hd izleyebilece\u011finiz elit site.",
-        "fileSize": 39820,
+        "fileSize": 44446,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -327,9 +327,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/Diziizle_v2.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/Diziizle_v3.cs3",
         "status": 1,
-        "version": 2,
+        "version": 3,
         "name": "Diziizle",
         "internalName": "Diziizle",
         "authors": [
@@ -337,7 +337,7 @@
             "wGodfather"
         ],
         "description": "Diziizle (diziizle.wiki) - G\u00fcncel dizi ve anime ar\u015fivi full HD T\u00fcrk\u00e7e altyaz\u0131l\u0131 ve dublajl\u0131.",
-        "fileSize": 39948,
+        "fileSize": 42722,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -455,9 +455,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/Dizipod_v3.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/Dizipod_v4.cs3",
         "status": 1,
-        "version": 3,
+        "version": 4,
         "name": "Dizipod",
         "internalName": "Dizipod",
         "authors": [
@@ -465,7 +465,7 @@
             "wGodfather"
         ],
         "description": "Dizipod - Orijinal Dilinde T\u00fcrk\u00e7e Altyaz\u0131l\u0131 Yabanc\u0131 dizi ve filmleri full HD kalitede izleyin.",
-        "fileSize": 35625,
+        "fileSize": 38580,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -476,9 +476,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/Diziroll_v2.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/Diziroll_v3.cs3",
         "status": 1,
-        "version": 2,
+        "version": 3,
         "name": "Diziroll",
         "internalName": "Diziroll",
         "authors": [
@@ -486,7 +486,7 @@
             "wGodfather"
         ],
         "description": "Diziroll (diziroll.club) - Yabanc\u0131 diziler, g\u00fcncel b\u00f6l\u00fcmler, T\u00fcrk\u00e7e dublaj ve altyaz\u0131 se\u00e7enekleriyle.",
-        "fileSize": 39497,
+        "fileSize": 58401,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -496,9 +496,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/Diziwatch_v2.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/Diziwatch_v3.cs3",
         "status": 1,
-        "version": 2,
+        "version": 3,
         "name": "Diziwatch",
         "internalName": "Diziwatch",
         "authors": [
@@ -506,7 +506,7 @@
             "wGodfather"
         ],
         "description": "diziwatch (diziwatch.now) - Yabanc\u0131 dizi ve anime izleme platformu.",
-        "fileSize": 35496,
+        "fileSize": 64841,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -519,9 +519,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/DiziYou_v28.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/DiziYou_v29.cs3",
         "status": 1,
-        "version": 28,
+        "version": 29,
         "name": "DiziYou",
         "internalName": "DiziYou",
         "authors": [
@@ -529,7 +529,7 @@
             "Dr.Octagon"
         ],
         "description": "Diziyou en kaliteli T\u00fcrk\u00e7e dublaj ve altyaz\u0131l\u0131 yabanc\u0131 dizi izleme sitesidir. G\u00fcncel ve efsanevi dizileri 1080p Full HD kalitede izlemek i\u00e7in hemen t\u0131kla!",
-        "fileSize": 23728,
+        "fileSize": 24556,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -581,9 +581,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/FilmciBaba_v1.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/FilmciBaba_v2.cs3",
         "status": 1,
-        "version": 1,
+        "version": 2,
         "name": "FilmciBaba",
         "internalName": "FilmciBaba",
         "authors": [
@@ -591,7 +591,7 @@
             "wGodfather"
         ],
         "description": "Filmci Baba (filmizle.ink) film ve dizi eklentisi. Sonsuz kayd\u0131rma, Hotstream ve altyaz\u0131 deste\u011fi i\u00e7erir.",
-        "fileSize": 39592,
+        "fileSize": 40602,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -643,9 +643,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/FilmGecesi_v1.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/FilmGecesi_v2.cs3",
         "status": 1,
-        "version": 1,
+        "version": 2,
         "name": "FilmGecesi",
         "internalName": "FilmGecesi",
         "authors": [
@@ -653,7 +653,7 @@
             "wGodfather"
         ],
         "description": "FilmGecesi (filmgecesi.vip) film eklentisi. Sonsuz kayd\u0131rma, Bluray/RapidVid oynat\u0131c\u0131 ve altyaz\u0131 deste\u011fi i\u00e7erir.",
-        "fileSize": 32672,
+        "fileSize": 35294,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -914,9 +914,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/JetFilmizle_v51.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/JetFilmizle_v52.cs3",
         "status": 1,
-        "version": 51,
+        "version": 52,
         "name": "JetFilmizle",
         "internalName": "JetFilmizle",
         "authors": [
@@ -924,7 +924,7 @@
             "Dr.Octagon"
         ],
         "description": "Binlerce Film \u0130zleme Se\u00e7ene\u011fiyle En \u0130yi Film \u0130zleme Sitesi",
-        "fileSize": 27049,
+        "fileSize": 43492,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -998,16 +998,16 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/rectv-bc_v9.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/rectv-bc_v10.cs3",
         "status": 1,
-        "version": 9,
+        "version": 10,
         "name": "rectv-bc",
         "internalName": "rectv-bc",
         "authors": [
             "Dr.Octagon"
         ],
         "description": "RecTV BronzeCloud Edition v160 - Canl\u0131 TV, Spor, Dizi ve Film",
-        "fileSize": 56298,
+        "fileSize": 55243,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -1042,9 +1042,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/SelcukFlix_v3.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/SelcukFlix_v4.cs3",
         "status": 1,
-        "version": 3,
+        "version": 4,
         "name": "SelcukFlix",
         "internalName": "SelcukFlix",
         "authors": [
@@ -1052,7 +1052,7 @@
             "wGodfather"
         ],
         "description": "SelcukFlix film ve dizi eklentisi. \u015eifreli katalog API'si, sayfalama, \u00e7oklu kaynak ve altyaz\u0131 deste\u011fi i\u00e7erir.",
-        "fileSize": 35592,
+        "fileSize": 59997,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -1063,9 +1063,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/SetFilmIzle_v38.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/SetFilmIzle_v39.cs3",
         "status": 1,
-        "version": 38,
+        "version": 39,
         "name": "SetFilmIzle",
         "internalName": "SetFilmIzle",
         "authors": [
@@ -1073,7 +1073,7 @@
             "Dr.Octagon"
         ],
         "description": "Setfilmizle sitemizde, donma ya\u015famadan T\u00fcrk\u00e7e dublaj ve altyaz\u0131l\u0131 filmleri ile dizileri muhte\u015fem 1080p full HD kalitesinde izleyebilirsiniz.",
-        "fileSize": 49447,
+        "fileSize": 57641,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -1127,9 +1127,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/SinemaCX_v30.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/SinemaCX_v31.cs3",
         "status": 1,
-        "version": 30,
+        "version": 31,
         "name": "SinemaCX",
         "internalName": "SinemaCX",
         "authors": [
@@ -1137,7 +1137,7 @@
             "Dr.Octagon"
         ],
         "description": "G\u00fcncel ve en iyi yabanc\u0131 filmleri y\u00fcksek g\u00f6r\u00fcnt\u00fc kalitesinde, T\u00fcrk\u00e7e dublaj ve altyaz\u0131 se\u00e7enekleriyle filmleri full izleyin. (SinemaCC)",
-        "fileSize": 27583,
+        "fileSize": 27663,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -1210,9 +1210,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/UltraFilm_v3.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/UltraFilm_v4.cs3",
         "status": 1,
-        "version": 3,
+        "version": 4,
         "name": "UltraFilm",
         "internalName": "UltraFilm",
         "authors": [
@@ -1220,7 +1220,7 @@
             "wGodfather"
         ],
         "description": "UltraFilm film eklentisi. Sonsuz kayd\u0131rma, \u00e7oklu kaynak, Hotstream ve YouTube fragman deste\u011fi i\u00e7erir.",
-        "fileSize": 39783,
+        "fileSize": 40628,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
@@ -1230,16 +1230,16 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/Vavoo_v9.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/Vavoo_v10.cs3",
         "status": 1,
-        "version": 9,
+        "version": 10,
         "name": "Vavoo",
         "internalName": "Vavoo",
         "authors": [
             "Dr.Octagon"
         ],
         "description": "Vavoo canl\u0131 TV eklentisi. T\u00fcrkiye ve Arnavutluk kanallar\u0131 kategorili olarak listelenir.",
-        "fileSize": 52689,
+        "fileSize": 51043,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "tvTypes": [
             "Live"
