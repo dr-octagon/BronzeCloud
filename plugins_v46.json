@@ -704,9 +704,9 @@
         "apiVersion": 1
     },
     {
-        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/FilmMakinesi_v67.cs3",
+        "url": "https://raw.githubusercontent.com/dr-octagon/Cloudstream-BronzeCloud/builds/FilmMakinesi_v69.cs3",
         "status": 1,
-        "version": 67,
+        "version": 69,
         "name": "FilmMakinesi",
         "internalName": "FilmMakinesi",
         "authors": [
@@ -715,13 +715,13 @@
             "Dr.Octagon"
         ],
         "description": "Film Makinesi, en yeni ve en g\u00fcncel filmleri sitemizde full HD kalite fark\u0131 ile izleyebilirsiniz. HD film izle denildi\u011finde akla gelen en kaliteli film izleme sitesi.",
-        "fileSize": 62488,
+        "fileSize": 44611,
         "repositoryUrl": "https://github.com/dr-octagon/Cloudstream-BronzeCloud",
         "language": "tr",
         "tvTypes": [
             "Movie"
         ],
-        "iconUrl": "https://www.google.com/s2/favicons?domain=filmmakinesi.co&sz=%size%",
+        "iconUrl": "https://www.google.com/s2/favicons?domain=filmmakinesi.to&sz=%size%",
         "apiVersion": 1
     },
     {
