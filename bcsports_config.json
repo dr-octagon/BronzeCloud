@@ -1,5 +1,5 @@
 {
-  "updated_at": 1795377969,
+  "updated_at": 1795383706,
   "sources": {
     "source_a": {
       "origin": "https://monotv547.com",
@@ -366,12 +366,12 @@
           "id": 133,
           "raw_name": "test",
           "title": "test",
-          "url": "http://sharelink.anonimltc.workers.dev/g/ji0rc0.mp4",
+          "url": "https://one.st23.lol/hls/natgeo/index.m3u8",
           "url_backup": "",
           "headers": {
-            "Referer": "https://kool.ws",
-            "Origin": "https://kool.ws",
-            "User-Agent": "VAVOO/2.6",
+            "Referer": "https://one.st23.lol/hls/natgeo/index.m3u8",
+            "Origin": "https://one.st23.lol/hls/natgeo/index.m3u8",
+            "User-Agent": "SSUserAgent",
             "Accept-Language": "tr-TR,tr;q=0.9",
             "Accept": "*/*"
           }
