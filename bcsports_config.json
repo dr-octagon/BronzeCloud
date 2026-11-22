@@ -1,5 +1,5 @@
 {
-  "updated_at": 1795363215,
+  "updated_at": 1795377969,
   "sources": {
     "source_a": {
       "origin": "https://monotv547.com",
@@ -366,10 +366,14 @@
           "id": 133,
           "raw_name": "test",
           "title": "test",
-          "url": "https://metvmetv03.lxi.be/proxypatron.php/?url=https://340.zirvedesin251.lol/zirve/mono.m3u8",
+          "url": "http://sharelink.anonimltc.workers.dev/g/ji0rc0.mp4",
           "url_backup": "",
           "headers": {
-            "Referer": "https://www.atomsportv520.top//"
+            "Referer": "https://kool.ws",
+            "Origin": "https://kool.ws",
+            "User-Agent": "VAVOO/2.6",
+            "Accept-Language": "tr-TR,tr;q=0.9",
+            "Accept": "*/*"
           }
         }
       ]
