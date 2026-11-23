@@ -1,5 +1,5 @@
 {
-  "updated_at": 1795383706,
+  "updated_at": 1795414873,
   "sources": {
     "source_a": {
       "origin": "https://monotv547.com",
@@ -49,7 +49,7 @@
           "raw_name": "MOR SPOR vp 1",
           "title": "beIN Sports 1",
           "url": "https://teletv15.top/load/yayinlink.php?id=bein-sports-1",
-          "url_backup": "https://340.zirvedesin251.lol/zirve/mono.m3u8",
+          "url_backup": "https://metvmetv03.lxi.be/proxypatron.php/?url=https://g1b.d72577a9dd0ec74.cfd/patron/mono.m3u8",
           "headers": {
             "Referer": "https://www.atomsportv520.top//",
             "Origin": "https://www.atomsportv520.top",
@@ -217,21 +217,26 @@
           "id": 56,
           "raw_name": "Eurosport 1",
           "title": "Eurosport 1",
-          "url": "https://andro.evrenesoglu101.click/checklist/androstreamlivees1.m3u8",
-          "url_backup": "https://raw.githubusercontent.com/icebu12/turbo-guacamole/refs/heads/main/streams/stream_e1.m3u8",
+          "url": "https://metvmetv03.lxi.be/proxypatron.php/?url=https://g1b.d72577a9dd0ec74.cfd/eu1/mono.m3u8",
+          "url_backup": "https://andro.evrenesoglu101.click/checklist/androstreamlivees1.m3u8",
           "headers": {
-            "Referer": "https://taraftarium.xyz/",
-            "Origin": "https://taraftarium.xyz"
+            "Referer": "https://patronsports2.cfd/",
+            "Origin": "https://patronsports2.cfd",
+            "Accept": "*/*",
+            "Accept-Language": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7"
           }
         },
         {
           "id": 57,
           "raw_name": "Eurosport 2",
           "title": "Eurosport 2",
-          "url": "https://andro.evrenesoglu101.click/checklist/androstreamlivees2.m3u8",
-          "url_backup": "",
+          "url": "https://metvmetv03.lxi.be/proxypatron.php/?url=https://g1b.d72577a9dd0ec74.cfd/eu2/mono.m3u8",
+          "url_backup": "https://andro.evrenesoglu101.click/checklist/androstreamlivees2.m3u8",
           "headers": {
-            "Referer": "https://trgoals1487.xyz/"
+            "Referer": "https://patronsports2.cfd/",
+            "Origin": "https://patronsports2.cfd",
+            "Accept": "*/*",
+            "Accept-Language": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7"
           }
         },
         {
@@ -366,14 +371,11 @@
           "id": 133,
           "raw_name": "test",
           "title": "test",
-          "url": "https://one.st23.lol/hls/natgeo/index.m3u8",
+          "url": "https://geil.to/live/resolve?url=https%3A%2F%2Fgeil.to%2Flive%2Fplay%2F2593800839",
           "url_backup": "",
           "headers": {
-            "Referer": "https://one.st23.lol/hls/natgeo/index.m3u8",
-            "Origin": "https://one.st23.lol/hls/natgeo/index.m3u8",
-            "User-Agent": "SSUserAgent",
-            "Accept-Language": "tr-TR,tr;q=0.9",
-            "Accept": "*/*"
+            "User-Agent": "MediaHubMX/2",
+            "Accept": "application/json"
           }
         }
       ]
